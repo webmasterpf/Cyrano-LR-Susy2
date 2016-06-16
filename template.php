@@ -31,24 +31,36 @@ $term = preg_replace('<code>\s+</code>', '<em>', trim($term));
   return ($NomTermeValide);
 }
 
-function d6_ce_susy2_preprocess_node(&$vars, $hook) {
-//Partie regions dans node.tpl- ajoute les regions utiles au node.tpl
- $vars['pole_bloc_G'] = theme('blocks', 'pole_bloc_G');
- $vars['pole_bloc_C'] = theme('blocks', 'pole_bloc_C');
- $vars['pole_bloc_D'] = theme('blocks', 'pole_bloc_D');
+function cyranod6_lr_susy2_preprocess_node(&$vars, $hook) {
+//Partie regions génériques dans node.tpl- ajoute les regions utiles au node.tpl
+ $vars['pole_col1'] = theme('blocks', 'pole_col1');
+ $vars['pole_col2'] = theme('blocks', 'pole_col2');
+ $vars['pole_col3'] = theme('blocks', 'pole_col3');
+ $vars['pole_col4'] = theme('blocks', 'pole_col4');
  $vars['node_col_1'] = theme('blocks', 'node_col_1');
  $vars['node_col_2'] = theme('blocks', 'node_col_2');
  $vars['node_col_3'] = theme('blocks', 'node_col_3');
- //Regions custom pour theme PF suite generalisation node.tpl
- $vars['centralBloc'] = theme('blocks', 'centralBloc');
- $vars['centre_partenaire'] = theme('blocks', 'centre_partenaire');
- $vars['formulaire'] = theme('blocks', 'formulaire');
+ $vars['node_col_4'] = theme('blocks', 'node_col_4');
+ $vars['node_col_5'] = theme('blocks', 'node_col_5');
+ $vars['actuAssociation'] = theme('blocks', 'actuAssociation');
+ //Regions custom pour theme suite generalisation node.tpl
+// $vars['pole_bloc_G'] = theme('blocks', 'pole_bloc_G');
+// $vars['pole_bloc_C'] = theme('blocks', 'pole_bloc_C');
+// $vars['pole_bloc_D'] = theme('blocks', 'pole_bloc_D');
  //
 //Partie template node.tpl
 $node = $vars['node'];
 $lesTypes=array('page_fiche_formation', 'page_pole','contenu_actualites');
 //ajouter les vids possibles pour chaque quelquesoit le type
-$lesVid= array('1','6');// vid 1 pour pole formation, vid 6 pour type actualite (DEV/PROD)
+$lesTypes=array('fiche_formation', 'page_pole','contenu_actualites');
+//ajouter les vids possibles pour chaque quelquesoit le type
+/* vid 1 pour pole formation
+ * vid 2 pour évènement
+ * vid 3 pour
+ * vid 5 pour type actualite
+ * vid 6 type de formation
+ *
+*/
 // on regarde si le type est dans le tableau
 if ( in_array($node->type, $lesTypes) ) {
      //drupal_set_message('Type du node si type ok (entrée de la condition) : '.$node->type,'status');
@@ -73,10 +85,12 @@ if ( in_array($node->type, $lesTypes) ) {
 // drupal_set_message('Type du node hors boucle: '.$node->type,'status');
  //drupal_set_message('Term name hors boucle: '.$term->name,'status');
     }
+    //template suggestion pour les nodes
+     $vars['template_files'][] = 'node-'. $vars['node']->nid; 
 }
 ?>
 <?php
-function d6_ce_susy2_preprocess_page(&$vars){
+function cyranod6_lr_susy2_preprocess_page(&$vars){
     //http://www.zites.net/en/load-external-javascript-files-drupal-6/
     // JS externe avec le module advagg qui permet d'utiliser 'external'
 //   drupal_add_js('http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.11.3.min.js', 'external');
@@ -84,29 +98,32 @@ function d6_ce_susy2_preprocess_page(&$vars){
 //   drupal_add_js('http://cdnjs.cloudflare.com/ajax/libs/masonry/3.3.2/masonry.pkgd.min.js', 'external');
 //   
 // permet usage de vieilles versions de jQuery
-        //drupal_add_js(drupal_get_path('theme', 'd6_ce_susy2') . '/js/jquery-migrate-1.2.1.min.js', 'theme');
+        //drupal_add_js(drupal_get_path('theme', 'cyranod6_lr_susy2') . '/js/jquery-migrate-1.2.1.min.js', 'theme');
 //chargement des plugins qui utilisent la version de jQuery par défaut du site
-//   drupal_add_js(drupal_get_path('theme', 'd6_ce_susy2') . '/js/responsive-nav.js','theme');
-//   drupal_add_js(drupal_get_path('theme', 'd6_ce_susy2') . '/js/tinynav.min.js','theme');
-    //   drupal_add_js(drupal_get_path('theme', 'd6_ce_susy2') . '/js/jquery.navobile.min.js','theme');
-    //   drupal_add_js(drupal_get_path('theme', 'd6_ce_susy2') . '/js/jquery.jpanelmenu.min.js','theme');
-    drupal_add_js(drupal_get_path('theme', 'd6_ce_susy2') . '/js/selectnav.min.js', 'theme');
-    drupal_add_js(drupal_get_path('theme', 'd6_ce_susy2') . '/js/jquery.sticky.js', 'theme');
-  //  drupal_add_js(drupal_get_path('theme', 'd6_ce_susy2') . '/js/jquery.sidebar.min.js', 'theme');
+//   drupal_add_js(drupal_get_path('theme', 'cyranod6_lr_susy2') . '/js/responsive-nav.js','theme');
+//   drupal_add_js(drupal_get_path('theme', 'cyranod6_lr_susy2') . '/js/tinynav.min.js','theme');
+    //   drupal_add_js(drupal_get_path('theme', 'cyranod6_lr_susy2') . '/js/jquery.navobile.min.js','theme');
+    //   drupal_add_js(drupal_get_path('theme', 'cyranod6_lr_susy2') . '/js/jquery.jpanelmenu.min.js','theme');
+    drupal_add_js(drupal_get_path('theme', 'cyranod6_lr_susy2') . '/js/selectnav.min.js', 'theme');
+    drupal_add_js(drupal_get_path('theme', 'cyranod6_lr_susy2') . '/js/jquery.sticky.js', 'theme');
+  //  drupal_add_js(drupal_get_path('theme', 'cyranod6_lr_susy2') . '/js/jquery.sidebar.min.js', 'theme');
 
 //chargement des scripts qui utilisent la version de jQuery par défaut du site
-    drupal_add_js(drupal_get_path('theme', 'd6_ce_susy2') . '/js/js_jquery_defaut.js', 'theme');
+    drupal_add_js(drupal_get_path('theme', 'cyranod6_lr_susy2') . '/js/js_jquery_defaut.js', 'theme');
 // mise en place du noConflict pour utiliser plusieurs versions de jQuery   
-    drupal_add_js(drupal_get_path('theme', 'd6_ce_susy2') . '/js/jquery_init.js', 'theme');
+    drupal_add_js(drupal_get_path('theme', 'cyranod6_lr_susy2') . '/js/jquery_init.js', 'theme');
 //chargement des plugins qui utilisent une version de jQuery plus récente
-    drupal_add_js(drupal_get_path('theme', 'd6_ce_susy2') . '/js/jquery.flexslider.js', 'theme');
-    drupal_add_js(drupal_get_path('theme', 'd6_ce_susy2') . '/js/jquery.bxslider.min.js', 'theme');
-    drupal_add_js(drupal_get_path('theme', 'd6_ce_susy2') . '/3rdparty/buttons/js/buttons.js', 'theme');
-    drupal_add_js(drupal_get_path('theme', 'd6_ce_susy2') . '/js/js_jquery_new.js', 'theme');
+    drupal_add_js(drupal_get_path('theme', 'cyranod6_lr_susy2') . '/js/jquery.flexslider.js', 'theme');
+    drupal_add_js(drupal_get_path('theme', 'cyranod6_lr_susy2') . '/js/jquery.bxslider.min.js', 'theme');
+    drupal_add_js(drupal_get_path('theme', 'cyranod6_lr_susy2') . '/3rdparty/buttons/js/buttons.js', 'theme');
+    drupal_add_js(drupal_get_path('theme', 'cyranod6_lr_susy2') . '/js/js_jquery_new.js', 'theme');
     //  mise à disposition des 2 versions de jQuery
-    drupal_add_js(drupal_get_path('theme', 'd6_ce_susy2') . '/js/jquery_exit.js', 'theme');
+    drupal_add_js(drupal_get_path('theme', 'cyranod6_lr_susy2') . '/js/jquery_exit.js', 'theme');
+   
 
     //die('les JS sont chargés');
+    // We need to rebuild the scripts variable with the new script included.
+    $vars['scripts'] = drupal_get_js();
 }
 ?>
 <?php
@@ -131,14 +148,14 @@ function debug_print($var) {
 }
 
 //Webform "You have already submitted this form." message off - http://drupal.org/node/1096226
-function d6_ce_susy2_webform_view_messages($node, $teaser, $page, $submission_count, $limit_exceeded, $allowed_roles, $closed, $cached) {
+function cyranod6_lr_susy2_webform_view_messages($node, $teaser, $page, $submission_count, $limit_exceeded, $allowed_roles, $closed, $cached) {
   return theme_webform_view_messages($node, $teaser, $page, 0, $limit_exceeded, $allowed_roles, $closed, $cached);
 }
 ?>
 <?php
 // permet d'ouvrir en blank les fichiers uploadés via filefield
 //NE PAS OUBLIER DE CHANGER NOM DU THEME !!!
-function d6_ce_susy2_filefield_file($file) {
+function cyranod6_lr_susy2_filefield_file($file) {
   // Views may call this function with a NULL value, return an empty string.
   if (empty($file['fid'])) {
     return '';
@@ -190,7 +207,7 @@ function phptemplate_aggregator_block_item($item, $feed = 0) {
   return $output;
 }
 /**Enleve le lien en savoir plus - NE PAS OUBLIER DE CHANGER LE NOM DU THEME !!!___*/
-function d6_ce_susy2_more_link ($url, $title) {
+function cyranod6_lr_susy2_more_link ($url, $title) {
   if (stristr( $url, 'aggregator')) {
     return "";
   }

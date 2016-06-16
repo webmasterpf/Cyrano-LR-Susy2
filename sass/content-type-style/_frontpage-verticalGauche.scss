@@ -1,0 +1,214 @@
+
+// Regroupe le style pour le contenu des node.tpl custom
+// créer des fichiers _node-TYPE.scss et les importer dans application.scss
+
+/*-------------------------------------|
+|       CONTENU CUSTOM NODE.TPL        |
+|     FRONTPAGE  VERTICAL GAUCHE       |
+|                       STYLE                   |
+|--------------------------------------*/
+
+  //@include susy-breakpoint ($mobile){}
+  //@include susy-breakpoint ($desktop){}
+  //@include susy-breakpoint ($tablet){}
+
+//Code imbriqué à 100%
+body .conteneur
+{
+    //Pas de @include container($total-columns); car deja mis dans layout !!!
+    background:transparent image-url("bg_content_etoile.gif") no-repeat left bottom;
+    .conteneur-flex{
+      
+    }
+    .HPDiapoVerticalGauche{
+       
+         }
+    .HPDiapoVerticalGauche aside.ImgFixeHPG{
+         
+    }
+    .HPDroite{
+       
+    }
+    .HPDroite1{}
+    .HPDroite2{
+        aside.PartieDroite2 {
+            h3{
+                font-family: arista,Trebuchet MS, sans-serif;
+                text-align: center;
+                color: $vert;
+                font-size: large;
+                margin: 0 0 em(10px);
+            }
+        }
+    }
+    .HPDroite3{}
+
+    @include breakpoint($tablet) {/*     //Dimensions pour les tablettes*/
+        
+        .HPDiapoVerticalGauche{}
+        .HPDroite{}
+        .HPDroite1{}
+        .HPDroite2{}
+        .HPDroite3{}
+
+    }
+    @include breakpoint($desktop) {/*    //Dimensions pour les pc*/
+        //Taille du conteneur du groupe    
+      @include container($desktopcol);
+.conteneur-flex{
+       
+            }
+        .HPDiapoVerticalGauche{
+       padding: 0 0.3em;     
+       
+            
+        }
+        .HPDroite{
+          
+           
+            
+            
+        }
+        .HPDroite1{
+            
+        }
+        .HPDroite2{
+            
+
+        }
+        .HPDroite3{
+
+        }
+    }
+
+}
+
+/********************/
+/*ZONES PAGE ACCUEIL*/
+
+.content-bottom-home {
+    table{width: auto;}
+    a {
+        //@include zocial;
+    }
+    ul{
+         @include horizontal-list;
+        li{}
+    }
+}
+
+/****************/
+.HPDroite {
+
+    background: none;
+    color: black;
+    ul li {
+        list-style: square;
+    }
+    a {
+        text-decoration: none;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+    a img{
+         text-decoration: none;
+            &:hover{ text-decoration: none;
+            border: 0;background: none;}
+        
+    }
+
+}
+.illus_lyceeMetiers{
+    margin: 0 auto;
+    display: block;
+    padding: em(5px);
+}
+.PartieDroite1 {
+    p{padding: 0.3em;}
+    a{
+        color: $vert;
+        padding: em(2px);
+        font-size: smaller;
+        &:hover{
+            color: black;
+            background: $vert;
+            text-decoration: none;
+        }
+    }
+       a > img[src$=".gif"]{
+         text-decoration: none;
+            &:hover{ text-decoration: none;
+            border: 0;background: none;}
+        
+    }
+}
+
+/*---DIAPORAMA HOMEPAGE TEXTE DYNAMIQUE  PANORAMIQUE----*/
+
+//Layout du diaporama dynamique (Views slideshow)
+//Code imbriqué à 100%
+aside.DiapoHP{
+   
+        #transparency{
+         
+           
+        }
+        #contenu-diapo{
+         
+        }
+    img{}
+       @include breakpoint($tablet) {
+        #transparency{}
+        #contenu-diapo{}
+
+    }
+    @include breakpoint($desktop) { 
+       
+       
+        #transparency{}
+        #contenu-diapo{}
+        img{}
+    }
+ 
+}
+
+// Style du diaporama dynamique
+
+/*---DIAPORAMA HOMEPAGE TEXTE DYNAMIQUE PAS SUR MOBILE----*/
+.conteneur #views_slideshow_cycle_div_diaporama_homepage-block_1_0 > div > div.views-field.views-field-teaser{
+    display: none;
+    @include breakpoint ($desktop){
+        display: block;
+        #transparency{
+            background:none repeat scroll 0 0 $vert;/*Couleur du fond*/
+            height:em(60px);
+            bottom:em(75px); 
+            left:em(12px);
+            width: 93.5%;
+            position:relative;
+            z-index:15;
+            @include opacity(0.6);
+        }
+        #contenu-diapo {
+
+            position: relative;
+            bottom:10.375em;
+            left: em(10px);
+            color: white;
+            z-index: 20;
+
+
+            h2 {
+                color: white;
+                padding: em(5px);
+                font-family: $AristaFont;
+                line-height: 1.3em;
+            }
+            a {
+
+                text-decoration: none;
+            }
+        }
+    }
+}

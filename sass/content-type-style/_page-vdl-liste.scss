@@ -1,0 +1,127 @@
+// Regroupe le style pour le contenu des node.tpl custom
+// créer des fichiers _node-TYPE.scss et les importer dans application.scss
+
+//@include breakpoint ($mobile){}
+//@include breakpoint ($desktop){}
+//@include breakpoint ($tablet){}
+
+/*----------------------------------------
+*****~~~~~~ PAGE VDL  ~~~~~~~~~~~~*********
+-----LISTE DES VDL - TEMPLATE VUES -----
+------------------------------------------*/
+/*######-------- ||| ORDRE FLEXBOX ||| --------######*/
+body .conteneur {
+
+    #colonne-1.vdl-liste{order:1;}
+    #colonne-2.vdl-liste{order:2;}
+    #colonne-3.vdl-liste{order:3;}
+    @include breakpoint ($desktop){
+   
+    }
+}
+
+/*######-------- ||| BORDURES ||| --------######*/
+body .conteneur {
+    @include breakpoint ($desktop){
+        #colonne-2.contenu-vdl,#colonne-2.page-liste-vdl{
+            @include border-orange-violet;
+        }
+        }
+    
+}
+/*######-------- ||| STYLE ||| --------######*/
+
+
+/*
+== Bloc filtre exposé de view pour l'année - archives ===
+*/
+/*Avec views 3 nvx noms de classes et ids : 
+views-exposed-form-liste-actu-lycee-block-5
+views-exposed-form-Actualites-liste-globale-block-1
+*/
+#views-exposed-form-liste-actu-lycee-block-5 ,
+#views-exposed-form-liste-actu-lycee-block-4 ,
+#views-exposed-form-liste-actu-lycee-block-3
+{
+    width: 45%;
+    margin: em(15px) auto;
+    background: transparent url(../images/zebra-gros-clair.gif) repeat ;
+    border-radius: em(5px);
+    padding: em(5px);
+
+
+    h3{
+        font-family: $AristaFont;
+        text-align: center;
+        color: $bleu-turquoise;
+        font-size: medium;
+        margin: 0;
+    }
+    select{
+        margin: 0 auto;
+    }
+    .date-views-filter-wrapper .form-item
+    {
+        margin: 0 0.75em;width: auto;display: block;
+     @include breakpoint ($desktop){
+         margin: 1px auto;width: em(160px);
+     }}
+    .views-exposed-form .views-exposed-widget .form-submit {
+        margin: 0 0 0 1.3em;
+        @include breakpoint ($desktop){
+            margin: 0 0 0 3.3em;
+        }
+        
+    }
+    .views-exposed-form label{
+        @include cesure-txt;
+        @include breakpoint ($mobile){
+            display: block;
+            width: 55%;
+            text-align: center;
+        }
+    }
+}
+
+/*Table pour la vue filtre dyn sur tid*/
+#table-bloc-vdl-liste{width: 95%;margin: 0 auto;border: 0;border-top: em(3px) solid $vert;}
+#table-bloc-vdl-liste thead th{
+    border-bottom: em(3px) solid $vert;
+}
+#table-bloc-vdl-liste tbody{}
+#table-bloc-vdl-liste tr{
+    margin: em(3px);
+    
+
+}
+#table-bloc-vdl-liste td{
+    background: white;
+    border: 0;
+    margin: em(2px) 0;
+    padding: em(5px);
+    display: block;
+    border-bottom: em(2px) solid $violet;
+    font-size: smaller;
+}
+#table-bloc-vdl-liste td:hover{
+    background: $vert;
+}
+#table-bloc-vdl-liste td img{border: em(2px) solid $violet;}
+#table-bloc-vdl-liste td img a{}
+#table-bloc-vdl-liste p{}
+#table-bloc-vdl-liste a{
+    color: $violet;
+    text-decoration: none;
+    font-weight: bold;
+    @include cesure-txt;
+}
+#table-bloc-vdl-liste a:hover{
+    text-decoration: underline;
+    color: white;
+}
+#table-bloc-vdl-liste span.date-display-single,#table-bloc-vdl-liste .views-field-field-date-evenement-value{
+    text-align: right;
+    /*float: right;*/
+    font-style: italic;
+}
+

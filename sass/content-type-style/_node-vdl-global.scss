@@ -1,0 +1,136 @@
+/*-------------------------------------|
+|       CONTENU CUSTOM               |
+|       PAGE VDL MUR IMAGE         |
+|--------------------------------------*/
+
+//@include breakpoint ($mobile){}
+//@include breakpoint ($desktop){}
+//@include breakpoint ($tablet){}
+
+/*== PAGE GLOBALE POUR VDL ou ACTU ===*/
+
+/*######-------- ||| ORDRE FLEXBOX ||| --------######*/
+
+/*######-------- ||| LAYOUT SUSY GALLERY ||| --------######*/
+//avec views style liste - ajouter la classe dans 
+// le display style
+.table-vdl-global .mur-image .liste-image-ul .liste-image-item{
+    @include gallery(2 of $mobilecol);
+    @include breakpoint ($desktop){
+        @include gallery(2 of $desktopcol);//nombre de colonnes susy par item
+    }
+    
+}
+//avec views style non mis en forme (div)
+.table-vdl-global .liste-image-item{
+    @include gallery(2 of $mobilecol);
+    padding: 0.3em;
+    @include breakpoint ($desktop){
+        @include gallery(2 of $desktopcol);//nombre de colonnes susy par item
+    }
+    
+}
+/*######-------- ||| LAYOUT SUSY MASONRY ||| --------######*/
+//ATTENTION: le display style n'accepte que les - , pas les _ !!!
+.table-vdl-global {
+    .masonry__gutter {
+        width: gutter();
+    }
+    .masonry__column {
+        width: span(3); 
+    }
+    .masonry__item,.masonry--item {
+        width: span(3);
+        margin-top: gutter();
+    }
+}
+
+/*######-------- ||| AFFICHAGE ||| --------######*/
+.table-vdl-global .tooltip-vdl{
+    display: block;
+     @include breakpoint ($desktop){
+    display: block;
+     }
+}
+
+.table-vdl-global .img-vdl,.table-vdl-global .titre-vdl{
+    display: inherit;
+}
+/*######-------- ||| STYLE ||| --------######*/
+
+/*Items*/
+.table-vdl-global .liste-image-ul{
+    list-style: none;
+    padding:0;
+    a{color: $violet;
+      text-decoration: none;
+      font-size:small;
+      &:hover{text-decoration: underline;}
+    }
+
+}
+span.titre-vdl{
+    a{color: $violet;
+      text-decoration: none;
+      font-size:small;
+      &:hover{text-decoration: underline;}
+    }
+}
+
+.table-vdl-global .field-content{height: em(160px);}
+.table-vdl-global img{border: 0.2em solid $vert;
+                      @include breakpoint ($desktop){ 
+                          padding: 0.3em;margin: em(3px);
+                      }
+}
+.table-vdl-global  span.titre-vdl{z-index:15;position: relative;bottom: em(90px);
+                                  background: $gris-clair;color: $violet;left: em(5px);width: em(145px);display: block;}
+.table-vdl-global .tooltip-vdl{padding: 0;height: em(160px);position: relative;bottom: em(30px);}
+.table-vdl-global .img-vdl{padding: 0;height: em(160px);position: relative;bottom: em(30px);
+                           @include breakpoint ($desktop){ 
+                               margin: 0.1em;
+                           }
+}
+
+/*Europe 13  Partenaires 14 Sortie-actions 15*/
+.vdl-13,.vdl-Europe,.vdl-15,.vdl-Sortie-actions,.vdl-14,.vdl-Partenaires
+{position: relative;z-index: 10;display: block;
+width: em(74px);height: em(52px);top: em(26px);left: em(3px);}
+
+.vdl-13,.vdl-Europe
+{background: transparent url('../images/coin-globale-VDL-europe.png') no-repeat 0;}
+
+.vdl-14,.vdl-Partenaires
+{background: transparent url('../images/coin-globale-VDL-partenaire.png') no-repeat 0;}
+
+.vdl-15,.vdl-Sortie-actions
+{background: transparent url('../images/coin-globale-VDL-sortie.png') no-repeat 0;}
+/*Filtre exposé page globale*/
+#views-exposed-form-VDL-visuel-block-1{
+    width: 50%;  margin: em(5px) auto;
+    background: transparent url(../images/zebra-gros-clair.gif) repeat ;
+    @include arrondis;
+    padding: em(5px);
+    label{
+        display: table-cell;
+  vertical-align: middle;
+   font-family: arista,Trebuchet MS, sans-serif;
+   text-align: center;
+   color: $bleu-turquoise;
+   font-size: larger;
+   margin: 0;
+    }
+}
+#views-exposed-form-VDL-visuel-block-1 h3{
+   font-family: arista,Trebuchet MS, sans-serif;
+   text-align: center;
+   color: $bleu-turquoise;
+   font-size: 1.5em;
+   margin: 0;
+}
+#views-exposed-form-VDL-visuel-block-1 select{margin: 0 auto;}
+#views-exposed-form-VDL-visuel-block-1 .views-reset-button
+{margin: 0 auto;}
+#views-exposed-form-VDL-visuel-block-1 .views-exposed-widget
+{margin: 0 auto;}
+#views-exposed-form-VDL-visuel-block-1 .views-submit-button{}

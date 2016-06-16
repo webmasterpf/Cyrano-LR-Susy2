@@ -1,0 +1,90 @@
+// Regroupe le style pour le contenu des node.tpl custom
+// créer des fichiers _node-TYPE.scss et les importer dans application.scss
+
+/*-------------------------------------|
+|       CONTENU CUSTOM NODE.TPL        |
+|           CONTENU VDL                |
+|--------------------------------------*/
+
+//@include breakpoint ($mobile){}
+//@include breakpoint ($desktop){}
+//@include breakpoint ($tablet){}
+
+
+
+.vdl-galerie-image .gallery-slides
+{
+    img{@include adaptable-img;}
+}
+/*######-------- ||| ORDRE FLEXBOX ||| --------######*/
+body .conteneur .conteneur-flex{
+    .titre-flex{order:0;}
+    #bloc-gauche-pole{}
+    #bloc-centre-pole {}
+    #bloc-droit-pole {}
+    @include breakpoint ($desktop){
+        .titre-flex{order:0;max-height: 4em;}
+        #bloc-gauche-pole{order:1;}
+        #bloc-centre-pole {order:2;}
+        #bloc-droit-pole {order:3;}
+    }
+}
+/*######-------- ||| BORDURES ||| --------######*/
+body .conteneur{
+    @include breakpoint ($desktop){
+        
+    }
+    
+}
+/*######-------- ||| STYLE ||| --------######*/
+h1.titre_pole_content{
+    text-align: center;
+      font-family: $AristaFont;
+}
+
+.bloc_pole_formation_MSAC, .bloc_pole_formation_MRSP, .bloc_pole_formation_FC{
+    background:  url(../images/bg_pole.jpg) no-repeat left top ;
+    background-size: cover;
+    padding: em(30px) 0 0 0;
+    h3 {
+        color: $gris-anthracite;
+        display: block;
+        margin: 0 auto;
+        text-align: center;
+        width: 70%;
+        padding: em(25px) 0 0;
+        font-family: $AristaFont;
+    }
+    h3.diplome_formation{
+     color: $bleu-turquoise;
+    padding: em(10px) 0;
+}
+}
+
+table.table-liste-pole{
+    margin: 0 auto;
+    width: 60%;//permet de centrer le contenu
+    padding: 0;
+    display: block;
+    tbody{        
+    }
+    td{
+        text-align: center;
+
+    }
+    p{
+        line-height: 1em;
+    }
+    a{
+        padding: em(2px);
+        display: block;
+        color: $gris-clair;
+        font-size: small;
+        text-decoration: none;
+        
+        &:hover{
+            background: $violet;
+        }
+    }
+
+}

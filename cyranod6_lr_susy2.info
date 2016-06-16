@@ -2,7 +2,7 @@
 ;Ajouter les regions utiles dans la liste ci apres, idem pour les CSS.
 ;Changer le screenshot du site pour interface admin
 ;
-name = SUSY 2 Template for PF
+name = Le Rocher with SUSY 2 Template 
 description = Gabarit SCSS /HTML5 pour Drupal 6. Thème RWD utilisant Compass, Susy 2
 version = VERSION
 core = 6.x
@@ -66,21 +66,10 @@ regions[search_box] = Zone recherche - Bloc
 ;Bandeau haut de page accueil (si besoin)
 regions[bandeau1] = Bandeau haut de page
 
-;Homepage pour site Provence Formation
-regions[annonceImg] = Image pour annonce - Bloc
-regions[blocLycee] = Acces Lycees - Bloc
-regions[Anim] = Animation Flash - Bloc
-regions[DiapoHP] = Diaporama Homepage - Bloc
-
-;Regions customs pour site Provence Formation
-regions[centralBloc] = Zone pour bloc central - View Bloc
-regions[centre_partenaire] = Zone centrale page partenaire
-
-
 
 ;Diaporama HP selon layout choisi (décommenter pour choisir)
 ;regions[DiapoPanoHP] = Diaporama Panoramique Homepage - Bloc
-;regions[DiapoGaucheHP] = Diaporama Gauche Homepage - Bloc
+regions[DiapoGaucheHP] = Diaporama Gauche Homepage - Bloc
 ;regions[DiapoDroiteHP] = Diaporama Droite Homepage - Bloc
 
 ;Diaporama panoramique
@@ -88,9 +77,9 @@ regions[centre_partenaire] = Zone centrale page partenaire
 ;regions[HPBasD] = Zone Bas Droit HP - Bloc
 
 ;Diaporama vertical Gauche
-;regions[PartieDroite1] = Zone Droite 1 HP - Bloc
-;regions[PartieDroite2] = Zone Droite 2 HP - Bloc
-;regions[PartieDroite3] = Zone Droite 3 HP - Bloc
+regions[PartieDroite1] = Zone Droite 1 HP - Bloc
+regions[PartieDroite2] = Zone Droite 2 HP - Bloc
+regions[PartieDroite3] = Zone Droite 3 HP - Bloc
 
 ;Diaporama vertical Droite
 ;regions[PartieGauche1] = Zone Gauche 1 HP - Bloc
@@ -102,6 +91,9 @@ regions[actuAssociation] = Zone pour RSS issu du site PF - Vue Bloc RSS
 regions[node_col_1] = Bloc pour colonne 1
 regions[node_col_2] = Bloc pour colonne 2
 regions[node_col_3] = Bloc pour colonne 3
+regions[node_col_4] = Bloc pour colonne 4
+regions[node_col_5] = Bloc pour colonne 5
+
 ;Region pour page poles formation (ajouter dans template.php)
 regions[pole_bloc_G] = Bloc pour pole Gauche
 regions[pole_bloc_C] = Bloc pour pole Centre

@@ -2,11 +2,11 @@
 // Regroupe le style pour le contenu des node.tpl custom
 // créer des fichiers _node-TYPE.scss et les importer dans application.scss
 
-/*-------------------------------------|
+/*---------------------------------------------|
 |       CONTENU CUSTOM NODE.TPL        |
-|     FRONTPAGE  VERTICAL GAUCHE       |
-|                       STYLE                   |
-|--------------------------------------*/
+|     FRONTPAGE  VERTICAL GAUCHE      |
+|                       STYLE                               |
+|---------------------------------------------*/
 
   //@include susy-breakpoint ($mobile){}
   //@include susy-breakpoint ($desktop){}
@@ -33,7 +33,7 @@ body .conteneur
     .HPDroite2{
         aside.PartieDroite2 {
             h3{
-                font-family: arista,Trebuchet MS, sans-serif;
+                font-family: $AristaFont;
                 text-align: center;
                 color: $vert;
                 font-size: large;
@@ -98,6 +98,13 @@ body .conteneur
 }
 
 /****************/
+.HPDiapoVerticalGauche{
+    iframe{
+        border: 1px solid #B6E026;
+        padding: 0.3em;
+        @include adaptable-img;
+    }
+}
 .HPDroite {
 
     background: none;
@@ -117,14 +124,21 @@ body .conteneur
             border: 0;background: none;}
         
     }
-
+    aside.bloc-bienvenue {
+        h3{
+            color: $violet;
+            font-family: $AristaFont;
+            font-size: xx-large;
+            text-align: center;
+        }
+    }
 }
 .illus_lyceeMetiers{
     margin: 0 auto;
     display: block;
     padding: em(5px);
 }
-.PartieDroite1 {
+.HPDroite1 {
     p{padding: 0.3em;}
     a{
         color: $vert;
@@ -141,6 +155,80 @@ body .conteneur
             &:hover{ text-decoration: none;
             border: 0;background: none;}
         
+    }
+}
+.HPDroite2{
+    ul li{
+
+    }
+    .views-field-title{
+        text-indent: em(15px);
+    }
+    li a{
+        color: $violet;
+        padding: 0;
+        &:hover{
+            color: $rose-fushia;
+            padding: 0;
+        }
+    }
+
+}
+/*-----------------------------------------
+LISTE ACTU
+-------------------------------------------*/
+#block-views-liste_activites_accueil-block_1 ul {
+list-style: none;
+}
+
+
+
+.view-liste-activites-accueil ul li{
+    list-style: none inside;
+    background: url("../images/puce-home.gif") no-repeat left 3px;
+    padding: 0;
+    margin: 0;
+}
+
+.view-liste-activites-accueil .titre a{
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: underline;
+}
+
+p.view-liste-activites-accueil a{
+    text-decoration: none;
+}
+/* LISTE JOURNAL PDF */
+.liste-journal{}
+.liste-journal a{
+    text-decoration: none;
+    color: #93117E;
+}
+.liste-journal a:hover{
+    text-decoration: underline;
+}
+
+
+/*------------------------------------------
+BLOC POUR ACTU FOYER
+-------------------------------------------*/
+#block-views-liste_actu_foyer-block_1{
+    float: left;
+    width: em(300px);
+    margin: 0 em(2px) 0 0;
+    padding: 0;
+    a{
+        text-decoration: none;
+        color: $violet;
+        &:hover{
+            text-decoration: underline;
+            color: $rouge;
+        }
+    }
+
+    li,  h3{
+        color: $bleu-turquoise;
     }
 }
 
@@ -181,7 +269,7 @@ aside.DiapoHP{
     @include breakpoint ($desktop){
         display: block;
         #transparency{
-            background:none repeat scroll 0 0 $vert;/*Couleur du fond*/
+            background:none repeat scroll 0 0 $violet;/*Couleur du fond*/
             height:em(60px);
             bottom:em(75px); 
             left:em(12px);

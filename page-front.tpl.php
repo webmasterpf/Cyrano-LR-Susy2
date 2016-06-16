@@ -1,36 +1,45 @@
-<!-- ______________________ LAYOUT HOMEPAGE PANORAMIQUE C.GRAWITZ_______________________ -->
+<!-- ______________________ LAYOUT HOMEPAGE VERTICAL G_______________________ -->
 <?php
 global $theme_path;
 include ($theme_path.'/includes/inc_header.php');
 ?>  
- <!-- ______________________ CONTENU _______________________ -->
-
-          <?php if ($content_top): ?>
-            <div id="content-top">
-              <?php print $content_top; ?>
-            </div> <!-- /#content-top -->
-          <?php endif; ?>
-       
-
-   <!-- ______________________ ZONE DIAPO PANORAMIQUE _______________________ -->
-
-              <?php if ($DiapoPanoHP): ?>
-                 <div class="HPDiapo"><?php print $DiapoPanoHP; ?></div>
+ <!-- ______________________ CONTENU HAUT _______________________ -->
+ 
+   <?php if ($content_top): ?>
+     <div class="content-top">
+         <?php print $content_top; ?>
+     </div> <!--/#content-top -->
+ <?php endif; ?>
+ 
+     <div class="conteneur-flex">
+   <!-- ______________________ ZONE DIAPO _______________________ -->
+			
+            <?php if ($DiapoGaucheHP): ?>
+       <div class="HPDiapoVerticalGauche"><?php print $DiapoGaucheHP; ?></div>
               <?php endif; ?>
-
-
-
-<!-- ______________________ PARTIE BAS GAUCHE _______________________ -->
-                 <?php if ($HPBasG): ?>
-                 <div class="HPBasGauche"><?php print $HPBasG; ?></div>
-              <?php endif; ?>
-
-<!-- ______________________ PARTIE BAS DROITE _______________________ -->
-
-        <?php if ($HPBasD): ?>
-     <div class="HPBasDroit"><?php print $HPBasD; ?></div>
+        	 
+<!-- ______________________ PARTIE DROITE _______________________ -->
+      
+	<div class="HPDroite">
+	 
+        <?php if ($PartieDroite1): ?>
+     <div class="HPDroite1"><?php print $PartieDroite1; ?></div>
         <?php endif; ?>
-  
+		
+     <?php if ($PartieDroite2): ?>
+     <div class="HPDroite2"><?php print $PartieDroite2; ?></div>
+        <?php endif; ?>
+
+     <?php if ($PartieDroite3): ?>
+     <div class="HPDroite3"><?php print $PartieDroite3; ?></div>
+        <?php endif; ?>
+	  
+</div><!--    /Partie Droite -->
+	</div><!--/conteneur-flex -->
+    <!-- ______________________ FIN LAYOUT PAGE _______________________ -->
+        
+
+        
 	<!-- ______________________ CONTENU BAS _______________________ -->
     <?php if ($content_bottom_home): ?>
     <div class="content-bottom-home">
@@ -40,8 +49,11 @@ include ($theme_path.'/includes/inc_header.php');
 
 
     </div><!-- /#content-bottom -->
+   
+	
 
-<?php
+</div> <!-- /content-global -->
+    <?php
 global $theme_path;
 include ($theme_path.'/includes/inc_footer.php');
 ?>      

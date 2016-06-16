@@ -3703,22 +3703,30 @@ body .conteneur .HPDiapo {
   }
 }
 
-/*-------------------------------------|
+/*---------------------------------------------|
 |       CONTENU CUSTOM NODE.TPL        |
-|     FRONTPAGE  VERTICAL GAUCHE       |
-|                       STYLE                   |
-|--------------------------------------*/
+|     FRONTPAGE  VERTICAL GAUCHE      |
+|                       STYLE                               |
+|---------------------------------------------*/
 /* line 16, ../sass/content-type-style/_frontpage-verticalGauche.scss */
 body .conteneur {
   background: transparent url('../images/bg_content_etoile.gif?1466068273') no-repeat left bottom;
 }
-/* line 35, ../sass/content-type-style/_frontpage-verticalGauche.scss */
+/* line 33, ../sass/content-type-style/_frontpage-verticalGauche.scss */
+body .conteneur .HPDroite2 {
+  background-size: contain;
+}
+/* line 36, ../sass/content-type-style/_frontpage-verticalGauche.scss */
 body .conteneur .HPDroite2 aside.PartieDroite2 h3 {
-  font-family: arista,Trebuchet MS, sans-serif;
+  font-family: "Arista", Trebuchet MS, sans-serif;
   text-align: center;
   color: #ADC91F;
   font-size: large;
   margin: 0 0 0.625em;
+}
+/* line 45, ../sass/content-type-style/_frontpage-verticalGauche.scss */
+body .conteneur .HPDroite3 {
+  background-size: contain;
 }
 @media (min-width: 800px) and (max-width: 989px) {
   /* line 16, ../sass/content-type-style/_frontpage-verticalGauche.scss */
@@ -3740,19 +3748,27 @@ body .conteneur .HPDroite2 aside.PartieDroite2 h3 {
     display: block;
     clear: both;
   }
-  /* line 61, ../sass/content-type-style/_frontpage-verticalGauche.scss */
+  /* line 64, ../sass/content-type-style/_frontpage-verticalGauche.scss */
   body .conteneur .HPDiapoVerticalGauche {
     padding: 0 0.3em;
+  }
+  /* line 78, ../sass/content-type-style/_frontpage-verticalGauche.scss */
+  body .conteneur .HPDroite2 {
+    background-size: initial;
+  }
+  /* line 82, ../sass/content-type-style/_frontpage-verticalGauche.scss */
+  body .conteneur .HPDroite3 {
+    background-size: initial;
   }
 }
 
 /********************/
 /*ZONES PAGE ACCUEIL*/
-/* line 90, ../sass/content-type-style/_frontpage-verticalGauche.scss */
+/* line 93, ../sass/content-type-style/_frontpage-verticalGauche.scss */
 .content-bottom-home table {
   width: auto;
 }
-/* line 94, ../sass/content-type-style/_frontpage-verticalGauche.scss */
+/* line 97, ../sass/content-type-style/_frontpage-verticalGauche.scss */
 .content-bottom-home ul {
   margin: 0;
   padding: 0;
@@ -3784,82 +3800,239 @@ body .conteneur .HPDroite2 aside.PartieDroite2 h3 {
 }
 
 /****************/
-/* line 101, ../sass/content-type-style/_frontpage-verticalGauche.scss */
+/* line 105, ../sass/content-type-style/_frontpage-verticalGauche.scss */
+.HPDiapoVerticalGauche iframe {
+  border: 0.2em solid #ADC91F;
+  padding: 0.3em;
+  max-width: 100%;
+}
+@-moz-document url-prefix() {
+  /* line 23, ../sass/global/_mixins_custom.scss */
+  .HPDiapoVerticalGauche iframe img {
+    width: 100%;
+    max-width: 100%;
+  }
+}
+/* line 111, ../sass/content-type-style/_frontpage-verticalGauche.scss */
 .HPDroite {
   background: none;
   color: black;
 }
-/* line 105, ../sass/content-type-style/_frontpage-verticalGauche.scss */
+/* line 115, ../sass/content-type-style/_frontpage-verticalGauche.scss */
 .HPDroite ul li {
   list-style: square;
 }
-/* line 108, ../sass/content-type-style/_frontpage-verticalGauche.scss */
+/* line 118, ../sass/content-type-style/_frontpage-verticalGauche.scss */
 .HPDroite a {
   text-decoration: none;
 }
-/* line 110, ../sass/content-type-style/_frontpage-verticalGauche.scss */
+/* line 120, ../sass/content-type-style/_frontpage-verticalGauche.scss */
 .HPDroite a:hover {
   text-decoration: underline;
 }
-/* line 114, ../sass/content-type-style/_frontpage-verticalGauche.scss */
+/* line 124, ../sass/content-type-style/_frontpage-verticalGauche.scss */
 .HPDroite a img {
   text-decoration: none;
 }
-/* line 116, ../sass/content-type-style/_frontpage-verticalGauche.scss */
+/* line 126, ../sass/content-type-style/_frontpage-verticalGauche.scss */
 .HPDroite a img:hover {
   text-decoration: none;
   border: 0;
   background: none;
 }
+/* line 131, ../sass/content-type-style/_frontpage-verticalGauche.scss */
+.HPDroite aside.bloc-bienvenue h3 {
+  color: #911381;
+  font-family: "Arista", Trebuchet MS, sans-serif;
+  font-size: xx-large;
+  text-align: center;
+}
 
-/* line 122, ../sass/content-type-style/_frontpage-verticalGauche.scss */
+/* line 139, ../sass/content-type-style/_frontpage-verticalGauche.scss */
 .illus_lyceeMetiers {
   margin: 0 auto;
   display: block;
   padding: 0.3125em;
 }
 
-/* line 128, ../sass/content-type-style/_frontpage-verticalGauche.scss */
-.PartieDroite1 p {
+/* line 144, ../sass/content-type-style/_frontpage-verticalGauche.scss */
+.HPDroite1 {
+  /*____ INFOS ADMIN ACCUEIL ____*/
+}
+/* line 145, ../sass/content-type-style/_frontpage-verticalGauche.scss */
+.HPDroite1 p {
   padding: 0.3em;
 }
-/* line 129, ../sass/content-type-style/_frontpage-verticalGauche.scss */
-.PartieDroite1 a {
+/* line 146, ../sass/content-type-style/_frontpage-verticalGauche.scss */
+.HPDroite1 a {
   color: #ADC91F;
   padding: 0.125em;
   font-size: smaller;
 }
-/* line 133, ../sass/content-type-style/_frontpage-verticalGauche.scss */
-.PartieDroite1 a:hover {
+/* line 150, ../sass/content-type-style/_frontpage-verticalGauche.scss */
+.HPDroite1 a:hover {
   color: black;
   background: #ADC91F;
   text-decoration: none;
 }
-/* line 139, ../sass/content-type-style/_frontpage-verticalGauche.scss */
-.PartieDroite1 a > img[src$=".gif"] {
+/* line 156, ../sass/content-type-style/_frontpage-verticalGauche.scss */
+.HPDroite1 a > img[src$=".gif"] {
   text-decoration: none;
 }
-/* line 141, ../sass/content-type-style/_frontpage-verticalGauche.scss */
-.PartieDroite1 a > img[src$=".gif"]:hover {
+/* line 158, ../sass/content-type-style/_frontpage-verticalGauche.scss */
+.HPDroite1 a > img[src$=".gif"]:hover {
   text-decoration: none;
   border: 0;
   background: none;
 }
+/* line 163, ../sass/content-type-style/_frontpage-verticalGauche.scss */
+.HPDroite1 table#info-admin-hp {
+  margin: 5px auto;
+}
+/* line 167, ../sass/content-type-style/_frontpage-verticalGauche.scss */
+.HPDroite1 table#info-admin-hp #info-admin-hp td {
+  background: #ECECED;
+  padding: 5px;
+  margin: 2px;
+}
+/* line 168, ../sass/content-type-style/_frontpage-verticalGauche.scss */
+.HPDroite1 table#info-admin-hp #info-admin-hp a {
+  color: #911381;
+  text-decoration: none;
+}
+/* line 169, ../sass/content-type-style/_frontpage-verticalGauche.scss */
+.HPDroite1 table#info-admin-hp #info-admin-hp a:hover {
+  text-decoration: underline;
+}
+/* line 170, ../sass/content-type-style/_frontpage-verticalGauche.scss */
+.HPDroite1 table#info-admin-hp #block-views-liste_activites_lycee-block_4 h3 {
+  color: #911381;
+  text-align: center;
+}
+/* line 171, ../sass/content-type-style/_frontpage-verticalGauche.scss */
+.HPDroite1 table#info-admin-hp #block-views-liste_activites_lycee-block_4 {
+  border: 1px solid #911381;
+  padding: 5px;
+}
+/* line 174, ../sass/content-type-style/_frontpage-verticalGauche.scss */
+.HPDroite1 .visuel-calendrier a {
+  color: transparent;
+  text-decoration: none;
+}
+/* line 177, ../sass/content-type-style/_frontpage-verticalGauche.scss */
+.HPDroite1 .visuel-calendrier a:hover {
+  background: transparent;
+}
+/* line 181, ../sass/content-type-style/_frontpage-verticalGauche.scss */
+.HPDroite1 .visuel-calendrier img {
+  display: block;
+  margin: 0 auto;
+}
+
+/* line 187, ../sass/content-type-style/_frontpage-verticalGauche.scss */
+.HPDroite2 {
+  background: url("../images/titre_actus_hp.gif") no-repeat top left;
+  margin: 0;
+  padding: 2.1875em 0.125em 0;
+  /*-----------------------------------------
+  LISTE ACTU
+  -------------------------------------------*/
+}
+/* line 195, ../sass/content-type-style/_frontpage-verticalGauche.scss */
+.HPDroite2 .views-field-title {
+  text-indent: 0.9375em;
+}
+/* line 198, ../sass/content-type-style/_frontpage-verticalGauche.scss */
+.HPDroite2 li a {
+  color: #911381;
+  padding: 0;
+}
+/* line 201, ../sass/content-type-style/_frontpage-verticalGauche.scss */
+.HPDroite2 li a:hover {
+  color: #E30078;
+  padding: 0;
+}
+/* line 209, ../sass/content-type-style/_frontpage-verticalGauche.scss */
+.HPDroite2 #block-views-liste_activites_accueil-block_1 ul {
+  list-style: none;
+}
+/* line 214, ../sass/content-type-style/_frontpage-verticalGauche.scss */
+.HPDroite2 .view-liste-activites-accueil ul li {
+  list-style: none inside;
+  background: url("../images/puce-home.gif") no-repeat left 0.1875em;
+  padding: 0;
+  margin: 0;
+}
+/* line 220, ../sass/content-type-style/_frontpage-verticalGauche.scss */
+.HPDroite2 .view-liste-activites-accueil .titre a {
+  font-weight: bold;
+  text-transform: uppercase;
+  text-decoration: underline;
+  font-size: small;
+}
+/* line 228, ../sass/content-type-style/_frontpage-verticalGauche.scss */
+.HPDroite2 p.view-liste-activites-accueil a {
+  text-decoration: none;
+}
+
+/* line 233, ../sass/content-type-style/_frontpage-verticalGauche.scss */
+.HPDroite3 {
+  background: url("../images/titre_foyer_hp.gif") no-repeat top left;
+  margin: 0;
+  padding: 2.1875em 0.125em 0;
+}
+
+/* LISTE JOURNAL PDF */
+/* line 242, ../sass/content-type-style/_frontpage-verticalGauche.scss */
+.liste-journal a {
+  text-decoration: none;
+  color: #911381;
+}
+
+/* line 246, ../sass/content-type-style/_frontpage-verticalGauche.scss */
+.liste-journal a:hover {
+  text-decoration: underline;
+}
+
+/*------------------------------------------
+BLOC POUR ACTU FOYER
+-------------------------------------------*/
+/* line 254, ../sass/content-type-style/_frontpage-verticalGauche.scss */
+#block-views-liste_actu_foyer-block_1 {
+  float: left;
+  width: 18.75em;
+  margin: 0 0.125em 0 0;
+  padding: 0;
+}
+/* line 259, ../sass/content-type-style/_frontpage-verticalGauche.scss */
+#block-views-liste_actu_foyer-block_1 a {
+  text-decoration: none;
+  color: #911381;
+}
+/* line 262, ../sass/content-type-style/_frontpage-verticalGauche.scss */
+#block-views-liste_actu_foyer-block_1 a:hover {
+  text-decoration: underline;
+  color: #E3001C;
+}
+/* line 268, ../sass/content-type-style/_frontpage-verticalGauche.scss */
+#block-views-liste_actu_foyer-block_1 li, #block-views-liste_actu_foyer-block_1 h3 {
+  color: #01ABCF;
+}
 
 /*---DIAPORAMA HOMEPAGE TEXTE DYNAMIQUE  PANORAMIQUE----*/
 /*---DIAPORAMA HOMEPAGE TEXTE DYNAMIQUE PAS SUR MOBILE----*/
-/* line 179, ../sass/content-type-style/_frontpage-verticalGauche.scss */
+/* line 305, ../sass/content-type-style/_frontpage-verticalGauche.scss */
 .conteneur #views_slideshow_cycle_div_diaporama_homepage-block_1_0 > div > div.views-field.views-field-teaser {
   display: none;
 }
 @media (min-width: 990px) {
-  /* line 179, ../sass/content-type-style/_frontpage-verticalGauche.scss */
+  /* line 305, ../sass/content-type-style/_frontpage-verticalGauche.scss */
   .conteneur #views_slideshow_cycle_div_diaporama_homepage-block_1_0 > div > div.views-field.views-field-teaser {
     display: block;
   }
-  /* line 183, ../sass/content-type-style/_frontpage-verticalGauche.scss */
+  /* line 309, ../sass/content-type-style/_frontpage-verticalGauche.scss */
   .conteneur #views_slideshow_cycle_div_diaporama_homepage-block_1_0 > div > div.views-field.views-field-teaser #transparency {
-    background: none repeat scroll 0 0 #ADC91F;
+    background: none repeat scroll 0 0 #911381;
     /*Couleur du fond*/
     height: 3.75em;
     bottom: 4.6875em;
@@ -3876,7 +4049,7 @@ body .conteneur .HPDroite2 aside.PartieDroite2 h3 {
     /* IE < 8 */
     -khtml-opacity: 0.6;
   }
-  /* line 193, ../sass/content-type-style/_frontpage-verticalGauche.scss */
+  /* line 319, ../sass/content-type-style/_frontpage-verticalGauche.scss */
   .conteneur #views_slideshow_cycle_div_diaporama_homepage-block_1_0 > div > div.views-field.views-field-teaser #contenu-diapo {
     position: relative;
     bottom: 10.375em;
@@ -3884,14 +4057,14 @@ body .conteneur .HPDroite2 aside.PartieDroite2 h3 {
     color: white;
     z-index: 20;
   }
-  /* line 202, ../sass/content-type-style/_frontpage-verticalGauche.scss */
+  /* line 328, ../sass/content-type-style/_frontpage-verticalGauche.scss */
   .conteneur #views_slideshow_cycle_div_diaporama_homepage-block_1_0 > div > div.views-field.views-field-teaser #contenu-diapo h2 {
     color: white;
     padding: 0.3125em;
     font-family: "Arista", Trebuchet MS, sans-serif;
     line-height: 1.3em;
   }
-  /* line 208, ../sass/content-type-style/_frontpage-verticalGauche.scss */
+  /* line 334, ../sass/content-type-style/_frontpage-verticalGauche.scss */
   .conteneur #views_slideshow_cycle_div_diaporama_homepage-block_1_0 > div > div.views-field.views-field-teaser #contenu-diapo a {
     text-decoration: none;
   }

@@ -170,7 +170,19 @@ body .conteneur
         #block-views-liste_activites_lycee-block_4 h3{color: $violet;text-align: center;}
         #block-views-liste_activites_lycee-block_4 {border: 1px solid $violet;padding: 5px;}
     }
-
+    .visuel-calendrier{
+        a{
+            color:transparent;
+            text-decoration:none;
+            &:hover{
+                background: transparent;
+            }
+        }
+        img{
+            display: block;
+            margin: 0 auto;
+        }
+    }
 }
 .HPDroite2{
     background: url("../images/titre_actus_hp.gif") no-repeat top left;
@@ -201,7 +213,7 @@ body .conteneur
     .view-liste-activites-accueil {
         ul li{
             list-style: none inside;
-            background: url("../images/puce-home.gif") no-repeat left 3px;
+            background: url("../images/puce-home.gif") no-repeat left em(3px);
             padding: 0;
             margin: 0;
         }

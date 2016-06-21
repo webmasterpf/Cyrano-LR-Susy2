@@ -160,15 +160,25 @@ body .conteneur
         
     }
     /*____ INFOS ADMIN ACCUEIL ____*/
-    table#info-admin-hp{
-        margin: 5px auto;
-        #info-admin-hp tr{}
-        #info-admin-hp {}
-        #info-admin-hp td{background: $gris-clair;padding: 5px;margin: 2px;}
-        #info-admin-hp a{color: $violet;text-decoration: none;}
-        #info-admin-hp a:hover{text-decoration: underline;}
-        #block-views-liste_activites_lycee-block_4 h3{color: $violet;text-align: center;}
-        #block-views-liste_activites_lycee-block_4 {border: 1px solid $violet;padding: 5px;}
+    table.info-admin-hp{
+        margin: em(5px) auto;
+         tr{}
+         td{
+             background: $gris-clair;padding: em(5px);margin: 2px;text-align: center;
+         }
+         a{
+             color: $violet;text-decoration: none;
+             &:hover{text-decoration: underline;
+             background: transparent;}
+         }
+         
+         .field-content{
+             font-size: smaller;
+         }
+    }
+    #block-views-liste_activites_lycee-block_4 {
+        border: em(1px) solid $violet;padding: em(5px);
+        h3{color: $violet;text-align: center;}
     }
     .visuel-calendrier{
         a{

@@ -82,4 +82,14 @@
   //Cible toutes les tables contenues dans la div.content (colonne-2)
   $('div.content').children('table') .stacktable();
 });
+
+jQuery(document).ready(function ()
+    {
+        //<!--Pour utiliser selectnav en RWD-->
+        console.log('Ajout classes odd et even sur tableaux');
+       //Ajout des classes pour styler les tableaux
+$('table tr:odd').addClass('odd');
+$('table tr:even') .addClass('even');
+    });
+
 })(jQuery);

@@ -714,7 +714,7 @@ h6, .h6 {
   line-height: 2em;
 }
 /* line 105, ../sass/global/_typos.scss */
-.conteneur .content-inner p, .conteneur .content-inner td, .conteneur .content-inner ul {
+.conteneur .content-inner p, .conteneur .content-inner td, .conteneur .content-inner ul, .conteneur .content-inner ol {
   padding: 0.15em;
   font-size: small;
 }
@@ -887,16 +887,17 @@ aside.navStatic select {
     margin: 0.25em;
     border: 0;
     font-family: "Arista", Trebuchet MS, sans-serif;
-    color: #F29400;
+    color: #ADC91F;
     text-decoration: none;
     display: block;
     font-size: x-large;
+    font-weight: bold;
   }
-  /* line 45, ../sass/global/_sub-nav.scss */
+  /* line 46, ../sass/global/_sub-nav.scss */
   aside.navStatic ul.horizontal-nav li a:hover {
     color: #911381;
   }
-  /* line 48, ../sass/global/_sub-nav.scss */
+  /* line 49, ../sass/global/_sub-nav.scss */
   aside.navStatic ul.horizontal-nav li a img {
     max-width: 100%;
     margin: 0;
@@ -908,7 +909,7 @@ aside.navStatic select {
       max-width: 100%;
     }
   }
-  /* line 56, ../sass/global/_sub-nav.scss */
+  /* line 57, ../sass/global/_sub-nav.scss */
   aside.navStatic ul.horizontal-nav li.logo {
     /*background-image: image-url("logo-Pf-sites-lycees.jpg");//avec compass*/
     background-image: url('../images/logo-PF-lycees.svg?1466068274');
@@ -922,11 +923,11 @@ aside.navStatic select {
   }
 }
 
-/* line 73, ../sass/global/_sub-nav.scss */
+/* line 74, ../sass/global/_sub-nav.scss */
 aside.navPicto table {
   display: table-row;
 }
-/* line 76, ../sass/global/_sub-nav.scss */
+/* line 77, ../sass/global/_sub-nav.scss */
 aside.navPicto a {
   float: left;
   margin: 0 0 0 0.5em;
@@ -939,9 +940,64 @@ aside.navPicto a {
   font-size: 1em;
   line-height: 1.5em;
 }
-/* line 86, ../sass/global/_sub-nav.scss */
+/* line 87, ../sass/global/_sub-nav.scss */
 aside.navPicto a:hover {
   color: #DE603A;
+}
+
+/*---------------------------- -----|
+|       STACKTABLE JS               |
+|         BREAKPOINTS                |
+|----------------------------------*/
+@media (max-width: 799px) {
+  /* line 13, ../sass/global/_stacktable.scss */
+  .stacktable {
+    width: 100%;
+  }
+
+  /* line 14, ../sass/global/_stacktable.scss */
+  .stacktable.large-only {
+    display: none;
+  }
+
+  /* line 15, ../sass/global/_stacktable.scss */
+  .stacktable.small-only {
+    display: table;
+  }
+}
+@media (min-width: 990px), (min-width: 800px) and (max-width: 989px) {
+  /* line 18, ../sass/global/_stacktable.scss */
+  .stacktable.large-only {
+    display: table;
+  }
+
+  /* line 19, ../sass/global/_stacktable.scss */
+  .stacktable.small-only {
+    display: none;
+  }
+}
+/* line 23, ../sass/global/_stacktable.scss */
+.st-head-row {
+  padding-top: 1em;
+}
+
+/* line 24, ../sass/global/_stacktable.scss */
+.st-head-row.st-head-row-main {
+  font-size: 1.5em;
+  padding-top: 0;
+}
+
+/* line 25, ../sass/global/_stacktable.scss */
+.st-key {
+  width: 49%;
+  text-align: right;
+  padding-right: 1%;
+}
+
+/* line 26, ../sass/global/_stacktable.scss */
+.st-val {
+  width: 49%;
+  padding-left: 1%;
 }
 
 /* line 8, ../sass/layout/_layout.scss */
@@ -2519,18 +2575,19 @@ body .conteneur #header .headHaut .logoHead {
 /* line 17, ../sass/layout/_layout-header.scss */
 body .conteneur #header .headHaut .logoHead img {
   margin: 0 auto;
-  display: block;
+  max-height: 5em;
+  object-fit: contain;
 }
-/* line 19, ../sass/layout/_layout-header.scss */
+/* line 23, ../sass/layout/_layout-header.scss */
 body .conteneur #header .headHaut .menuImg {
   background: white;
 }
-/* line 23, ../sass/layout/_layout-header.scss */
+/* line 27, ../sass/layout/_layout-header.scss */
 body .conteneur #header .headBas {
   overflow: hidden;
   *zoom: 1;
 }
-/* line 26, ../sass/layout/_layout-header.scss */
+/* line 30, ../sass/layout/_layout-header.scss */
 body .conteneur #header .headBas .headSearch {
   margin-left: 7.88265%;
   margin-right: 7.88265%;
@@ -2540,14 +2597,14 @@ body .conteneur #header .headBas .headSearch {
   body .conteneur #header {
     /*    //Dimensions pour les pc*/
   }
-  /* line 35, ../sass/layout/_layout-header.scss */
+  /* line 39, ../sass/layout/_layout-header.scss */
   body .conteneur #header .headHaut {
     width: 100%;
     float: left;
     margin-left: 0;
     margin-right: 0;
   }
-  /* line 37, ../sass/layout/_layout-header.scss */
+  /* line 41, ../sass/layout/_layout-header.scss */
   body .conteneur #header .headHaut .logoHead {
     width: 32.23684%;
     float: left;
@@ -2555,28 +2612,28 @@ body .conteneur #header .headBas .headSearch {
     margin-right: -100%;
     padding: 0;
   }
-  /* line 41, ../sass/layout/_layout-header.scss */
+  /* line 45, ../sass/layout/_layout-header.scss */
   body .conteneur #header .headHaut .menuImg {
     width: 66.11842%;
     float: left;
     margin-left: 33.88158%;
     margin-right: -100%;
   }
-  /* line 46, ../sass/layout/_layout-header.scss */
+  /* line 50, ../sass/layout/_layout-header.scss */
   body .conteneur #header .headBas {
     width: 100%;
     float: left;
     margin-left: 0;
     margin-right: 0;
   }
-  /* line 48, ../sass/layout/_layout-header.scss */
+  /* line 52, ../sass/layout/_layout-header.scss */
   body .conteneur #header .headBas .site-slogan {
     width: 57.64803%;
     float: left;
     margin-left: 0;
     margin-right: -100%;
   }
-  /* line 49, ../sass/layout/_layout-header.scss */
+  /* line 53, ../sass/layout/_layout-header.scss */
   body .conteneur #header .headBas .headSearch {
     width: 40.70724%;
     float: left;
@@ -2589,14 +2646,14 @@ body .conteneur #header .headBas .headSearch {
   body .conteneur #header {
     /*     //Dimensions pour les tablettes*/
   }
-  /* line 65, ../sass/layout/_layout-header.scss */
+  /* line 69, ../sass/layout/_layout-header.scss */
   body .conteneur #header .headBas .site-slogan {
     width: 48.75622%;
     float: left;
     margin-left: 0;
     margin-right: -100%;
   }
-  /* line 66, ../sass/layout/_layout-header.scss */
+  /* line 70, ../sass/layout/_layout-header.scss */
   body .conteneur #header .headBas .headSearch {
     width: 48.75622%;
     float: left;
@@ -2606,7 +2663,7 @@ body .conteneur #header .headBas .headSearch {
 }
 
 /*---- HEADER HAUT ----*/
-/* line 83, ../sass/layout/_layout-header.scss */
+/* line 87, ../sass/layout/_layout-header.scss */
 .logoHead img {
   max-width: 100%;
   padding: 0;
@@ -2620,65 +2677,65 @@ body .conteneur #header .headBas .headSearch {
   }
 }
 /*---- HEADER BAS ----*/
-/* line 93, ../sass/layout/_layout-header.scss */
+/* line 97, ../sass/layout/_layout-header.scss */
 .headBas {
-  background: #F29400;
+  background: #911381;
 }
 
-/* line 98, ../sass/layout/_layout-header.scss */
+/* line 102, ../sass/layout/_layout-header.scss */
 .headSearch {
   padding: 0 0.5em;
   text-align: right;
   margin: 0.125em 0 0 0;
 }
-/* line 104, ../sass/layout/_layout-header.scss */
+/* line 108, ../sass/layout/_layout-header.scss */
 .headSearch .form-item > label {
   color: #DDD;
   font-family: "Arista", Trebuchet MS, sans-serif;
   font-size: medium;
 }
-/* line 105, ../sass/layout/_layout-header.scss */
+/* line 109, ../sass/layout/_layout-header.scss */
 .headSearch input[type=image] {
   vertical-align: middle;
 }
 @media (min-width: 990px) {
-  /* line 98, ../sass/layout/_layout-header.scss */
+  /* line 102, ../sass/layout/_layout-header.scss */
   .headSearch {
     padding: 0;
   }
 }
 
-/* line 115, ../sass/layout/_layout-header.scss */
+/* line 119, ../sass/layout/_layout-header.scss */
 .name-and-slogan {
   vertical-align: bottom;
 }
 
-/* line 119, ../sass/layout/_layout-header.scss */
+/* line 123, ../sass/layout/_layout-header.scss */
 .site-name {
   padding: 10em 0 0 0;
   margin: 0;
 }
-/* line 120, ../sass/layout/_layout-header.scss */
+/* line 124, ../sass/layout/_layout-header.scss */
 .site-name a {
   text-decoration: none;
   color: white;
   text-transform: uppercase;
 }
 
-/* line 129, ../sass/layout/_layout-header.scss */
+/* line 133, ../sass/layout/_layout-header.scss */
 .site-slogan {
   color: white;
   font-size: small;
   text-align: center;
 }
 @media (min-width: 990px) {
-  /* line 129, ../sass/layout/_layout-header.scss */
+  /* line 133, ../sass/layout/_layout-header.scss */
   .site-slogan {
     text-align: left;
     padding: 0.1875em 0 0 1em;
   }
 }
-/* line 139, ../sass/layout/_layout-header.scss */
+/* line 143, ../sass/layout/_layout-header.scss */
 .site-slogan a {
   text-decoration: none;
   color: white;
@@ -2999,7 +3056,7 @@ body .conteneur .off-canvas {
 }
 /* line 30, ../sass/layout/_layout-off-canvas-susy.scss */
 body .conteneur .close {
-  background: #F29400;
+  background: #911381;
 }
 /* line 33, ../sass/layout/_layout-off-canvas-susy.scss */
 body .conteneur img.close-btn {
@@ -3045,7 +3102,7 @@ body .conteneur .menu-toggle, body .conteneur .transformer.is-open > .menu-toggl
     -moz-border-radius: 0.5em;
     -webkit-border-radius: 0.5em;
     border-radius: 0.5em;
-    background: #F29400;
+    background: #911381;
   }
   /* line 77, ../sass/layout/_layout-off-canvas-susy.scss */
   body .conteneur .menu-toggle, body .conteneur .transformer.is-open > .menu-toggle {
@@ -3886,50 +3943,56 @@ body .conteneur .HPDroite3 {
   background: none;
 }
 /* line 163, ../sass/content-type-style/_frontpage-verticalGauche.scss */
-.HPDroite1 table#info-admin-hp {
-  margin: 5px auto;
+.HPDroite1 table.info-admin-hp {
+  margin: 0.3125em auto;
 }
-/* line 167, ../sass/content-type-style/_frontpage-verticalGauche.scss */
-.HPDroite1 table#info-admin-hp #info-admin-hp td {
+/* line 166, ../sass/content-type-style/_frontpage-verticalGauche.scss */
+.HPDroite1 table.info-admin-hp td {
   background: #ECECED;
-  padding: 5px;
+  padding: 0.3125em;
   margin: 2px;
+  text-align: center;
 }
-/* line 168, ../sass/content-type-style/_frontpage-verticalGauche.scss */
-.HPDroite1 table#info-admin-hp #info-admin-hp a {
+/* line 169, ../sass/content-type-style/_frontpage-verticalGauche.scss */
+.HPDroite1 table.info-admin-hp a {
   color: #911381;
   text-decoration: none;
 }
-/* line 169, ../sass/content-type-style/_frontpage-verticalGauche.scss */
-.HPDroite1 table#info-admin-hp #info-admin-hp a:hover {
+/* line 171, ../sass/content-type-style/_frontpage-verticalGauche.scss */
+.HPDroite1 table.info-admin-hp a:hover {
   text-decoration: underline;
+  background: transparent;
 }
-/* line 170, ../sass/content-type-style/_frontpage-verticalGauche.scss */
-.HPDroite1 table#info-admin-hp #block-views-liste_activites_lycee-block_4 h3 {
+/* line 175, ../sass/content-type-style/_frontpage-verticalGauche.scss */
+.HPDroite1 table.info-admin-hp .field-content {
+  font-size: smaller;
+}
+/* line 179, ../sass/content-type-style/_frontpage-verticalGauche.scss */
+.HPDroite1 #block-views-liste_activites_lycee-block_4 {
+  border: 0.0625em solid #911381;
+  padding: 0.3125em;
+}
+/* line 181, ../sass/content-type-style/_frontpage-verticalGauche.scss */
+.HPDroite1 #block-views-liste_activites_lycee-block_4 h3 {
   color: #911381;
   text-align: center;
 }
-/* line 171, ../sass/content-type-style/_frontpage-verticalGauche.scss */
-.HPDroite1 table#info-admin-hp #block-views-liste_activites_lycee-block_4 {
-  border: 1px solid #911381;
-  padding: 5px;
-}
-/* line 174, ../sass/content-type-style/_frontpage-verticalGauche.scss */
+/* line 184, ../sass/content-type-style/_frontpage-verticalGauche.scss */
 .HPDroite1 .visuel-calendrier a {
   color: transparent;
   text-decoration: none;
 }
-/* line 177, ../sass/content-type-style/_frontpage-verticalGauche.scss */
+/* line 187, ../sass/content-type-style/_frontpage-verticalGauche.scss */
 .HPDroite1 .visuel-calendrier a:hover {
   background: transparent;
 }
-/* line 181, ../sass/content-type-style/_frontpage-verticalGauche.scss */
+/* line 191, ../sass/content-type-style/_frontpage-verticalGauche.scss */
 .HPDroite1 .visuel-calendrier img {
   display: block;
   margin: 0 auto;
 }
 
-/* line 187, ../sass/content-type-style/_frontpage-verticalGauche.scss */
+/* line 197, ../sass/content-type-style/_frontpage-verticalGauche.scss */
 .HPDroite2 {
   background: url("../images/titre_actus_hp.gif") no-repeat top left;
   margin: 0;
@@ -3938,44 +4001,44 @@ body .conteneur .HPDroite3 {
   LISTE ACTU
   -------------------------------------------*/
 }
-/* line 195, ../sass/content-type-style/_frontpage-verticalGauche.scss */
+/* line 205, ../sass/content-type-style/_frontpage-verticalGauche.scss */
 .HPDroite2 .views-field-title {
   text-indent: 0.9375em;
 }
-/* line 198, ../sass/content-type-style/_frontpage-verticalGauche.scss */
+/* line 208, ../sass/content-type-style/_frontpage-verticalGauche.scss */
 .HPDroite2 li a {
   color: #911381;
   padding: 0;
 }
-/* line 201, ../sass/content-type-style/_frontpage-verticalGauche.scss */
+/* line 211, ../sass/content-type-style/_frontpage-verticalGauche.scss */
 .HPDroite2 li a:hover {
   color: #E30078;
   padding: 0;
 }
-/* line 209, ../sass/content-type-style/_frontpage-verticalGauche.scss */
+/* line 219, ../sass/content-type-style/_frontpage-verticalGauche.scss */
 .HPDroite2 #block-views-liste_activites_accueil-block_1 ul {
   list-style: none;
 }
-/* line 214, ../sass/content-type-style/_frontpage-verticalGauche.scss */
+/* line 224, ../sass/content-type-style/_frontpage-verticalGauche.scss */
 .HPDroite2 .view-liste-activites-accueil ul li {
   list-style: none inside;
   background: url("../images/puce-home.gif") no-repeat left 0.1875em;
   padding: 0;
   margin: 0;
 }
-/* line 220, ../sass/content-type-style/_frontpage-verticalGauche.scss */
+/* line 230, ../sass/content-type-style/_frontpage-verticalGauche.scss */
 .HPDroite2 .view-liste-activites-accueil .titre a {
   font-weight: bold;
   text-transform: uppercase;
   text-decoration: underline;
   font-size: small;
 }
-/* line 228, ../sass/content-type-style/_frontpage-verticalGauche.scss */
+/* line 238, ../sass/content-type-style/_frontpage-verticalGauche.scss */
 .HPDroite2 p.view-liste-activites-accueil a {
   text-decoration: none;
 }
 
-/* line 233, ../sass/content-type-style/_frontpage-verticalGauche.scss */
+/* line 243, ../sass/content-type-style/_frontpage-verticalGauche.scss */
 .HPDroite3 {
   background: url("../images/titre_foyer_hp.gif") no-repeat top left;
   margin: 0;
@@ -3983,13 +4046,13 @@ body .conteneur .HPDroite3 {
 }
 
 /* LISTE JOURNAL PDF */
-/* line 242, ../sass/content-type-style/_frontpage-verticalGauche.scss */
+/* line 252, ../sass/content-type-style/_frontpage-verticalGauche.scss */
 .liste-journal a {
   text-decoration: none;
   color: #911381;
 }
 
-/* line 246, ../sass/content-type-style/_frontpage-verticalGauche.scss */
+/* line 256, ../sass/content-type-style/_frontpage-verticalGauche.scss */
 .liste-journal a:hover {
   text-decoration: underline;
 }
@@ -3997,40 +4060,40 @@ body .conteneur .HPDroite3 {
 /*------------------------------------------
 BLOC POUR ACTU FOYER
 -------------------------------------------*/
-/* line 254, ../sass/content-type-style/_frontpage-verticalGauche.scss */
+/* line 264, ../sass/content-type-style/_frontpage-verticalGauche.scss */
 #block-views-liste_actu_foyer-block_1 {
   float: left;
   width: 18.75em;
   margin: 0 0.125em 0 0;
   padding: 0;
 }
-/* line 259, ../sass/content-type-style/_frontpage-verticalGauche.scss */
+/* line 269, ../sass/content-type-style/_frontpage-verticalGauche.scss */
 #block-views-liste_actu_foyer-block_1 a {
   text-decoration: none;
   color: #911381;
 }
-/* line 262, ../sass/content-type-style/_frontpage-verticalGauche.scss */
+/* line 272, ../sass/content-type-style/_frontpage-verticalGauche.scss */
 #block-views-liste_actu_foyer-block_1 a:hover {
   text-decoration: underline;
   color: #E3001C;
 }
-/* line 268, ../sass/content-type-style/_frontpage-verticalGauche.scss */
+/* line 278, ../sass/content-type-style/_frontpage-verticalGauche.scss */
 #block-views-liste_actu_foyer-block_1 li, #block-views-liste_actu_foyer-block_1 h3 {
   color: #01ABCF;
 }
 
 /*---DIAPORAMA HOMEPAGE TEXTE DYNAMIQUE  PANORAMIQUE----*/
 /*---DIAPORAMA HOMEPAGE TEXTE DYNAMIQUE PAS SUR MOBILE----*/
-/* line 305, ../sass/content-type-style/_frontpage-verticalGauche.scss */
+/* line 315, ../sass/content-type-style/_frontpage-verticalGauche.scss */
 .conteneur #views_slideshow_cycle_div_diaporama_homepage-block_1_0 > div > div.views-field.views-field-teaser {
   display: none;
 }
 @media (min-width: 990px) {
-  /* line 305, ../sass/content-type-style/_frontpage-verticalGauche.scss */
+  /* line 315, ../sass/content-type-style/_frontpage-verticalGauche.scss */
   .conteneur #views_slideshow_cycle_div_diaporama_homepage-block_1_0 > div > div.views-field.views-field-teaser {
     display: block;
   }
-  /* line 309, ../sass/content-type-style/_frontpage-verticalGauche.scss */
+  /* line 319, ../sass/content-type-style/_frontpage-verticalGauche.scss */
   .conteneur #views_slideshow_cycle_div_diaporama_homepage-block_1_0 > div > div.views-field.views-field-teaser #transparency {
     background: none repeat scroll 0 0 #911381;
     /*Couleur du fond*/
@@ -4049,7 +4112,7 @@ BLOC POUR ACTU FOYER
     /* IE < 8 */
     -khtml-opacity: 0.6;
   }
-  /* line 319, ../sass/content-type-style/_frontpage-verticalGauche.scss */
+  /* line 329, ../sass/content-type-style/_frontpage-verticalGauche.scss */
   .conteneur #views_slideshow_cycle_div_diaporama_homepage-block_1_0 > div > div.views-field.views-field-teaser #contenu-diapo {
     position: relative;
     bottom: 10.375em;
@@ -4057,14 +4120,14 @@ BLOC POUR ACTU FOYER
     color: white;
     z-index: 20;
   }
-  /* line 328, ../sass/content-type-style/_frontpage-verticalGauche.scss */
+  /* line 338, ../sass/content-type-style/_frontpage-verticalGauche.scss */
   .conteneur #views_slideshow_cycle_div_diaporama_homepage-block_1_0 > div > div.views-field.views-field-teaser #contenu-diapo h2 {
     color: white;
     padding: 0.3125em;
     font-family: "Arista", Trebuchet MS, sans-serif;
     line-height: 1.3em;
   }
-  /* line 334, ../sass/content-type-style/_frontpage-verticalGauche.scss */
+  /* line 344, ../sass/content-type-style/_frontpage-verticalGauche.scss */
   .conteneur #views_slideshow_cycle_div_diaporama_homepage-block_1_0 > div > div.views-field.views-field-teaser #contenu-diapo a {
     text-decoration: none;
   }
@@ -4358,13 +4421,19 @@ body .conteneur .conteneur-flex #colonne-3.page-lycee {
 @media (min-width: 990px) {
   /* line 30, ../sass/content-type-style/_page-lycee.scss */
   body .conteneur #colonne-2.page-lycee {
-    border-left: 0.0625em solid #F29400;
-    border-right: 0.0625em solid #911381;
+    border-left: 0.0625em solid #911381;
   }
 }
 
+/*######-------- ||| BREAKPOINTS ||| --------######*/
+@media (max-width: 799px) {
+  /* line 36, ../sass/content-type-style/_page-lycee.scss */
+  aside.deco-lycee {
+    display: none;
+  }
+}
 /*######-------- ||| STYLE ||| --------######*/
-/* line 35, ../sass/content-type-style/_page-lycee.scss */
+/* line 42, ../sass/content-type-style/_page-lycee.scss */
 h1.titre-lycee {
   font-size: 1.5em;
   color: #911381;
@@ -4372,12 +4441,8 @@ h1.titre-lycee {
 }
 
 /*######-------- COLONNE 1 --------######*/
-/* line 48, ../sass/content-type-style/_page-lycee.scss */
+/* line 55, ../sass/content-type-style/_page-lycee.scss */
 #colonne-1.page-lycee img {
-  border: 0.3em solid #fff;
-  -moz-box-shadow: 0 0 0.3em 0.1em;
-  -webkit-box-shadow: 0 0 0.3em 0.1em;
-  box-shadow: 0 0 0.3em 0.1em;
   display: block;
   margin: 0 auto;
   max-width: 100%;
@@ -4390,165 +4455,56 @@ h1.titre-lycee {
   }
 }
 /*######-------- COLONNE 2 --------######*/
-/* line 69, ../sass/content-type-style/_page-lycee.scss */
+/* line 76, ../sass/content-type-style/_page-lycee.scss */
+#colonne-2.page-lycee h2, #colonne-2.page-lycee h3, #colonne-2.page-lycee h4, #colonne-2.page-lycee p, #colonne-2.page-lycee ul, #colonne-2.page-lycee ol, #colonne-2.page-lycee img {
+  margin: 0;
+}
+/* line 79, ../sass/content-type-style/_page-lycee.scss */
 #colonne-2.page-lycee h2 {
-  color: #F29400;
+  color: #911381;
   padding: 0.3125em;
 }
-/* line 73, ../sass/content-type-style/_page-lycee.scss */
+/* line 83, ../sass/content-type-style/_page-lycee.scss */
 #colonne-2.page-lycee h3 {
   color: #911381;
   padding: 0.3125em;
 }
-/* line 77, ../sass/content-type-style/_page-lycee.scss */
+/* line 87, ../sass/content-type-style/_page-lycee.scss */
 #colonne-2.page-lycee h4 {
   padding: 0.3125em;
-  color: #F29400;
+  color: #911381;
 }
-/* line 81, ../sass/content-type-style/_page-lycee.scss */
+/* line 91, ../sass/content-type-style/_page-lycee.scss */
 #colonne-2.page-lycee p {
   padding: 0.3125em;
+  line-height: 1.5em;
 }
-/* line 84, ../sass/content-type-style/_page-lycee.scss */
+/* line 95, ../sass/content-type-style/_page-lycee.scss */
 #colonne-2.page-lycee ul {
   padding: 0.3125em;
 }
-/* line 90, ../sass/content-type-style/_page-lycee.scss */
+/* line 101, ../sass/content-type-style/_page-lycee.scss */
 #colonne-2.page-lycee a {
-  color: #F29400;
+  color: #911381;
   text-decoration: none;
   padding: 2px;
 }
-/* line 94, ../sass/content-type-style/_page-lycee.scss */
+/* line 105, ../sass/content-type-style/_page-lycee.scss */
 #colonne-2.page-lycee a:hover {
   color: white;
-  background: #F29400;
+  background: #911381;
 }
-/* line 99, ../sass/content-type-style/_page-lycee.scss */
+/* line 110, ../sass/content-type-style/_page-lycee.scss */
 #colonne-2.page-lycee form {
   margin: 0 6em;
 }
+/* line 111, ../sass/content-type-style/_page-lycee.scss */
+#colonne-2.page-lycee table, #colonne-2.page-lycee tbody {
+  max-width: 100%;
+  margin: 0 auto;
+}
 
 /*######-------- COLONNE 3 --------######*/
-/* Fichier joint dans page lycée*/
-/* line 127, ../sass/content-type-style/_page-lycee.scss */
-#fichier-joint-plycee {
-  display: block;
-  margin: 0 auto;
-  width: 90%;
-  background: transparent url(../images/bg_doc_utile_rp.gif) repeat;
-  padding: 0.625em 0;
-  position: relative;
-  -moz-border-radius: 0.5em;
-  -webkit-border-radius: 0.5em;
-  border-radius: 0.5em;
-  behavior: url(/sites/all/libraries/PIE/PIE.htc);
-}
-/* line 136, ../sass/content-type-style/_page-lycee.scss */
-#fichier-joint-plycee h3 {
-  font-family: "Arista", Trebuchet MS, sans-serif;
-  color: #F29400;
-  padding: 0.3125em;
-  text-align: center;
-  font-size: x-large;
-}
-/* line 143, ../sass/content-type-style/_page-lycee.scss */
-#fichier-joint-plycee a {
-  color: #9898a6;
-  display: block;
-  font-weight: bold;
-  margin: 0 auto;
-  padding: 0.125em;
-  width: 90%;
-  text-decoration: none;
-  font-size: small;
-}
-/* line 152, ../sass/content-type-style/_page-lycee.scss */
-#fichier-joint-plycee a:hover {
-  background: #F29400;
-  color: white;
-  -moz-border-radius: 0.5em;
-  -webkit-border-radius: 0.5em;
-  border-radius: 0.5em;
-}
-/* line 159, ../sass/content-type-style/_page-lycee.scss */
-#fichier-joint-plycee .filefield-icon {
-  display: none;
-}
-
-/* line 164, ../sass/content-type-style/_page-lycee.scss */
-#video-plycee {
-  margin: 0 auto;
-  border: 0.1em solid #F29400;
-  padding: 0.3125em;
-  width: 90%;
-}
-
-/*Tableaux*/
-/* line 172, ../sass/content-type-style/_page-lycee.scss */
-.table_generik {
-  border: 0px solid black;
-  width: 95%;
-  margin: 0 auto;
-}
-/* line 176, ../sass/content-type-style/_page-lycee.scss */
-.table_generik tbody {
-  border: 0;
-  text-align: center;
-}
-/* line 180, ../sass/content-type-style/_page-lycee.scss */
-.table_generik tr {
-  border: 0px solid black;
-}
-/* line 183, ../sass/content-type-style/_page-lycee.scss */
-.table_generik tr.ligne_1 {
-  background: transparent;
-  color: black;
-}
-/* line 187, ../sass/content-type-style/_page-lycee.scss */
-.table_generik tr.ligne_2 {
-  background: #F29400;
-  color: white;
-}
-/* line 191, ../sass/content-type-style/_page-lycee.scss */
-.table_generik td {
-  border: 0px solid black;
-}
-
-/* line 197, ../sass/content-type-style/_page-lycee.scss */
-#table_frais {
-  border: 0;
-  width: 100%;
-}
-/* line 200, ../sass/content-type-style/_page-lycee.scss */
-#table_frais tr.tf_line_1 {
-  color: white;
-  background: #01ABCF;
-}
-/* line 204, ../sass/content-type-style/_page-lycee.scss */
-#table_frais tr.tf_line_2 {
-  color: #DE603A;
-  background: white;
-}
-
-/*---- PAGE RESULTATS ¤¤¤*/
-/* line 212, ../sass/content-type-style/_page-lycee.scss */
-.table-resultats table {
-  width: 100%;
-}
-/* line 213, ../sass/content-type-style/_page-lycee.scss */
-.table-resultats tbody {
-  border: 0;
-}
-/* line 214, ../sass/content-type-style/_page-lycee.scss */
-.table-resultats tr {
-  border-bottom: 0.1em solid #F29400;
-}
-/* line 215, ../sass/content-type-style/_page-lycee.scss */
-.table-resultats tr:hover {
-  background: gainsboro;
-}
-
 /*-------------------------------------|
 |       CONTENU CUSTOM NODE.TPL        |
 |           CONTENU VDL                |

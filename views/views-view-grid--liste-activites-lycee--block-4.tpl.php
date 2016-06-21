@@ -13,7 +13,7 @@
 <?php if (!empty($title)) : ?>
   <h3><?php print $title; ?></h3>
 <?php endif; ?>
-<table id="info-admin-hp" class="<?php print $class; ?>"<?php print $attributes; ?>>
+<table  class="info-admin-hp <?php print $class; ?>"<?php print $attributes; ?>>
   <tbody>
     <?php foreach ($rows as $row_number => $columns): ?>
       <?php

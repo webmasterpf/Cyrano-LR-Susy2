@@ -27,10 +27,17 @@ body .conteneur .conteneur-flex{
 /*######-------- ||| BORDURES ||| --------######*/
 body .conteneur{
     @include breakpoint ($desktop){
-        #colonne-2.page-lycee{@include border-orange-violet;}
+        #colonne-2.page-lycee{@include border-L-violet;}
     }
     
 }
+/*######-------- ||| BREAKPOINTS ||| --------######*/
+@include breakpoint ($mobile){
+    aside.deco-lycee{
+        display: none;
+    }
+}
+
 /*######-------- ||| STYLE ||| --------######*/
 h1.titre-lycee{
     font-size: em(24px);
@@ -46,7 +53,7 @@ h4{}
 p{}
 ul{}
 img{
-    @include ombrage(0.3em,0,0,0.1em);
+    //@include ombrage(0.3em,0,0,0.1em);
     display: block;
     margin: 0 auto;
     @include adaptable-img;
@@ -66,8 +73,11 @@ h4 a:hover{}
 } 
 /*######-------- COLONNE 2 --------######*/
 #colonne-2.page-lycee{
+    h2,h3,h4,p,ul,ol,img{
+        margin: 0;
+    }
     h2{
-        color: $orange;
+        color: $violet;
         padding: em(5px);
     }
     h3{
@@ -76,27 +86,36 @@ h4 a:hover{}
     }
     h4{
         padding: em(5px);
-        color: $orange;
+        color: $violet;
     }
     p{
         padding: em(5px);
-    }
+        line-height: 1.5em;
+            }
     ul{
         padding: em(5px);
-    }
+            }
     img{
-
+        
     }
     a{
-        color: $orange;
+        color: $violet;
         text-decoration: none;
         padding: 2px;
         &:hover{
             color: white;
-            background: $orange;
+            background: $violet;
         }
     }
     form{margin: 0 6em;}
+    table,tbody{
+        max-width: 100%;
+        margin: 0 auto;
+        tr{
+            
+        }
+        td{}
+    }
 }
 
 /*######-------- COLONNE 3 --------######*/
@@ -121,97 +140,5 @@ h4 a:hover{}
     h3 a:hover{}
     h4 a{}
     h4 a:hover{}
-}
-
-/* Fichier joint dans page lycée*/
-#fichier-joint-plycee{
-    display: block;
-    margin: 0 auto;
-    width: 90%;
-    background: transparent url(../images/bg_doc_utile_rp.gif) repeat ;
-    padding: em(10px) 0;
-    position: relative;
-    @include arrondis;
-    @include PIE;
-    h3{
-        font-family: $AristaFont;
-        color: $orange;
-        padding: em(5px);
-        text-align: center;
-        font-size: x-large;
-    }
-    a{
-        color: $gris-clair-moyen;
-        display: block;
-        font-weight: bold;
-        margin: 0 auto;
-        padding: em(2px);
-        width: 90%;
-        text-decoration: none;
-        font-size:small;
-        &:hover{
-            background: $orange;
-            color: white;
-            @include arrondis;
-        }
-    }
-
-    .filefield-icon {
-        display: none;
-    }
-}
-
-#video-plycee{
-    margin: 0 auto;
-    border: 0.1em solid $orange;
-    padding: em(5px);
-    width: 90%;
-}
-
-/*Tableaux*/
-.table_generik{
-    border: 0px solid black;
-    width: 95%;
-    margin: 0 auto;
-    tbody{
-        border: 0;
-        text-align: center;
-    }
-    tr{
-        border: 0px solid black;
-    }
-    tr.ligne_1{
-        background: transparent;
-        color: black;
-    }
-    tr.ligne_2{
-        background: $orange;
-        color: white;
-    }
-    td{
-        border: 0px solid black;
-
-    }
-}
-
-#table_frais{
-    border: 0;
-    width: 100%;
-    tr.tf_line_1{
-        color: white;
-        background: $bleu-turquoise;
-    }
-    tr.tf_line_2{
-        color: $orange-fonce;
-        background: white;
-    }
-}
-
-/*---- PAGE RESULTATS ¤¤¤*/
-.table-resultats{
-    table{width: 100%;}
-    tbody{border: 0;}
-    tr{border-bottom: 0.1em solid $orange;}
-    tr:hover{background: gainsboro;}
 }
 

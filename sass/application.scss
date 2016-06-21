@@ -41,6 +41,7 @@ breakpoint-2.5.0
 @import "global/style";
 @import "global/sub-nav";
 @import "global/flex";
+@import "global/_stacktable.scss";
 
 // Import des partiels du layout du thème Drupal
 
@@ -65,7 +66,7 @@ breakpoint-2.5.0
 
 //Import Homepage - choisir quel layout et style utiliser
 @import "layout/layout-diapo-frontpage";
-@import "content-type-style/frontpage-verticalGauche";
+@import "content-type-style/_frontpage-verticalGauche.scss";
 @import "layout/_layout-vertical-hp-gauche.scss";
 
 

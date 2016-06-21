@@ -6,11 +6,6 @@
 <div class="node <?php print $classes; ?>" id="node-<?php print $node->nid; ?>">
     <div class="node-inner">
         <!--______________COLONNE 1________________ -->
-        <?php /* choix du layout selon nombre de colonne
-         * .col1_layout_200_590_200{} .col1_layout_330_all{} .col1_layout_18_56_25{}
-         * .col2_layout_200_590_200{} .col2_layout_330_all{} .col2_layout_18_56_25{}
-         * .col3_layout_200_590_200{} .col3_layout_330_all{} .col3_layout_18_56_25{}
-         */?>
         <div id="colonne-1" class="CHOIX_DU_LAYOUT">
             <?php if ($title): /*copier le titre dans la colonne desirée*/?>
             <h1 class="titre_page"><?php print $title; ?></h1>
@@ -18,9 +13,14 @@
         
             <?php 
   $theme_path = drupal_get_path('theme', 'NOM_THEME');
-include($theme_path .'/includes/inc_region_col_1.php');
+include($theme_path .'/includes/regions_inc/inc_region_col_1.php');
 ?>
-        </div>
+            
+                 <?php
+           global $theme_path;
+              include ($theme_path.'/includes/regions_inc/inc_region_col_1.php');
+              ?>
+        </div><!-- /colonne1 -->
         <!--______________COLONNE 2________________ -->
          <!-- <pre> <?php //print_r($node); ?> </pre>-->   <!-- listage des variables du $content -->
         <div id="colonne-2" class="CHOIX_DU_LAYOUT">
@@ -35,7 +35,7 @@ include($theme_path .'/includes/inc_region_col_1.php');
                 <?php   print $node->content['body']['#value'];/*déplacer le contenu dans la colonne désirée*/ ?>
             </div>
 
-        </div>
+        </div><!-- /colonne2 -->
 
         <!--______________COLONNE 3________________ -->
         <div id="colonne-3" class="CHOIX_DU_LAYOUT">
@@ -47,7 +47,7 @@ include($theme_path .'/includes/inc_region_col_1.php');
             <?php endif;?>
 
 
-        </div>
+        </div><!-- /colonne3 -->
 
         <?php if ($terms): ?>
         <div class="taxonomy"><?php //print $terms; ?></div>

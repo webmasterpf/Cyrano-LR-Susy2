@@ -38,10 +38,11 @@ aside.navStatic{
                     margin: 0.25em;
                     border: 0;
                     font-family: $AristaFont;
-                    color: $orange;//couleur des liens
+                    color: $vert;//couleur des liens
                     text-decoration: none;
                     display: block;
                     font-size: x-large;
+                    font-weight: bold;//si typo trop fine
                     &:hover {
                         color: $violet;//couleur du hover
                     }

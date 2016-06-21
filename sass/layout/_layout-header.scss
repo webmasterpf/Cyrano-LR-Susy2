@@ -14,7 +14,11 @@
       
          .logoHead {
              padding:4em 0 1em 0;
-                    img{margin: 0 auto;display: block;}
+                    img{margin: 0 auto;
+                    //display: block;//commenter si logo pas collé à gauche
+                    max-height: 5em;//si logo trop gros
+                    object-fit: contain;
+                    }
          }
          .menuImg {
              background: white;
@@ -91,7 +95,7 @@
 /*---- HEADER BAS ----*/
 
 .headBas {
- background: $orange;//Modifier la couleur du fond de la partie basse selon couleur du lycée
+ background: $violet;//Modifier la couleur du fond de la partie basse selon couleur du lycée
 }
 
 

@@ -49,3 +49,17 @@
     }
 
 }
+/*---- STYLE TABLE GENERIK ----
+Avec des classes odd et even via JS
+js_jquery_new.js
+*/
+table{
+    tr{
+        .odd,:odd{
+            background: $gris-clair;
+        }
+        .even,:even{
+            background: $gris-clair-moyen;
+        }
+    }
+}

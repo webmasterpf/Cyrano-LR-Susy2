@@ -1,40 +1,31 @@
-<?php $theme_path = drupal_get_path('theme', 'cyrano_pf'); include ($theme_path.'/includes/inc_header.php'); ?>
  <!-- ______________________ LAYOUT PAGE CONTACT _______________________ -->
-  <!-- ______________________ CONTENU _______________________ -->
+<?php
+global $theme_path;
+include ($theme_path.'/includes/inc_header.php');
+?>
+  
 
-      <div id="contentPage">
+       <!-- ______________________ CONTENT INNER GLOBAL _______________________ -->
 
-          <!-- ______________________ CONTENT TOP _______________________ -->
-      <?php if ($breadcrumb ||$content_top ): ?>
+        <div class="content-inner">
+              <!-- ______________________ CONTENT TOP _______________________ -->
+      <?php if ($breadcrumb ||$content_top): ?>
             <div id="content-top">
-	<span id="ariane"> <?php print $breadcrumb; ?></span>
+	<span class="ariane"> <?php print $breadcrumb; ?></span>
 
               <?php print $content_top; ?>
             </div> <!-- /#content-top -->
+            <?php endif; ?>
 
-
-       <!-- ______________________ COLONNE GAUCHE _______________________ -->
-
-           
-         <div id="left-content-partenaire">
-
-             <?php if ($title): ?>
-                <h1 class="title"><?php print $title; ?></h1>
-              <?php endif; ?>
-
-            <?php print $left; ?>
-          </div>
-              <!-- /sidebar-left -->
-
-		<!--fin du contenu gauche -->
-
-        <div id="content-inner-partenaire" class="inner column center">
-
-		 
-
+  <!-- ______________________ CONTENT TOP NODE_______________________ -->
+               <?php if ($content_top_node): ?>
+            <div id="content-top-node">
+	              <?php print $content_top_node; ?>
+            </div> <!-- /#content-top-node -->
+            <?php endif; ?>
 
           <?php if ($mission || $messages || $help || $tabs): ?>
-            <div id="content-header">
+            <div class="content-header">
 
               <?php if ($mission): ?>
                 <div id="mission"><?php print $mission; ?></div>
@@ -51,21 +42,11 @@
             </div> <!-- /#content-header -->
           <?php endif; ?>
 		  <!-- ______________________ CONTENU CENTRAL _______________________ -->
-          <div id="middle-content-partenaire">
+             <article class="middle-content">
+
             <?php print $content; ?>
-
-              <?php if ($formulaire): ?>
-            <div id="formulaire_partenaire">
-              <?php print $formulaire; ?>
-            </div><!-- /#formulaire_partenaire -->
-              <?php endif; ?>
-
               <?php print $feed_icons; ?>
-          </div> <!-- /#content-area -->
-
-
-
-
+                  </article> <!-- /#content-area -->
 
       </div> <!-- /content-inner /content -->
 
@@ -77,26 +58,14 @@
           </div> <!-- /navigation -->
         <?php endif; ?>
 
-
-		  <!-- ______________________ COLONNE DROITE _______________________ -->
-        <?php if ($right): ?>
-         <!--d�but du contenu droit -->
-		<div id="right-content-partenaire">
-
-
-            <?php print $right; ?>
-        </div>
-        <?php endif; ?> <!-- /sidebar-right -->
-
-
-    	 <br clear="all"/>
          <!-- ______________________ CONTENU BAS _______________________ -->
 <?php if ($content_bottom): ?>
-            <div id="content-bottom">
+            <div class="content-bottom">
               <?php print $content_bottom; ?>
             </div><!-- /#content-bottom -->
           <?php endif; ?>
-	 </div> <!-- /contentPage -->
-
-	  <?php $theme_path = drupal_get_path('theme', 'cyrano_pf'); include ($theme_path.'/includes/inc_footer.php'); ?>
-         <?php endif; ?>
+	
+<?php
+global $theme_path;
+include ($theme_path.'/includes/inc_footer.php');
+?>     >     

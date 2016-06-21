@@ -101,7 +101,7 @@ h4 a:hover{}
     a{
         color: $violet;
         text-decoration: none;
-        padding: 2px;
+        padding: em(2px);
         &:hover{
             color: white;
             background: $violet;
@@ -112,7 +112,12 @@ h4 a:hover{}
         max-width: 100%;
         margin: 0 auto;
         tr{
-            
+              .odd,&:odd{
+                background: $gris-clair;
+            }
+            .even,&:even{
+                background: $gris-clair-moyen;
+            }
         }
         td{}
     }
@@ -142,3 +147,15 @@ h4 a:hover{}
     h4 a:hover{}
 }
 
+#service-tiers{
+    margin: 0 auto;
+    width: 55%;
+    border: 0.15em solid $violet;
+    padding: 0.2em;
+}
+#docs-utiles{
+    margin: 1em auto;
+    width: 40%;
+    background: $gris-clair;
+    text-align: left;
+}

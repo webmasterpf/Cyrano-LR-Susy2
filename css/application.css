@@ -719,7 +719,7 @@ h6, .h6 {
   font-size: small;
 }
 /* line 110, ../sass/global/_typos.scss */
-.conteneur .content-inner ul {
+.conteneur .content-inner ul, .conteneur .content-inner ol {
   list-style: inside;
 }
 /* line 115, ../sass/global/_typos.scss */
@@ -814,6 +814,23 @@ h6, .h6 {
     text-transform: capitalize;
     font-weight: normal;
   }
+}
+
+/*---- STYLE TABLE GENERIK ----
+Avec des classes odd et even via JS
+js_jquery_new.js
+*/
+/* line 58, ../sass/global/_style.scss */
+table tbody tr {
+  border: 0;
+}
+/* line 60, ../sass/global/_style.scss */
+table tbody tr .odd, table tbody tr:odd {
+  background: #ECECED;
+}
+/* line 64, ../sass/global/_style.scss */
+table tbody tr .even, table tbody tr:even {
+  background: #9898a6;
 }
 
 /* line 7, ../sass/global/_sub-nav.scss */
@@ -2749,7 +2766,7 @@ body .conteneur #header .headBas .headSearch {
 |--------------------------------------*/
 /* line 10, ../sass/layout/_layout-footer.scss */
 body .conteneur #footer {
-  padding: 1.875em 0;
+  padding: 0;
   color: #9898a6;
   background: transparent url('../images/bg_footer.jpg?1466068273') no-repeat scroll right bottom;
 }
@@ -4487,7 +4504,7 @@ h1.titre-lycee {
 #colonne-2.page-lycee a {
   color: #911381;
   text-decoration: none;
-  padding: 2px;
+  padding: 0.125em;
 }
 /* line 105, ../sass/content-type-style/_page-lycee.scss */
 #colonne-2.page-lycee a:hover {
@@ -4503,8 +4520,32 @@ h1.titre-lycee {
   max-width: 100%;
   margin: 0 auto;
 }
+/* line 115, ../sass/content-type-style/_page-lycee.scss */
+#colonne-2.page-lycee table tr .odd, #colonne-2.page-lycee table tr:odd, #colonne-2.page-lycee tbody tr .odd, #colonne-2.page-lycee tbody tr:odd {
+  background: #ECECED;
+}
+/* line 118, ../sass/content-type-style/_page-lycee.scss */
+#colonne-2.page-lycee table tr .even, #colonne-2.page-lycee table tr:even, #colonne-2.page-lycee tbody tr .even, #colonne-2.page-lycee tbody tr:even {
+  background: #9898a6;
+}
 
 /*######-------- COLONNE 3 --------######*/
+/* line 150, ../sass/content-type-style/_page-lycee.scss */
+#service-tiers {
+  margin: 0 auto;
+  width: 55%;
+  border: 0.15em solid #911381;
+  padding: 0.2em;
+}
+
+/* line 156, ../sass/content-type-style/_page-lycee.scss */
+#docs-utiles {
+  margin: 1em auto;
+  width: 40%;
+  background: #ECECED;
+  text-align: left;
+}
+
 /*-------------------------------------|
 |       CONTENU CUSTOM NODE.TPL        |
 |           CONTENU VDL                |
@@ -5938,6 +5979,132 @@ h2.philo-ficheform {
 #colonne-2.fiche-formation h3, #colonne-3.fiche-formation h3 {
   color: #01ABCF;
   font-size: small;
+}
+
+/*-------------------------------------|
+|       CONTENU CUSTOM              |
+|               NODE.TPL                     |
+|       CONTACT WEBFORM            |
+|--------------------------------------*/
+/*######-------- ||| ORDRE FLEXBOX ||| --------######*/
+/* line 16, ../sass/content-type-style/_webform.scss */
+body .conteneur .conteneur-flex #colonne-1.CLASS_NAME {
+  order: 1;
+}
+/* line 17, ../sass/content-type-style/_webform.scss */
+body .conteneur .conteneur-flex #colonne-2.CLASS_NAME {
+  order: 2;
+}
+/* line 18, ../sass/content-type-style/_webform.scss */
+body .conteneur .conteneur-flex #colonne-3.CLASS_NAME {
+  order: 3;
+}
+
+/*######-------- ||| BORDURES ||| --------######*/
+@media (min-width: 990px) {
+  /* line 25, ../sass/content-type-style/_webform.scss */
+  body .conteneur #colonne-2.webform {
+    border-left: 0.0625em solid #911381;
+  }
+}
+
+/*######-------- ||| STYLE ||| --------######*/
+/* line 33, ../sass/content-type-style/_webform.scss */
+#colonne-2.webform table, #colonne-2.webform tbody, #colonne-2.webform tr, #colonne-2.webform td {
+  width: 98%;
+  display: block;
+  margin: 0 auto;
+}
+/* line 37, ../sass/content-type-style/_webform.scss */
+#colonne-2.webform tbody {
+  border: 0;
+}
+
+/* line 43, ../sass/content-type-style/_webform.scss */
+h1.titre-webform {
+  font-size: 1.5em;
+  color: #911381;
+  line-height: 1.0em;
+}
+
+/* line 50, ../sass/content-type-style/_webform.scss */
+#colonne-2.webform h2 {
+  color: #F29400;
+  padding: 0.3125em;
+}
+/* line 54, ../sass/content-type-style/_webform.scss */
+#colonne-2.webform h3 {
+  color: #911381;
+  padding: 0.3125em;
+}
+/* line 58, ../sass/content-type-style/_webform.scss */
+#colonne-2.webform h4 {
+  padding: 0.3125em;
+  color: #F29400;
+}
+/* line 62, ../sass/content-type-style/_webform.scss */
+#colonne-2.webform p {
+  padding: 0.3125em;
+  font-size: small;
+}
+/* line 66, ../sass/content-type-style/_webform.scss */
+#colonne-2.webform ul {
+  padding: 0.3125em;
+}
+/* line 72, ../sass/content-type-style/_webform.scss */
+#colonne-2.webform a {
+  color: #F29400;
+  text-decoration: none;
+  padding: 2px;
+}
+/* line 76, ../sass/content-type-style/_webform.scss */
+#colonne-2.webform a:hover {
+  color: white;
+  background: #F29400;
+}
+/* line 81, ../sass/content-type-style/_webform.scss */
+#colonne-2.webform form {
+  background: transparent url(../images/bg_doc_utile_rp.gif) repeat;
+  padding: 0.2em;
+  position: relative;
+  -moz-border-radius: 0.5em;
+  -webkit-border-radius: 0.5em;
+  border-radius: 0.5em;
+  behavior: url(/sites/all/libraries/PIE/PIE.htc);
+}
+
+/*---- STYLE ELEMENTS FORMULAIRE ----*/
+/* line 90, ../sass/content-type-style/_webform.scss */
+form.webform-client-form {
+  width: 95%;
+  margin: 0 auto;
+  display: block;
+}
+/* line 92, ../sass/content-type-style/_webform.scss */
+form.webform-client-form label {
+  font-size: smaller;
+}
+/* line 93, ../sass/content-type-style/_webform.scss */
+form.webform-client-form input[type="text"], form.webform-client-form input[type="email"], form.webform-client-form input[type="submit"], form.webform-client-form select {
+  width: 95%;
+  margin: 0 auto;
+  display: block;
+}
+/* line 96, ../sass/content-type-style/_webform.scss */
+form.webform-client-form input[type="submit"] {
+  width: 95%;
+  margin: 0 auto;
+  display: block;
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  -ms-hyphens: auto;
+  -o-hyphens: auto;
+  hyphens: auto;
+}
+/* line 100, ../sass/content-type-style/_webform.scss */
+form.webform-client-form .form-item {
+  margin-bottom: 0.5em;
+  margin-top: 0.5em;
 }
 
 /*

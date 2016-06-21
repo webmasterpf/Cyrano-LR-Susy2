@@ -74,4 +74,12 @@
   $('.bxslider').bxSlider();
    pagerCustom: '#bx-pager'
 });
+
+  //Pour stacktable (tableaux RWD)
+    jQuery(window).load(function (){
+        console.log('Chargement de Stacktable.js');
+        //Ajouter l'ID de la table à rendre RWD
+  //Cible toutes les tables contenues dans la div.content (colonne-2)
+  $('div.content').children('table') .stacktable();
+});
 })(jQuery);

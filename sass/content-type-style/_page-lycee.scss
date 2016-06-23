@@ -39,7 +39,7 @@ body .conteneur{
 }
 
 /*######-------- ||| STYLE ||| --------######*/
-h1.titre-lycee{
+h1.titre-lycee,h1.title-classes{
     font-size: em(24px);
     color: $violet;
     line-height: 1.0em
@@ -122,7 +122,9 @@ h4 a:hover{}
         td{}
     }
 }
-
+#colonne-2.page-classes{
+    padding: 0.5em;
+}
 /*######-------- COLONNE 3 --------######*/
 #colonne-3.page-lycee{
     h2{}
@@ -158,4 +160,26 @@ h4 a:hover{}
     width: 40%;
     background: $gris-clair;
     text-align: left;
+}
+table.doc-joint-lycee{
+       tr.even, tr.odd {//override suite stacktable.js
+                         background-color: transparent;
+                         border-bottom: none;
+                         padding: 0;
+
+        }
+}
+
+/*________ FOYER (liste) ________*/
+#views-exposed-form-liste-actu-foyer-page-1,#views-exposed-form-liste-activites-lycee-block-2,#views-exposed-form-liste-activites-lycee-block-3
+{width: 55%;margin: 0 auto; background:#C68DBD;padding: 5px;}
+#views-exposed-form-liste-actu-foyer-page-1 label,#views-exposed-form-liste-activites-lycee-block-2 label,#views-exposed-form-liste-activites-lycee-block-3 label
+{color: darkslategrey;text-align: center;}
+/*________ CLASSES DOCUMENTS ________*/
+
+.accordeon-classes{}
+.accordeon-classes a{color: $violet;text-decoration: none;}
+.accordeon-classes a:hover{text-decoration: underline;}
+.accordeon-classes .views-accordion-item .accordion-header-active {
+background: $violet;color: $gris-clair;
 }

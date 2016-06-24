@@ -40,7 +40,7 @@
         
    
             
-                 <?php
+             <?php //voir snippet pour code affichage bloc dans region sur views display page
            global $theme_path;
               include ($theme_path.'/includes/regions_inc/inc_region_col_1.php');
               ?>

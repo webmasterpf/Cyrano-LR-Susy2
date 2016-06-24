@@ -31,12 +31,20 @@ body .conteneur {
 /*######-------- ||| STYLE ||| --------######*/
 #colonne-2.webform{
     table,tbody,tr,td{
-          width: 98%;display: block;
+        //pas de display:block sinon stacktable conflit
+          width: 98%;
           margin: 0 auto;
-      }
-      tbody{
           border: 0;
       }
+      table{
+          tr.odd{
+              background: transparent;
+          }
+          tr.even{
+              background: transparent;
+          }
+      }
+
     
 }
 

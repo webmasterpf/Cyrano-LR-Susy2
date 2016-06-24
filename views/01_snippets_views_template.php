@@ -21,12 +21,22 @@
       <?php endforeach; ?>
 
 //////////////////////////////////////
-<?php 
+<?php
 $field_galerie_image_vdl = field_get_items('node', $node, 'field_galerie_image_vdl'); 
  $image_url = file_create_url($field_video_image[0]['uri']);  
  print $image_url;
- ?>
+ 
 /////////////////////////////////////
-Affiche URL/sites/all/
+//Affiche URL/sites/all/
 $file = $fields['field_galerie_image_vdl_fid'];
 print file_create_url($file->uri);  
+
+//////
+//Affichage d'un block selon url,pour views page display
+// Dans un champ php
+
+$url = request_uri();
+if (strpos($url, "terme_contenu_dans_url")) {
+return TRUE;
+}
+

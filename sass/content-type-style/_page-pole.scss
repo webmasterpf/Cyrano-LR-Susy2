@@ -37,54 +37,46 @@ body .conteneur{
     
 }
 /*######-------- ||| STYLE ||| --------######*/
-h1.titre_pole_content{
+h1.titre_page_pole{
     text-align: center;
       font-family: $AristaFont;
+      font-size: x-large;
+      color: $violet;
+}
+/*--------------------------------------
+**** POLE FORMATION REDESIGN 2012 ******
+_________________________________________*/
+
+.bloc-pole{
+    td a,a{text-align: center;
+      color: $violet;text-decoration: none;line-height: 1.6em;padding: em(1px);text-align: center;display: block;
+      &:hover{background:$vert;color: whitesmoke;}
+    }
+    h3{text-align: center;margin:0 0 em(5px) 0;}
+    .views-field-field-complement-info-formation-value{text-align: center;font-style: italic;color: $gris-anthracite; display: block;}
+    table,tbody,tr,td{
+        background: $gris-clair;max-width: 100%;
+          display: block;
+    tbody > tr.odd{
+              background: transparent;
+              border: 0;
+          }
+    tbody >  tr.even{
+              background: transparent;
+              border: 0;
+          }
+    }
 }
 
-.bloc_pole_formation_MSAC, .bloc_pole_formation_MRSP, .bloc_pole_formation_FC{
-    background:  url(../images/bg_pole.jpg) no-repeat left top ;
-    background-size: cover;
-    padding: em(30px) 0 0 0;
-    h3 {
-        color: $gris-anthracite;
-        display: block;
-        margin: 0 auto;
-        text-align: center;
-        width: 70%;
-        padding: em(25px) 0 0;
-        font-family: $AristaFont;
-    }
-    h3.diplome_formation{
-     color: $bleu-turquoise;
-    padding: em(10px) 0;
-}
-}
 
-table.table-liste-pole{
-    margin: 0 auto;
-    width: 60%;//permet de centrer le contenu
-    padding: 0;
-    display: block;
-    tbody{        
-    }
-    td{
-        text-align: center;
+#industrie table{border:em(3px) solid $orange;padding: em(3px);margin: em(22px) 0 0 0;}
+#restauration table{border:em(3px) solid $vert;padding: em(3px);margin: 0;}
+#services table{border:em(3px) solid $bleu-turquoise;padding: em(3px);}
+#orientation table{border:em(3px) solid $rose-fushia;padding: em(3px);margin: em(22px) 0 0 0;}
 
-    }
-    p{
-        line-height: 1em;
-    }
-    a{
-        padding: em(2px);
-        display: block;
-        color: $gris-clair;
-        font-size: small;
-        text-decoration: none;
-        
-        &:hover{
-            background: $violet;
-        }
-    }
-
-}
+#industrie h3{color: $orange;}
+#services h3{color: $bleu-turquoise;}
+#restauration h3{color: $vert;}
+#orientation h3{color: $rose-fushia;}
+#industrie tr,#services tr,#restauration tr,#orientation tr{margin: em(2px) 0;}
+#industrie td,#services td,#restauration td,#orientation td{padding: em(10px) em(5px);display: block;}

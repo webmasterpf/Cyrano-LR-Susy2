@@ -85,11 +85,20 @@
 
 jQuery(document).ready(function ()
     {
-        //<!--Pour utiliser selectnav en RWD-->
-        console.log('Ajout classes odd et even sur tableaux');
+        //<!-- Pour ajouter classes sur éléments du tableau -->
+        console.log('Actions sur divers éléments : tableaux, images...');
        //Ajout des classes pour styler les tableaux
 $('table tr:odd').addClass('odd');
 $('table tr:even') .addClass('even');
+
+//Action sur taille des images : retrait de toutes les tailles en dur de manière ciblée
+ //$('img').each(function(){
+    $('.fiche-formation img').each(function(){
+ $(this).removeAttr('width');
+ $(this).removeAttr('height');
+ });
     });
+    
+
 
 })(jQuery);

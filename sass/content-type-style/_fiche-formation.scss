@@ -104,7 +104,7 @@ h1.titre_ficheform{
         padding: 0;
         display: block;
         img{
-            border: 0.2em solid $vert;
+            border: em(1px) solid $vert;
             padding: em(2px);
         }
     }

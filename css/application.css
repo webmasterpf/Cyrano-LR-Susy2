@@ -4640,59 +4640,116 @@ body .conteneur .conteneur-flex .titre-flex {
 /*######-------- ||| BORDURES ||| --------######*/
 /*######-------- ||| STYLE ||| --------######*/
 /* line 40, ../sass/content-type-style/_page-pole.scss */
-h1.titre_pole_content {
+h1.titre_page_pole {
   text-align: center;
   font-family: "Arista", Trebuchet MS, sans-serif;
+  font-size: x-large;
+  color: #911381;
 }
 
-/* line 45, ../sass/content-type-style/_page-pole.scss */
-.bloc_pole_formation_MSAC, .bloc_pole_formation_MRSP, .bloc_pole_formation_FC {
-  background: url(../images/bg_pole.jpg) no-repeat left top;
-  background-size: cover;
-  padding: 1.875em 0 0 0;
+/*--------------------------------------
+**** POLE FORMATION REDESIGN 2012 ******
+_________________________________________*/
+/* line 51, ../sass/content-type-style/_page-pole.scss */
+.bloc-pole td a, .bloc-pole a {
+  text-align: center;
+  color: #911381;
+  text-decoration: none;
+  line-height: 1.6em;
+  padding: 0.0625em;
+  text-align: center;
+  display: block;
 }
-/* line 49, ../sass/content-type-style/_page-pole.scss */
-.bloc_pole_formation_MSAC h3, .bloc_pole_formation_MRSP h3, .bloc_pole_formation_FC h3 {
+/* line 53, ../sass/content-type-style/_page-pole.scss */
+.bloc-pole td a:hover, .bloc-pole a:hover {
+  background: #ADC91F;
+  color: whitesmoke;
+}
+/* line 55, ../sass/content-type-style/_page-pole.scss */
+.bloc-pole h3 {
+  text-align: center;
+  margin: 0 0 0.3125em 0;
+}
+/* line 56, ../sass/content-type-style/_page-pole.scss */
+.bloc-pole .views-field-field-complement-info-formation-value {
+  text-align: center;
+  font-style: italic;
   color: #606070;
   display: block;
-  margin: 0 auto;
-  text-align: center;
-  width: 70%;
-  padding: 1.5625em 0 0;
-  font-family: "Arista", Trebuchet MS, sans-serif;
 }
-/* line 58, ../sass/content-type-style/_page-pole.scss */
-.bloc_pole_formation_MSAC h3.diplome_formation, .bloc_pole_formation_MRSP h3.diplome_formation, .bloc_pole_formation_FC h3.diplome_formation {
-  color: #01ABCF;
-  padding: 0.625em 0;
+/* line 57, ../sass/content-type-style/_page-pole.scss */
+.bloc-pole table, .bloc-pole tbody, .bloc-pole tr, .bloc-pole td {
+  background: #ECECED;
+  max-width: 100%;
+  display: block;
+}
+/* line 60, ../sass/content-type-style/_page-pole.scss */
+.bloc-pole table tbody > tr.odd, .bloc-pole tbody tbody > tr.odd, .bloc-pole tr tbody > tr.odd, .bloc-pole td tbody > tr.odd {
+  background: transparent;
+  border: 0;
+}
+/* line 64, ../sass/content-type-style/_page-pole.scss */
+.bloc-pole table tbody > tr.even, .bloc-pole tbody tbody > tr.even, .bloc-pole tr tbody > tr.even, .bloc-pole td tbody > tr.even {
+  background: transparent;
+  border: 0;
 }
 
-/* line 64, ../sass/content-type-style/_page-pole.scss */
-table.table-liste-pole {
-  margin: 0 auto;
-  width: 60%;
-  padding: 0;
-  display: block;
+/* line 72, ../sass/content-type-style/_page-pole.scss */
+#industrie table {
+  border: 0.1875em solid #F29400;
+  padding: 0.1875em;
+  margin: 1.375em 0 0 0;
 }
-/* line 71, ../sass/content-type-style/_page-pole.scss */
-table.table-liste-pole td {
-  text-align: center;
+
+/* line 73, ../sass/content-type-style/_page-pole.scss */
+#restauration table {
+  border: 0.1875em solid #ADC91F;
+  padding: 0.1875em;
+  margin: 0;
 }
+
+/* line 74, ../sass/content-type-style/_page-pole.scss */
+#services table {
+  border: 0.1875em solid #01ABCF;
+  padding: 0.1875em;
+}
+
 /* line 75, ../sass/content-type-style/_page-pole.scss */
-table.table-liste-pole p {
-  line-height: 1em;
+#orientation table {
+  border: 0.1875em solid #E30078;
+  padding: 0.1875em;
+  margin: 1.375em 0 0 0;
 }
+
+/* line 77, ../sass/content-type-style/_page-pole.scss */
+#industrie h3 {
+  color: #F29400;
+}
+
 /* line 78, ../sass/content-type-style/_page-pole.scss */
-table.table-liste-pole a {
-  padding: 0.125em;
-  display: block;
-  color: #ECECED;
-  font-size: small;
-  text-decoration: none;
+#services h3 {
+  color: #01ABCF;
 }
-/* line 85, ../sass/content-type-style/_page-pole.scss */
-table.table-liste-pole a:hover {
-  background: #911381;
+
+/* line 79, ../sass/content-type-style/_page-pole.scss */
+#restauration h3 {
+  color: #ADC91F;
+}
+
+/* line 80, ../sass/content-type-style/_page-pole.scss */
+#orientation h3 {
+  color: #E30078;
+}
+
+/* line 81, ../sass/content-type-style/_page-pole.scss */
+#industrie tr, #services tr, #restauration tr, #orientation tr {
+  margin: 0.125em 0;
+}
+
+/* line 82, ../sass/content-type-style/_page-pole.scss */
+#industrie td, #services td, #restauration td, #orientation td {
+  padding: 0.625em 0.3125em;
+  display: block;
 }
 
 /*----------------------------------------
@@ -5890,146 +5947,107 @@ body .conteneur .conteneur-flex #colonne-3.CLASS_NAME {
 @media (min-width: 990px) {
   /* line 26, ../sass/content-type-style/_fiche-formation.scss */
   body .conteneur #colonne-2.fiche-formation {
-    border-right: 0.0625em solid #911381;
+    border-left: 0.0625em solid #E30078;
   }
 }
 
 /*######-------- ||| STYLE ||| --------######*/
 /* line 32, ../sass/content-type-style/_fiche-formation.scss */
 h1.titre_ficheform {
-  color: #F29400;
+  color: #911381;
 }
 
-/*Bloc 1 - Zone 1-1*/
 /* line 36, ../sass/content-type-style/_fiche-formation.scss */
-.docs-utiles-ficheform {
-  background: #F29400 url(../images/bg_docs_ficheform.gif) no-repeat left top;
-  margin: 0 auto;
-  max-width: 86%;
-  padding: 1.25em 0;
+#colonne-1.fiche-formation ul {
+  padding: 0;
+  margin: 0;
 }
-/* line 41, ../sass/content-type-style/_fiche-formation.scss */
-.docs-utiles-ficheform h3 {
-  text-align: center;
-  color: white;
-  margin: 0.625em 0;
+/* line 40, ../sass/content-type-style/_fiche-formation.scss */
+#colonne-1.fiche-formation ul li {
+  padding: 0.125em;
+  list-style: square inside none;
+  line-height: 1;
 }
-/* line 47, ../sass/content-type-style/_fiche-formation.scss */
-.docs-utiles-ficheform a {
-  color: #606070;
-  display: list-item;
-  list-style-position: inside;
-  list-style-type: square;
-  text-decoration: none;
-  padding: 2px;
+/* line 46, ../sass/content-type-style/_fiche-formation.scss */
+#colonne-1.fiche-formation .complement_titre_fiche h3 {
+  font-size: small;
+  color: #ADC91F;
+  text-align: right;
+}
+/* line 52, ../sass/content-type-style/_fiche-formation.scss */
+#colonne-1.fiche-formation .programme {
+  font-size: small;
 }
 /* line 54, ../sass/content-type-style/_fiche-formation.scss */
-.docs-utiles-ficheform a:hover {
-  background: #911381;
-  color: white;
-  padding: 0.125em 0.125em 0.3125em;
-}
-/* line 61, ../sass/content-type-style/_fiche-formation.scss */
-.docs-utiles-ficheform .filefield-icon {
-  display: none;
-}
-
-/* line 67, ../sass/content-type-style/_fiche-formation.scss */
-table.table-docs-utiles-ficheform {
-  border: 0;
-}
-/* line 69, ../sass/content-type-style/_fiche-formation.scss */
-table.table-docs-utiles-ficheform tr.even, table.table-docs-utiles-ficheform tr.odd {
-  border: 0;
-}
-/* line 72, ../sass/content-type-style/_fiche-formation.scss */
-table.table-docs-utiles-ficheform tbody {
-  border: 0;
-}
-/* line 75, ../sass/content-type-style/_fiche-formation.scss */
-table.table-docs-utiles-ficheform tr {
-  background: none repeat scroll 0 0 transparent;
-  border: 0 none;
-}
-/* line 79, ../sass/content-type-style/_fiche-formation.scss */
-table.table-docs-utiles-ficheform td {
-  border: 0;
-}
-
-/* line 84, ../sass/content-type-style/_fiche-formation.scss */
-.taxo_ficheform {
-  background: #ADC91F;
-  color: #606070;
-  font-weight: bold;
-  margin: 0 auto;
-  text-align: center;
-  width: 65%;
-  font-size: small;
-}
-
-/*Bloc 1 - Zone 1-2*/
-/* line 95, ../sass/content-type-style/_fiche-formation.scss */
-.deco-ficheform {
-  -moz-border-radius: 0.5em;
-  -webkit-border-radius: 0.5em;
-  border-radius: 0.5em;
-  width: 95%;
-  margin: 0 auto;
-}
-/* line 99, ../sass/content-type-style/_fiche-formation.scss */
-.deco-ficheform img {
-  padding: 0.3%;
-  margin: 2% 0;
-  border: 0.2em solid #911381;
-  -moz-border-radius: 0.8em;
-  -webkit-border-radius: 0.8em;
-  border-radius: 0.8em;
-  behavior: url(/sites/all/libraries/PIE/PIE.htc);
-  max-width: 100%;
-}
-@-moz-document url-prefix() {
-  /* line 23, ../sass/global/_mixins_custom.scss */
-  .deco-ficheform img img {
-    width: 100%;
-    max-width: 100%;
-  }
-}
-/* line 109, ../sass/content-type-style/_fiche-formation.scss */
-h2.philo-ficheform {
-  font-family: 'Josefin Slab',Trebuchet MS;
-  font-size: larger;
-  text-align: right;
-  color: #F29400;
-  font-style: italic;
-  font-weight: 400;
-  margin: 0;
-  padding: 0;
-}
-
-/* line 121, ../sass/content-type-style/_fiche-formation.scss */
-#colonne-2.fiche-formation p, #colonne-3.fiche-formation p {
-  padding: 0.3125em;
-}
-/* line 124, ../sass/content-type-style/_fiche-formation.scss */
-#colonne-2.fiche-formation strong, #colonne-3.fiche-formation strong {
-  color: #F29400;
-}
-/* line 127, ../sass/content-type-style/_fiche-formation.scss */
-#colonne-2.fiche-formation a, #colonne-3.fiche-formation a {
-  color: #F29400;
-}
-/* line 129, ../sass/content-type-style/_fiche-formation.scss */
-#colonne-2.fiche-formation a:hover, #colonne-3.fiche-formation a:hover {
+#colonne-1.fiche-formation .programme a {
   text-decoration: none;
-}
-/* line 134, ../sass/content-type-style/_fiche-formation.scss */
-#colonne-2.fiche-formation h2, #colonne-3.fiche-formation h2 {
-  color: #DE603A;
-}
-/* line 137, ../sass/content-type-style/_fiche-formation.scss */
-#colonne-2.fiche-formation h3, #colonne-3.fiche-formation h3 {
-  color: #01ABCF;
+  color: #911381;
+  padding: 0.125em;
   font-size: small;
+}
+/* line 59, ../sass/content-type-style/_fiche-formation.scss */
+#colonne-1.fiche-formation .programme a:hover {
+  color: #ECECED;
+  background: #911381;
+}
+/* line 66, ../sass/content-type-style/_fiche-formation.scss */
+#colonne-1.fiche-formation .lien-ficheform {
+  font-size: small;
+}
+/* line 68, ../sass/content-type-style/_fiche-formation.scss */
+#colonne-1.fiche-formation .lien-ficheform a {
+  text-decoration: none;
+  color: #911381;
+  padding: 0.125em;
+}
+/* line 70, ../sass/content-type-style/_fiche-formation.scss */
+#colonne-1.fiche-formation .lien-ficheform a:hover {
+  color: #ECECED;
+  background: #911381;
+}
+
+/* line 81, ../sass/content-type-style/_fiche-formation.scss */
+#colonne-2.fiche-formation p {
+  line-height: 1.5em;
+  padding: 0.325em;
+  margin: 0;
+}
+/* line 86, ../sass/content-type-style/_fiche-formation.scss */
+#colonne-2.fiche-formation h2 {
+  font-size: inherit;
+  color: #911381;
+  padding: 0.1875em;
+}
+/* line 91, ../sass/content-type-style/_fiche-formation.scss */
+#colonne-2.fiche-formation h3 {
+  font-size: small;
+  color: #ADC91F;
+  padding: 0.125em;
+}
+/* line 96, ../sass/content-type-style/_fiche-formation.scss */
+#colonne-2.fiche-formation ul li {
+  padding: 0.125em;
+  list-style: square inside none;
+  line-height: 1;
+}
+/* line 101, ../sass/content-type-style/_fiche-formation.scss */
+#colonne-2.fiche-formation .diapo_fiche {
+  max-width: 100%;
+  margin: 5px 0;
+  padding: 0;
+  display: block;
+}
+/* line 106, ../sass/content-type-style/_fiche-formation.scss */
+#colonne-2.fiche-formation .diapo_fiche img {
+  border: 0.2em solid #ADC91F;
+  padding: 0.125em;
+}
+
+/* line 113, ../sass/content-type-style/_fiche-formation.scss */
+.views-field-field-complement-info-formation-value {
+  text-align: center;
+  margin: 0 auto;
+  width: 160px;
 }
 
 /*-------------------------------------|
@@ -6063,57 +6081,61 @@ body .conteneur .conteneur-flex #colonne-3.CLASS_NAME {
 /* line 33, ../sass/content-type-style/_webform.scss */
 #colonne-2.webform table, #colonne-2.webform tbody, #colonne-2.webform tr, #colonne-2.webform td {
   width: 98%;
-  display: block;
   margin: 0 auto;
-}
-/* line 37, ../sass/content-type-style/_webform.scss */
-#colonne-2.webform tbody {
   border: 0;
 }
-
+/* line 40, ../sass/content-type-style/_webform.scss */
+#colonne-2.webform table tr.odd {
+  background: transparent;
+}
 /* line 43, ../sass/content-type-style/_webform.scss */
+#colonne-2.webform table tr.even {
+  background: transparent;
+}
+
+/* line 51, ../sass/content-type-style/_webform.scss */
 h1.titre-webform {
   font-size: 1.5em;
   color: #911381;
   line-height: 1.0em;
 }
 
-/* line 50, ../sass/content-type-style/_webform.scss */
+/* line 58, ../sass/content-type-style/_webform.scss */
 #colonne-2.webform h2 {
   color: #F29400;
   padding: 0.3125em;
 }
-/* line 54, ../sass/content-type-style/_webform.scss */
+/* line 62, ../sass/content-type-style/_webform.scss */
 #colonne-2.webform h3 {
   color: #911381;
   padding: 0.3125em;
 }
-/* line 58, ../sass/content-type-style/_webform.scss */
+/* line 66, ../sass/content-type-style/_webform.scss */
 #colonne-2.webform h4 {
   padding: 0.3125em;
   color: #F29400;
 }
-/* line 62, ../sass/content-type-style/_webform.scss */
+/* line 70, ../sass/content-type-style/_webform.scss */
 #colonne-2.webform p {
   padding: 0.3125em;
   font-size: small;
 }
-/* line 66, ../sass/content-type-style/_webform.scss */
+/* line 74, ../sass/content-type-style/_webform.scss */
 #colonne-2.webform ul {
   padding: 0.3125em;
 }
-/* line 72, ../sass/content-type-style/_webform.scss */
+/* line 80, ../sass/content-type-style/_webform.scss */
 #colonne-2.webform a {
   color: #F29400;
   text-decoration: none;
   padding: 2px;
 }
-/* line 76, ../sass/content-type-style/_webform.scss */
+/* line 84, ../sass/content-type-style/_webform.scss */
 #colonne-2.webform a:hover {
   color: white;
   background: #F29400;
 }
-/* line 81, ../sass/content-type-style/_webform.scss */
+/* line 89, ../sass/content-type-style/_webform.scss */
 #colonne-2.webform form {
   background: transparent url(../images/bg_doc_utile_rp.gif) repeat;
   padding: 0.2em;
@@ -6125,23 +6147,23 @@ h1.titre-webform {
 }
 
 /*---- STYLE ELEMENTS FORMULAIRE ----*/
-/* line 90, ../sass/content-type-style/_webform.scss */
+/* line 98, ../sass/content-type-style/_webform.scss */
 form.webform-client-form {
   width: 95%;
   margin: 0 auto;
   display: block;
 }
-/* line 92, ../sass/content-type-style/_webform.scss */
+/* line 100, ../sass/content-type-style/_webform.scss */
 form.webform-client-form label {
   font-size: smaller;
 }
-/* line 93, ../sass/content-type-style/_webform.scss */
+/* line 101, ../sass/content-type-style/_webform.scss */
 form.webform-client-form input[type="text"], form.webform-client-form input[type="email"], form.webform-client-form input[type="submit"], form.webform-client-form select {
   width: 95%;
   margin: 0 auto;
   display: block;
 }
-/* line 96, ../sass/content-type-style/_webform.scss */
+/* line 104, ../sass/content-type-style/_webform.scss */
 form.webform-client-form input[type="submit"] {
   width: 95%;
   margin: 0 auto;
@@ -6152,7 +6174,7 @@ form.webform-client-form input[type="submit"] {
   -o-hyphens: auto;
   hyphens: auto;
 }
-/* line 100, ../sass/content-type-style/_webform.scss */
+/* line 108, ../sass/content-type-style/_webform.scss */
 form.webform-client-form .form-item {
   margin-bottom: 0.5em;
   margin-top: 0.5em;

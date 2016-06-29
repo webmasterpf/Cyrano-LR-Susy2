@@ -33,14 +33,19 @@ h1.titre_ficheform{
     color: $violet;
 }
 #colonne-1.fiche-formation{
-    ul li{
+    ul{
+        padding:0;
+        margin:0;
+        
+         li{
         padding: em(2px);
         list-style: square inside none;
         line-height: 1;
     }
+    }
     .complement_titre_fiche h3{
         font-size: small;
-        color: $rose-fushia;
+        color: $vert;
         text-align: right;
     }
 
@@ -52,7 +57,7 @@ h1.titre_ficheform{
             padding: em(2px);
             font-size: small;
             &:hover{
-                color: $vert;
+                color: $gris-clair;
                 background: $violet;
             }
         }
@@ -62,7 +67,10 @@ h1.titre_ficheform{
         font-size: small;
         a{
             text-decoration: none;color: $violet;padding: em(2px);
-            &:hover{color: $vert;background: $violet;}
+            &:hover{
+                color: $gris-clair;
+                  background: $violet;
+            }
         }
     }
 
@@ -95,6 +103,10 @@ h1.titre_ficheform{
         margin: 5px 0;
         padding: 0;
         display: block;
+        img{
+            border: 0.2em solid $vert;
+            padding: em(2px);
+        }
     }
 }
 

@@ -23,119 +23,79 @@ body .conteneur .conteneur-flex{
 body .conteneur {
     @include breakpoint ($desktop){
         #colonne-1.fiche-formation{}
-        #colonne-2.fiche-formation{@include border-R-violet;}
-        #colonne-3.fiche-formation{}
+        #colonne-2.fiche-formation{@include border-L-rose;}
+        
         }
     
 }
 /*######-------- ||| STYLE ||| --------######*/
 h1.titre_ficheform{
-    color: $orange;
+    color: $violet;
 }
-/*Bloc 1 - Zone 1-1*/
-.docs-utiles-ficheform{
-    background: $orange url(../images/bg_docs_ficheform.gif) no-repeat left top ;
-    margin: 0 auto;
-    max-width: 86%;
-    padding: em(20px) 0;
-     h3{
-    text-align: center;
-    color: white;
-    margin: em(10px) 0;
-
-}
- a{
-    color: $gris-anthracite;
-    display: list-item;
-    list-style-position: inside;
-    list-style-type: square;
-    text-decoration: none;
-    padding: 2px;
-&:hover{
-    background: $violet;
-    color: white;
-    padding: em(2px) em(2px) em(5px);
-}    
-}
-
- .filefield-icon {
-    display: none;
-}
-
-}
-
-table.table-docs-utiles-ficheform{
-      border: 0;
-    tr.even, tr.odd{
-        border: 0;
+#colonne-1.fiche-formation{
+    ul li{
+        padding: em(2px);
+        list-style: square inside none;
+        line-height: 1;
     }
-    tbody{
-        border: 0;
+    .complement_titre_fiche h3{
+        font-size: small;
+        color: $rose-fushia;
+        text-align: right;
     }
-    tr{
-        background: none repeat scroll 0 0 transparent;
-        border: 0 none;
-    }
-    td{
-        border: 0;
-    }
-}
 
-.taxo_ficheform{
-    background: $vert;
-    color: $gris-anthracite;
-    font-weight: bold;
-    margin: 0 auto;
-    text-align: center;
-    width: 65%;
-    font-size: small;
-}
-
-/*Bloc 1 - Zone 1-2*/
-.deco-ficheform {
-    @include arrondis;
-    width:95%;
-    margin: 0 auto;
-    img{
-        padding:0.3%;//pour passer en RWD
-        margin: 2% 0;
-        border: 0.2em solid $violet;
-        @include arrondis(0.8em);
-        @include PIE;
-        @include adaptable-img;
-
-    }
-}
-h2.philo-ficheform{
-   font-family: 'Josefin Slab',Trebuchet MS;
-    font-size: larger;
-    text-align: right;
-    color: $orange;
-    font-style: italic;
-    font-weight: 400;
-    margin: 0;
-    padding: 0;
-}
-
-#colonne-2.fiche-formation,#colonne-3.fiche-formation{
-    p{
-        padding: em(5px);
-    }
-    strong{
-        color: $orange;
-    }
-    a{
-        color: $orange;
-        &:hover{
+    .programme{
+        font-size: small;
+        a{
             text-decoration: none;
+            color: $violet;
+            padding: em(2px);
+            font-size: small;
+            &:hover{
+                color: $vert;
+                background: $violet;
+            }
         }
     }
 
+    .lien-ficheform{
+        font-size: small;
+        a{
+            text-decoration: none;color: $violet;padding: em(2px);
+            &:hover{color: $vert;background: $violet;}
+        }
+    }
+
+}
+
+
+#colonne-2.fiche-formation{
+    p{
+        line-height: 1.5em;
+        padding: 0.325em;
+        margin: 0;
+    }
     h2{
-        color: $orange-fonce;
+        font-size: inherit;
+        color: $violet;
+        padding: em(3px);
     }
     h3{
-        color: $bleu-turquoise;
         font-size: small;
+        color: $vert;
+        padding: em(2px);
+    }
+    ul li{
+        padding: em(2px);
+        list-style: square inside none;
+        line-height: 1;
+    }
+    .diapo_fiche{
+        max-width: 100%;
+        margin: 5px 0;
+        padding: 0;
+        display: block;
     }
 }
+
+.views-field-field-complement-info-formation-value{text-align: center;margin: 0 auto;width: 160px;}

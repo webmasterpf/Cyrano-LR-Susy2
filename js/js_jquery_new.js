@@ -97,7 +97,7 @@ $('table tr:even') .addClass('even');
  $(this).removeAttr('width');
  $(this).removeAttr('height');
  });
-    });
+   });
     
 
 

@@ -11,6 +11,9 @@
 //@include breakpoint ($desktop){}
 //@include breakpoint ($tablet){}
 
+//Consulter js_jquery_new.js pour controler le retrait de la taille des images produites par PHP 
+// inscrite dans le code HTML
+
 /*######-------- ||| ORDRE FLEXBOX ||| --------######*/
 body .conteneur .conteneur-flex{
     #colonne-1.CLASS_NAME{order:1;}
@@ -99,13 +102,15 @@ h1.titre_ficheform{
         line-height: 1;
     }
     .diapo_fiche{
-        max-width: 100%;
-        margin: 5px 0;
+        margin: em(5px) 0;
         padding: 0;
-        display: block;
+        
         img{
             border: em(1px) solid $vert;
             padding: em(2px);
+            zoom: 0.97;
+            margin: 0 auto;
+            display: block;
         }
     }
 }

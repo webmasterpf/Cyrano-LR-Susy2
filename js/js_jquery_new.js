@@ -91,7 +91,7 @@ jQuery(document).ready(function ()
 $('table tr:odd').addClass('odd');
 $('table tr:even') .addClass('even');
 
-//Action sur taille des images : retrait de toutes les tailles en dur de manière ciblée
+//Action sur taille des images : retrait de toutes les tailles en dur (HTML) de manière ciblée
  //$('img').each(function(){
     $('.fiche-formation img').each(function(){
  $(this).removeAttr('width');

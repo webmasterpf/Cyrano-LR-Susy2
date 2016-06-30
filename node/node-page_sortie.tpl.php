@@ -7,19 +7,19 @@
     <div class="node-inner">
         <!--______________COLONNE 1________________ -->
       
-        <div id="colonne-1" class="col1_layout_225_735 contenu-vdl">
+        <div id="colonne-1" class="col1_layout_3_9 contenu-vdl">
             <?php if ($title): /*copier le titre dans la colonne desirée*/?>
-            <h1 class="titre_page"><?php print $title; ?></h1>
+            <h1 class="titre-vdl"><?php print $title; ?></h1>
             <?php endif; ?>
         
-             <?php
-              $theme_path = drupal_get_path('theme', 'cyrano_lr');
-              include ($theme_path.'/includes/inc_region_col_C1.php');
+              <?php
+           global $theme_path;
+              include ($theme_path.'/includes/regions_inc/inc_region_col_1.php');
               ?>
         </div>
         <!--______________COLONNE 2________________ -->
          <!-- <pre> <?php //print_r($node); ?> </pre>-->   <!-- listage des variables du $content -->
-        <div id="colonne-2" class="col2_layout_225_735 contenu-vdl">
+        <div id="colonne-2" class="col2_layout_3_9 contenu-vdl">
 
             <?php print $picture; ?>
 
@@ -36,10 +36,10 @@
             <?php endif;?>
                 
             </div>
- <?php 
-  $theme_path = drupal_get_path('theme', 'cyrano_lr');
-include($theme_path .'/includes/inc_region_col_2.php');
-?>
+    <?php
+           global $theme_path;
+              include ($theme_path.'/includes/regions_inc/inc_region_col_2.php');
+              ?>
             
         <?php if ($terms): ?>
         <div class="taxonomy"><?php //print $terms; ?></div>

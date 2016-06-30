@@ -28,7 +28,7 @@
 <body class="<?php print $body_classes; ?>">
     <!-- TEMPLATE PAGE MAINTENANCE DE BASE  -->
   <div id="page">
-    <div id="header">
+    <header id="header">
       <div id="logo-title">
 
         <?php if (!empty($logo)): ?>
@@ -56,14 +56,12 @@
         </div>
       <?php endif; ?>
 
-    </div> <!-- /header -->
+    </header> <!-- /header -->
 
     <div id="content-global-maintenance" class="clear-block">
 
 
-        <div id="left-content" class="column sidebar">
-          <?php print $left; ?>
-        </div> <!-- /sidebar-left -->
+       
 
 
       <div id="main" class="column"><div id="main-squeeze">
@@ -79,19 +77,16 @@
       </div></div> <!-- /main-squeeze /main -->
 
 
-        <div id="left-content" class="column sidebar">
-          <?php print $right; ?>
-        </div> <!-- /sidebar-right -->
 
 
     </div> <!-- /container -->
 
-    <div id="footer-wrapper">
+    <footer id="footer">
       <div id="footer-maintenance">
         <?php print $footer_message; ?>
         <?php if (!empty($footer)): print $footer; endif; ?>
       </div> <!-- /footer -->
-    </div> <!-- /footer-wrapper -->
+    </footer> <!-- /footer-wrapper -->
 
   </div> <!-- /page -->
 

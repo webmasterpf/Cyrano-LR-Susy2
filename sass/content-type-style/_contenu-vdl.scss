@@ -26,9 +26,12 @@ body .conteneur {
 body .conteneur {
     @include breakpoint ($desktop){
         #colonne-2.contenu-vdl{
-            @include border-violet-orange;
+            @include border-L-vert;
         }
         }
     
 }
 /*######-------- ||| STYLE ||| --------######*/
+h1.titre-vdl{
+    color: $violet;
+}

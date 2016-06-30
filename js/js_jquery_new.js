@@ -98,6 +98,12 @@ $('table tr:even') .addClass('even');
  $(this).removeAttr('height');
  });
 
+//Changer la casse des titres H1 qui sont en Majuscule
+ $('h1').each(function(){
+var h1content = $(this).val().toLowerCase();
+$(this).text().toLowerCase();
+ });
+
    });
     
 

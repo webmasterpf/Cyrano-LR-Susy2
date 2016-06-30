@@ -23,8 +23,8 @@
 }
 /*STYLE MAINTENANCE OFFLINE*/
 #name-and-slogan-offline, #site-slogan-offline{
-     background: #ADC91F;
-    color: #606070;
+     background: $violet;//couleur du bg du slogan du site - à changer selon le site
+    color: $gris-clair;//couleur du texte du slogan du site - à changer selon le site
     padding: em(5px);
     -moz-border-radius: em(5px);
     -webkit-border-radius:em(5px);
@@ -34,24 +34,24 @@
 
 	margin:0 auto;
 	padding:0;
-	width: em(990px);
+	max-width: 100%;
 	background-color:white;
 
 }
 #footer-offline{
     margin:0 auto;
-	padding:em(5px) 0;
-	width:em(980px);
-	background: white url(../images/bg_footer.jpg) no-repeat bottom right;
-	text-align: left;
-	color: #9898a6;
-        height:50px;
-        font-size: 11px;
+    padding:em(5px) 0;
+    max-width: 100%;
+    background: white url(../images/bg_footer.jpg) no-repeat bottom right;
+    text-align: left;
+    color: $gris-clair-moyen;
+    height:auto;
+    
 }
 /*STYLE MAINTENANCE */
 #name-and-slogan-maintenance, #site-slogan-maintenance{
-    background: #ADC91F;
-    color: #606070;
+    background: $violet;//couleur du bg du slogan du site - à changer selon le site
+    color: $gris-clair;//couleur du texte du slogan du site - à changer selon le site
     padding: em(5px);
     -moz-border-radius: em(5px);
     -webkit-border-radius:em(5px);
@@ -63,40 +63,41 @@
 }
 #contentPage-maintenance{
 
-	margin:0 auto;
-	padding:10px 0;
-	width: 990px;
-	background-color:white;
-        text-align: center;
+    margin:0 auto;
+    padding:10px 0;
+    max-width: 100%;
+    background-color:white;
+    text-align: center;
 
 }
 #middle-content-maintenance{
     margin: 0 auto;
-    width: 900px;
+    max-width: 100%;
     display: block;
      background: transparent url(../images/zebra-gros-clair.gif) repeat top left;
      padding: em(15px) 0;
-}
-#middle-content-maintenance p{
+     p{
     background: white;
     padding: 5px;
     width: 75%;
     margin: 0 auto;
 }
+}
+
 #footer-maintenance{
     margin:0 auto;
-	padding:em(5px) 0;
-	width:980px;
-	background: white url(../images/bg_footer.jpg) no-repeat bottom right;
-	text-align: left;
-	color: #9898a6;
-        height:em(50px);
-        font-size: 11px;
-}
-#footer-maintenance a{
-    color: #606070;
-    text-decoration: none;
-}
-#footer-maintenance a:hover{
-    text-decoration: underline;
+    padding:em(10px) 0;
+    max-width: 100%;
+    background: white url(../images/bg_footer.jpg) no-repeat bottom right;
+    text-align: left;
+    color: #9898a6;
+    height:auto;
+    font-size: small;
+    a{
+        color: $gris-anthracite;
+        text-decoration: none;
+        &:hover{
+            text-decoration: underline;
+        }
+    }
 }

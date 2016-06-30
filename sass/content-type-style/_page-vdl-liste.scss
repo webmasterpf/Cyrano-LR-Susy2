@@ -23,105 +23,101 @@ body .conteneur {
 /*######-------- ||| BORDURES ||| --------######*/
 body .conteneur {
     @include breakpoint ($desktop){
-        #colonne-2.contenu-vdl,#colonne-2.page-liste-vdl{
-            @include border-orange-violet;
+        #colonne-2.vie-lycee{
+            @include border-L-violet;
         }
         }
     
 }
 /*######-------- ||| STYLE ||| --------######*/
-
-
-/*
-== Bloc filtre exposé de view pour l'année - archives ===
-*/
-/*Avec views 3 nvx noms de classes et ids : 
-views-exposed-form-liste-actu-lycee-block-5
-views-exposed-form-Actualites-liste-globale-block-1
-*/
-#views-exposed-form-liste-actu-lycee-block-5 ,
-#views-exposed-form-liste-actu-lycee-block-4 ,
-#views-exposed-form-liste-actu-lycee-block-3
-{
-    width: 45%;
-    margin: em(15px) auto;
-    background: transparent url(../images/zebra-gros-clair.gif) repeat ;
-    border-radius: em(5px);
-    padding: em(5px);
-
-
-    h3{
-        font-family: $AristaFont;
-        text-align: center;
-        color: $bleu-turquoise;
-        font-size: medium;
-        margin: 0;
-    }
-    select{
-        margin: 0 auto;
-    }
-    .date-views-filter-wrapper .form-item
-    {
-        margin: 0 0.75em;width: auto;display: block;
-     @include breakpoint ($desktop){
-         margin: 1px auto;width: em(160px);
-     }}
-    .views-exposed-form .views-exposed-widget .form-submit {
-        margin: 0 0 0 1.3em;
-        @include breakpoint ($desktop){
-            margin: 0 0 0 3.3em;
-        }
-        
-    }
-    .views-exposed-form label{
-        @include cesure-txt;
-        @include breakpoint ($mobile){
-            display: block;
-            width: 55%;
-            text-align: center;
-        }
-    }
-}
-
-/*Table pour la vue filtre dyn sur tid*/
-#table-bloc-vdl-liste{width: 95%;margin: 0 auto;border: 0;border-top: em(3px) solid $vert;}
-#table-bloc-vdl-liste thead th{
-    border-bottom: em(3px) solid $vert;
-}
-#table-bloc-vdl-liste tbody{}
-#table-bloc-vdl-liste tr{
-    margin: em(3px);
-    
-
-}
-#table-bloc-vdl-liste td{
-    background: white;
-    border: 0;
-    margin: em(2px) 0;
-    padding: em(5px);
-    display: block;
-    border-bottom: em(2px) solid $violet;
-    font-size: smaller;
-}
-#table-bloc-vdl-liste td:hover{
-    background: $vert;
-}
-#table-bloc-vdl-liste td img{border: em(2px) solid $violet;}
-#table-bloc-vdl-liste td img a{}
-#table-bloc-vdl-liste p{}
-#table-bloc-vdl-liste a{
+h1.page-liste-vdl{
     color: $violet;
+     font-size: x-large;
+     line-height: 1.0em;
+}
+.item-list-activites{
+    margin: 0;
+}
+.item-list-activites h3{
+    color: #93117E;
+    padding:5px;
+    text-align:center;
+    font-size: 13px;
+}
+.item-list-activites a{
+    color: black;
     text-decoration: none;
-    font-weight: bold;
-    @include cesure-txt;
 }
-#table-bloc-vdl-liste a:hover{
+.item-list-activites a:hover{
+    color: black;
     text-decoration: underline;
-    color: white;
 }
-#table-bloc-vdl-liste span.date-display-single,#table-bloc-vdl-liste .views-field-field-date-evenement-value{
-    text-align: right;
-    /*float: right;*/
-    font-style: italic;
+.item-list-activites ul{
+    list-style: none;
 }
-
+.item-list-activites li{
+    list-style: none;
+    background: #EFEFEF;
+    padding: 3px;
+    margin:0 3px 3px;
+}
+.item-list-activites .views-field-title a{
+    font-weight: bold;
+    text-transform: capitalize;
+    color: #AEC81F;
+}
+.view-liste-activites-lycee a.field-content{
+    color: red;
+}
+/*--------------------------------------------
+**********************************************
+        VUE BLOC VDL ARCHIVES FILTRE EXPOSE
+---------------------------------------------*/
+#vue-bloc-vdl-archives{
+    width: 99%;
+    margin: 0 auto;
+}
+#vue-bloc-vdl-archives table{
+    
+}
+#vue-bloc-vdl-archives tbody{}
+#vue-bloc-vdl-archives tr{
+    margin:5px 3px;
+    display: block;
+    background: #EFEFEF;
+}
+#vue-bloc-vdl-archives td{
+    padding: 3px;
+}
+#vue-bloc-vdl-archives td a{
+    font-weight: bold;
+    text-transform: capitalize;
+    color: #AEC81F;
+    text-decoration: none;
+}
+#vue-bloc-vdl-archives td a:hover{
+    color: black;
+}
+#vue-bloc-vdl-archives{}
+/*--------*/
+/* FLUX BLOC ACTU ASSO*/
+#block-aggregator-feed-1 {
+    margin: 5px 0;
+    color: #02A7D5;
+}
+#block-aggregator-feed-1 h3{
+   color: #E2017B;
+   padding: 2px;
+}
+#block-aggregator-feed-1 ul li{
+    list-style-position: inside;
+    list-style-type: square;
+   
+}
+#block-aggregator-feed-1 ul li a{
+    text-decoration: none;
+    color:#02A7D5;
+}
+#block-aggregator-feed-1 ul li a:hover{
+   color: #E2017B;
+}

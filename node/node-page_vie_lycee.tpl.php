@@ -36,7 +36,7 @@
                 
                <?php
            global $theme_path;
-              include ($theme_path.'/includes/regions_inc/inc_region_col_1.php');
+              include ($theme_path.'/includes/regions_inc/inc_region_col_2.php');
               ?>       
                 
             </div>

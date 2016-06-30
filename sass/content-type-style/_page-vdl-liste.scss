@@ -70,7 +70,9 @@ h1.titre_page_vdl{
             background: $violet;
         }
     }
-    form{margin: 0 6em;}
+    form{
+        margin: 0.5em auto;
+    }
     table{
         margin: 0 auto;
         display:table;
@@ -158,26 +160,20 @@ h1.titre_page_vdl{
 #vue-bloc-vdl-archives td a:hover{
     color: black;
 }
-#vue-bloc-vdl-archives{}
-/*--------*/
-/* FLUX BLOC ACTU ASSO*/
-#block-aggregator-feed-1 {
-    margin: 5px 0;
-    color: #02A7D5;
-}
-#block-aggregator-feed-1 h3{
-   color: #E2017B;
-   padding: 2px;
-}
-#block-aggregator-feed-1 ul li{
-    list-style-position: inside;
-    list-style-type: square;
-   
-}
-#block-aggregator-feed-1 ul li a{
-    text-decoration: none;
-    color:#02A7D5;
-}
-#block-aggregator-feed-1 ul li a:hover{
-   color: #E2017B;
+
+/*________ FOYER (liste) - FORMULAIRE EXPOSE ________*/
+#views-exposed-form-liste-actu-foyer-page-1,#views-exposed-form-liste-activites-lycee-block-2,#views-exposed-form-liste-activites-lycee-block-3
+{
+    width: 65%;margin: 0 auto;padding: 5px;
+    background:$violet;
+    @include rgba-background($violet,0.35);
+    
+    label
+    {
+        color: $gris-anthracite;text-align: center;
+        font-size: small;
+    }
+    select{
+        font-size: small;
+    }
 }

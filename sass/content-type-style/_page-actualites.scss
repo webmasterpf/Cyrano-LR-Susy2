@@ -181,85 +181,23 @@ h1.titre_page_actualites{
 }
 
 /*Bloc RSS*/
-#block-aggregator-feed-1{
-        background: #F29400 url(../images/bg_docs_ficheform.gif) no-repeat left top ;
-    margin: 0 auto;
-    width: 200px;
-    padding: 20px 0;
-}
-#block-aggregator-feed-1 h3{
-     text-align: center;
-    color: white;
-    margin: 10px 0;
-}
-#block-aggregator-feed-1 a{
-      color: #606070;
-    display: list-item;
-    list-style-position: inside;
-    list-style-type: square;
-    text-decoration: none;
-    padding: 2px;
-    text-indent: 2px;
-}
-#block-aggregator-feed-1 a:hover{
-      background: #911381;
-    color: white;
-    text-indent: 5px;
-}
-#block-aggregator-feed-1 ul li{
-    margin: 0;
-    list-style: none;
-}
-#block-aggregator-feed-1 li{
-    list-style: none;
-}
-#block-aggregator-feed-1 .filefield-icon {
-    display: none;
-}
-#bloc_grawitz_actus, #bloc_autre_event{
-    background-color: white;
-    background-image: url(../images/bg_grawitz_actus_ht.jpg),url(../images/bg_grawitz_actus_bas.jpg);
-    background-position: left -30%, left bottom;
-    background-repeat: no-repeat;
-    padding: em(5px) 0;
-    tr{}
-    td{}
+/*--------*//* FLUX BLOC ACTU ASSO*/
+#block-aggregator-feed-1 {
+    margin: em(5px) 0;
+    color: $bleu-turquoise;
     h3{
-        color: $violet;
-        font-family: $AristaFont;
-        padding: em(5px);
-        text-align: center;
-        font-size: x-large;
+        color: $rose-fushia;
+        padding: em(2px);
     }
-}
-
-
-table.table_ga ,table.table_ae{
-    margin:0 0.3em;
-    width: 100%;
-    tbody{
-        
-        border: 0;
-    }
-    td{
-        background: none repeat scroll 0 0 transparent;
-        border: 0 none;
-        display: block;
-        width: 90%;
-    }
-    tr{
-        background: none repeat scroll 0 0 transparent;
-        border: 0;
-    }
-    a{
-        text-decoration: none;
-        color: $gris-anthracite;
-        padding:0.3em;
-        font-size:small;
-        &:hover{
-            background: $orange;
-            color: white;
+    ul li{
+        list-style-position: inside;
+        list-style-type: square;
+        a{
+            text-decoration: none;
+            color:$bleu-turquoise;
+            &:hover{
+                color: $rose-fushia;
+            }
         }
     }
 }
- 

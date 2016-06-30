@@ -30,45 +30,105 @@ body .conteneur {
     
 }
 /*######-------- ||| STYLE ||| --------######*/
-h1.page-liste-vdl{
+h1.titre_page_vdl{
     color: $violet;
      font-size: x-large;
      line-height: 1.0em;
 }
-.item-list-activites{
-    margin: 0;
+#colonne-2.vie-lycee{
+    h2,h3,h4,p,ul,ol,img{
+        margin: 0;
+    }
+    h2{
+        color: $violet;
+        padding: em(5px);
+    }
+    h3{
+        color: $violet;
+        padding: em(5px);
+    }
+    h4{
+        padding: em(5px);
+        color: $violet;
+    }
+    p{
+        padding: em(5px);
+        line-height: 1.5em;
+            }
+    ul{
+        padding: em(5px);
+            }
+    img{
+        
+    }
+    a{
+        color: $violet;
+        text-decoration: none;
+        padding: em(2px);
+        &:hover{
+            color: white;
+            background: $violet;
+        }
+    }
+    form{margin: 0 6em;}
+    table{
+        margin: 0 auto;
+        display:table;
+        tbody{
+            max-width: 100%;
+
+            tr{
+                border:0;
+            }
+            tr.even{
+                background: $gris-clair;
+            }
+            tr.odd{
+                background: $gris-clair-moyen;
+                color: $gris-clair;
+            }
+            td{}
+        }
+    }
+    table#archives-info-admin,.item-list-activites{
+    
+    h3{
+        color: $violet;
+        padding:5px;
+        text-align:center;
+    }
+    a{
+        color: black;
+        text-decoration: none;
+        display:block;
+        &:hover{
+            color: black;
+            text-decoration: underline;
+            background: 0;
+        }
+    }
+
+    ul{
+        list-style: none;
+    }
+    li{
+        list-style: none;
+        background: $gris-clair;
+        padding: 3px;
+        margin:0 3px 3px;
+    }
+    .views-field-title a{
+        font-weight: bold;
+        text-transform: capitalize;
+        color: $vert;
+    }
+    .view-liste-activites-lycee a.field-content{
+        color: red;
+    }
 }
-.item-list-activites h3{
-    color: #93117E;
-    padding:5px;
-    text-align:center;
-    font-size: 13px;
 }
-.item-list-activites a{
-    color: black;
-    text-decoration: none;
-}
-.item-list-activites a:hover{
-    color: black;
-    text-decoration: underline;
-}
-.item-list-activites ul{
-    list-style: none;
-}
-.item-list-activites li{
-    list-style: none;
-    background: #EFEFEF;
-    padding: 3px;
-    margin:0 3px 3px;
-}
-.item-list-activites .views-field-title a{
-    font-weight: bold;
-    text-transform: capitalize;
-    color: #AEC81F;
-}
-.view-liste-activites-lycee a.field-content{
-    color: red;
-}
+
+
 /*--------------------------------------------
 **********************************************
         VUE BLOC VDL ARCHIVES FILTRE EXPOSE

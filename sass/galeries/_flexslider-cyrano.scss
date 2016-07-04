@@ -21,11 +21,11 @@ Indiquer les classes ou les IDs des enveloppes des galeries
                 background: $violet;//couleur defaut
                 @include ombrage(0.1em,0.1em,0.1em);
                 &:hover{
-                    background: $orange;
+                    background: $vert;
                 }
             }
             li a.flex-active  {
-                background: $orange;//couleur image active
+                background: $vert;//couleur image active
             }
         }
 

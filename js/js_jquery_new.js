@@ -104,6 +104,7 @@ var h1content = $(this).val().toLowerCase();
 $(this).text().toLowerCase();
  });
 
+$('h1').css('text-transform','lowercase');
    });
     
 

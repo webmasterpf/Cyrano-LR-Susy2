@@ -666,68 +666,72 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
 h1, .h1 {
   font-size: 1.25em;
 }
+/* line 48, ../sass/global/_typos.scss */
+h1::first-letter, .h1::first-letter {
+  text-transform: capitalize;
+}
 
-/* line 49, ../sass/global/_typos.scss */
+/* line 53, ../sass/global/_typos.scss */
 h2, .h2 {
   font-size: 1.125em;
 }
 
-/* line 53, ../sass/global/_typos.scss */
+/* line 57, ../sass/global/_typos.scss */
 h2.title {
   font-size: 1.125em;
 }
-/* line 58, ../sass/global/_typos.scss */
+/* line 62, ../sass/global/_typos.scss */
 h2.title a {
   color: #E3001C;
 }
 
-/* line 62, ../sass/global/_typos.scss */
+/* line 66, ../sass/global/_typos.scss */
 h3, .h3 {
   font-size: 1em;
 }
 
-/* line 65, ../sass/global/_typos.scss */
+/* line 69, ../sass/global/_typos.scss */
 h4, .h4 {
   font-size: 0.875em;
 }
 
-/* line 69, ../sass/global/_typos.scss */
+/* line 73, ../sass/global/_typos.scss */
 h5, .h5 {
   font-size: 0.75em;
 }
 
-/* line 73, ../sass/global/_typos.scss */
+/* line 77, ../sass/global/_typos.scss */
 h6, .h6 {
   font-size: 0.625em;
 }
 
 /*---------------- TITRES -----------------------*/
 /*------------ PARAGRAPHES ---------------*/
-/* line 95, ../sass/global/_typos.scss */
+/* line 99, ../sass/global/_typos.scss */
 .conteneur p {
   font-size: 0.625em;
   line-height: 2.4em;
 }
-/* line 101, ../sass/global/_typos.scss */
+/* line 105, ../sass/global/_typos.scss */
 .conteneur #header {
   font-size: 0.75em;
   line-height: 2em;
 }
-/* line 105, ../sass/global/_typos.scss */
+/* line 109, ../sass/global/_typos.scss */
 .conteneur .content-inner p, .conteneur .content-inner td, .conteneur .content-inner ul, .conteneur .content-inner ol {
   padding: 0.15em;
   font-size: small;
 }
-/* line 110, ../sass/global/_typos.scss */
+/* line 114, ../sass/global/_typos.scss */
 .conteneur .content-inner ul, .conteneur .content-inner ol {
   list-style: inside;
 }
-/* line 115, ../sass/global/_typos.scss */
+/* line 119, ../sass/global/_typos.scss */
 .conteneur #footer {
   font-size: 0.625em;
   line-height: 2.4em;
 }
-/* line 116, ../sass/global/_typos.scss */
+/* line 120, ../sass/global/_typos.scss */
 .conteneur #footer p {
   margin-bottom: 1.5em;
   font-size: x-small;
@@ -735,7 +739,7 @@ h6, .h6 {
   line-height: 1.4em;
 }
 
-/* line 125, ../sass/global/_typos.scss */
+/* line 129, ../sass/global/_typos.scss */
 .HPBasGauche p, .HPBasDroit p {
   font-size: 0.75em;
   line-height: 2em;
@@ -3437,8 +3441,8 @@ Layout pour les desktop.Breakpoint définit par variable dans _variables.scss
 /*STYLE MAINTENANCE OFFLINE*/
 /* line 25, ../sass/ui/_maintenance.scss */
 #name-and-slogan-offline, #site-slogan-offline {
-  background: #ADC91F;
-  color: #606070;
+  background: #911381;
+  color: #ECECED;
   padding: 0.3125em;
   -moz-border-radius: 0.3125em;
   -webkit-border-radius: 0.3125em;
@@ -3449,7 +3453,7 @@ Layout pour les desktop.Breakpoint définit par variable dans _variables.scss
 #contentPage-offline {
   margin: 0 auto;
   padding: 0;
-  width: 61.875em;
+  max-width: 100%;
   background-color: white;
 }
 
@@ -3457,19 +3461,18 @@ Layout pour les desktop.Breakpoint définit par variable dans _variables.scss
 #footer-offline {
   margin: 0 auto;
   padding: 0.3125em 0;
-  width: 61.25em;
+  max-width: 100%;
   background: white url(../images/bg_footer.jpg) no-repeat bottom right;
   text-align: left;
   color: #9898a6;
-  height: 50px;
-  font-size: 11px;
+  height: auto;
 }
 
 /*STYLE MAINTENANCE */
 /* line 52, ../sass/ui/_maintenance.scss */
 #name-and-slogan-maintenance, #site-slogan-maintenance {
-  background: #ADC91F;
-  color: #606070;
+  background: #911381;
+  color: #ECECED;
   padding: 0.3125em;
   -moz-border-radius: 0.3125em;
   -webkit-border-radius: 0.3125em;
@@ -3486,7 +3489,7 @@ Layout pour les desktop.Breakpoint définit par variable dans _variables.scss
 #contentPage-maintenance {
   margin: 0 auto;
   padding: 10px 0;
-  width: 990px;
+  max-width: 100%;
   background-color: white;
   text-align: center;
 }
@@ -3494,13 +3497,12 @@ Layout pour les desktop.Breakpoint définit par variable dans _variables.scss
 /* line 73, ../sass/ui/_maintenance.scss */
 #middle-content-maintenance {
   margin: 0 auto;
-  width: 900px;
+  max-width: 100%;
   display: block;
   background: transparent url(../images/zebra-gros-clair.gif) repeat top left;
   padding: 0.9375em 0;
 }
-
-/* line 80, ../sass/ui/_maintenance.scss */
+/* line 79, ../sass/ui/_maintenance.scss */
 #middle-content-maintenance p {
   background: white;
   padding: 5px;
@@ -3508,25 +3510,23 @@ Layout pour les desktop.Breakpoint définit par variable dans _variables.scss
   margin: 0 auto;
 }
 
-/* line 86, ../sass/ui/_maintenance.scss */
+/* line 87, ../sass/ui/_maintenance.scss */
 #footer-maintenance {
   margin: 0 auto;
-  padding: 0.3125em 0;
-  width: 980px;
+  padding: 0.625em 0;
+  max-width: 100%;
   background: white url(../images/bg_footer.jpg) no-repeat bottom right;
   text-align: left;
   color: #9898a6;
-  height: 3.125em;
-  font-size: 11px;
+  height: auto;
+  font-size: small;
 }
-
 /* line 96, ../sass/ui/_maintenance.scss */
 #footer-maintenance a {
   color: #606070;
   text-decoration: none;
 }
-
-/* line 100, ../sass/ui/_maintenance.scss */
+/* line 99, ../sass/ui/_maintenance.scss */
 #footer-maintenance a:hover {
   text-decoration: underline;
 }
@@ -5621,12 +5621,26 @@ body .conteneur #colonne-3.contenu-vdl {
 @media (min-width: 990px) {
   /* line 28, ../sass/content-type-style/_contenu-vdl.scss */
   body .conteneur #colonne-2.contenu-vdl {
-    border-left: 0.0625em solid #911381;
-    border-right: 0.0625em solid #F29400;
+    border-left: 0.0625em solid #ADC91F;
   }
 }
 
 /*######-------- ||| STYLE ||| --------######*/
+/* line 35, ../sass/content-type-style/_contenu-vdl.scss */
+h1.titre-vdl {
+  color: #911381;
+}
+
+/* line 40, ../sass/content-type-style/_contenu-vdl.scss */
+.contenu-vdl a {
+  color: #911381;
+  text-decoration: none;
+}
+/* line 43, ../sass/content-type-style/_contenu-vdl.scss */
+.contenu-vdl a:hover {
+  text-decoration: underline;
+}
+
 /*-------------------------------------|
 |       CONTENU CUSTOM               |
 |               NODE.TPL                      |
@@ -6293,11 +6307,11 @@ Indiquer les classes ou les IDs des enveloppes des galeries
 }
 /* line 23, ../sass/galeries/_flexslider-cyrano.scss */
 #colonne-2 .galerie-vdl .flexslider .flex-control-paging li a:hover {
-  background: #F29400;
+  background: #ADC91F;
 }
 /* line 27, ../sass/galeries/_flexslider-cyrano.scss */
 #colonne-2 .galerie-vdl .flexslider .flex-control-paging li a.flex-active {
-  background: #F29400;
+  background: #ADC91F;
 }
 /* line 34, ../sass/galeries/_flexslider-cyrano.scss */
 #colonne-2 .galerie-vdl .flexslider ul.flex-direction-nav {

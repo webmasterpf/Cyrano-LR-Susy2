@@ -34,4 +34,16 @@ body .conteneur {
 /*######-------- ||| STYLE ||| --------######*/
 h1.titre-vdl{
     color: $violet;
+  
+}
+.contenu-vdl{
+    a{
+        color: $violet;
+        text-decoration: none;
+        &:hover{
+            text-decoration: underline;
+        }
+        
+    }
+    
 }

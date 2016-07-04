@@ -99,13 +99,13 @@ $('table tr:even') .addClass('even');
  });
 
 //Changer la casse des titres H1 qui sont en Majuscule
- $('h1').each(function(){
-var h1content = $(this).val().toLowerCase();
-$(this).text().toLowerCase();
- });
-
 $('h1').css('text-transform','lowercase');
-   });
+
+//Retirer les style en ligne issus de copier/coller
+        $("#colonne-2 span").removeAttr("style");
+        $("#colonne-2 p").removeAttr("style");
+        $("#colonne-2 ul").removeAttr("style");
+    });
     
 
 

@@ -29,6 +29,12 @@
 
             <div class="content">
                 <?php   print $node->content['body']['#value'];/*déplacer le contenu dans la colonne désirée*/ ?>
+                        <?php if ($node->field_service_tiers[0]['view']): ?>
+            <div class="services-tiers">
+                    <?php  print $node->field_service_tiers[0]['view']  ?>
+            </div>
+            <?php endif;?>
+                
                     <?php if ($node->field_choix_galerie_vdl[0]['view']): ?>
             <div class="galerie-vdl">
                     <?php  print $node->field_choix_galerie_vdl[0]['view']  ?>

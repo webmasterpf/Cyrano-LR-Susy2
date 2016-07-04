@@ -2,7 +2,7 @@
 /* Ce template permet la création d'un layout multicolonne pour les pages de base, en permettant la disposition facile
  * des champs CCK custom, si nécessaires pour une page de base.
 */?>
-<!--______________NODE TPL POUR CONTENU PROJET.TPL CUSTOM________________ -->
+<!--______________NODE TPL POUR CONTENU PAGE_FORMATION_INTERNE.TPL CUSTOM________________ -->
 <div class="node <?php print $classes; ?>" id="node-<?php print $node->nid; ?>">
     <div class="node-inner">
         <!--______________COLONNE 1________________ -->
@@ -11,6 +11,11 @@
             <?php if ($title): /*copier le titre dans la colonne desirée*/?>
             <h1 class="titre-vdl"><?php print $title; ?></h1>
             <?php endif; ?>
+                  <?php if ($node->field_liens_vdl[0]['view']): ?>
+            <div class="liens-vdl">
+                    <?php  print $node->field_liens_vdl[0]['view']  ?>
+            </div>
+            <?php endif;?>
         
               <?php
            global $theme_path;
@@ -29,11 +34,23 @@
 
             <div class="content">
                 <?php   print $node->content['body']['#value'];/*déplacer le contenu dans la colonne désirée*/ ?>
-                        <?php if ($node->field_service_tiers[0]['view']): ?>
+                  <?php if ($node->field_fichier_joint_form_interne[0]['view']): ?>
+            <div class="fichiers-joints">
+                    <?php  print $node->field_fichier_joint_form_interne[0]['view']  ?>
+            </div>
+            <?php endif;?>
+                  <?php if ($node->field_service_tiers[0]['view']): ?>
             <div class="services-tiers">
                     <?php  print $node->field_service_tiers[0]['view']  ?>
             </div>
             <?php endif;?>
+                
+                      <?php if ($node->field_video_externe[0]['view']): ?>
+            <div class="services-tiers">
+                    <?php  print $node->field_video_externe[0]['view']  ?>
+            </div>
+            <?php endif;?>
+                
                 
                     <?php if ($node->field_choix_galerie_vdl[0]['view']): ?>
             <div class="galerie-vdl">

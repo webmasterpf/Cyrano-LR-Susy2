@@ -40,7 +40,7 @@ include($theme_path .'/includes/regions_inc/inc_region_col_1.php');
             <?php endif;?>
                 
                 <?php if ($node->field_service_tiers[0]['view']): ?>
-            <div id="service-tiers">
+            <div class="service-tiers">
                     <?php  print $node->field_service_tiers[0]['view']  ?>
             </div>
             <?php endif;?>

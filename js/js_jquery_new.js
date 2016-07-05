@@ -73,6 +73,51 @@
   $('div.content').children('table') .stacktable();
 });
 
+  
+//// Script pour Masonry - Views casse les __ utiliser -- plutôt
+
+//    jQuery(document).ready(function () 
+    jQuery(window).on('load', function()
+    {
+        console.log('Chargement des paramètres Masonry.js');
+        'use strict';
+        var $masonryContainer = $('.masonry');
+        //$masonryContainer.imagesLoaded(function () {
+            $masonryContainer.masonry({
+                itemSelector: '.masonry--item',
+                columnWidth: '.masonry--column',
+                gutter: '.masonry--gutter',
+                //percentPosition: true
+
+            });
+       // });
+        //GoogleFont cause un problème avec Masonry
+        (function () {
+            var wf = document.createElement('script');
+            wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
+                    '://ajax.googleapis.com/ajax/libs/webfont/1.4.2/webfont.js';
+            wf.type = 'text/javascript';
+            wf.async = 'true';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(wf, s);
+        })();
+    
+    });
+//// Script pour Wookmark (liste html)
+jQuery(document).ready(function (){
+  console.log('Chargement des paramètres Wookmark.js');   
+$('#wookmark-id li').wookmark({
+            autoResize: true, // This will auto-update the layout when the browser window is resized.
+            container: $('#tiles'), // Optional, used for some extra CSS styling
+            offset: 2, // Optional, the distance between grid items
+            itemWidth: 210 // Optional, the width of a grid item
+        });
+ 
+ window.onresize = function(event) {
+     $('#wookmark-id li').wookmark({offset: 2});
+ }
+  });
+  
 jQuery(document).ready(function ()
     {
         //<!-- Pour ajouter classes sur éléments du tableau -->
@@ -80,6 +125,7 @@ jQuery(document).ready(function ()
        //Ajout des classes pour styler les tableaux
 $('table tr:odd').addClass('odd');
 $('table tr:even') .addClass('even');
+$('#liste-vdl ul').attr("id", "wookmark-id");
 
 //Action sur taille des images : retrait de toutes les tailles en dur (HTML) de manière ciblée
  //$('img').each(function(){
@@ -90,27 +136,13 @@ $('table tr:even') .addClass('even');
 
 //Changer la casse des titres H1 qui sont en Majuscule
 $('h1').css('text-transform','lowercase');
+$('.titre-vdl a').css('text-transform','lowercase');
 
 //Retirer les style en ligne issus de copier/coller
         $("#colonne-2 span").removeAttr("style");
         $("#colonne-2 p").removeAttr("style");
         $("#colonne-2 ul").removeAttr("style");
+        $(".masonry-brick").removeAttr("style");//pas d'effet
+        
     });
-    
-//// Script pour Masonry - Views casse les __ utiliser -- plutôt
-//jQuery.noConflict();
-    jQuery(document).ready(function () {
-        console.log('Chargement des paramètres Masonry.js');
-        'use strict';
-        var $masonryContainer = $('.mansonry');
-        $masonryContainer.imagesLoaded(function () {
-            $masonryContainer.masonry({
-                itemSelector: '.masonry--item',
-                columnWidth: '.masonry--column',
-                gutter: '.masonry--gutter'
-                
-            });
-        });
-    });
-
 })(jQuery);

@@ -1,5 +1,5 @@
 /*
-Mise en place / forme des items du mur d'images'
+Mise en place / forme des items du mur d'images
 Indiquer les classes ou les IDs des enveloppes des galeries
 */
 
@@ -7,7 +7,15 @@ Indiquer les classes ou les IDs des enveloppes des galeries
 //@include breakpoint ($desktop){}
 //@include breakpoint ($tablet){}
 
-/*http://zellwk.com/blog/masonry-with-susy/*/
+/*
+<ul id="wookmark"> 			
+	<li style="height: 206px;"><img src= /><p>text</p></li>
+	<li style="height: 256px;"><img src= /><p>text</p></li>
+	<li style="height: 216px;"><img src= /><p>text</p></li>
+	<li style="height: 276px;"><img src= /><p>text</p></li> 
+	. . .
+</ul>
+*/
 .masonry {
     //@include container;
 /*@include span($mobilecol);
@@ -46,7 +54,11 @@ Indiquer les classes ou les IDs des enveloppes des galeries
 ---------------------*/
 /*Changer l'ID selon les besoins, en général la #colonne-2 doit convenir*/
 #colonne-1,#colonne-2{
-    .tooltip-vdl{}
+    .wookmark{
+        ul li{
+            list-style: none;
+        }
+        .tooltip-vdl{}
 /*style du terme de taxonomie selon son ID
 Vocabulaire: Type d'évènement
 Action: 3
@@ -95,5 +107,7 @@ div.img-vdl{
         }   
     }
 }
+    }
+    
 
 }

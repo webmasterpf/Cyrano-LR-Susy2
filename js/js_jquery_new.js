@@ -35,16 +35,6 @@
 
 
 
-//// Script pour Masonry
-// jQuery(document).ready(function (){
-//        var $masonryContainer = $('.content-page-globale');
-//        $masonryContainer.masonry({
-//            columnWidth: '.masonry__column',
-//            gutter: '.masonry__gutter',
-//            itemSelector: '.masonry__item,.masonry--item'
-//        });
-//    });
-
     jQuery(window).load(function () {
         //Pour une galerie standard
         console.log('Chargement de Flexslider');
@@ -107,6 +97,20 @@ $('h1').css('text-transform','lowercase');
         $("#colonne-2 ul").removeAttr("style");
     });
     
-
+//// Script pour Masonry - Views casse les __ utiliser -- plutôt
+//jQuery.noConflict();
+    jQuery(document).ready(function () {
+        console.log('Chargement des paramètres Masonry.js');
+        'use strict';
+        var $masonryContainer = $('.mansonry');
+        $masonryContainer.imagesLoaded(function () {
+            $masonryContainer.masonry({
+                itemSelector: '.masonry--item',
+                columnWidth: '.masonry--column',
+                gutter: '.masonry--gutter'
+                
+            });
+        });
+    });
 
 })(jQuery);

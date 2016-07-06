@@ -18,9 +18,12 @@ Indiquer les classes ou les IDs des enveloppes des galeries
     @include breakpoint ($desktop){
     @include colonnes(4);
     }
+    @include breakpoint ($tablet){
+        @include colonnes(3);
+    }
 }
 
-.item { /* Masonry bricks or child elements */
+.item { /* Masonry bricks or child elements - classe ajoutée dans la vue */
     background-color: #eee;
     display: inline-block;
     margin: 0 0 em(10px);

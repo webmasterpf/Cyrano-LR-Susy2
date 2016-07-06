@@ -126,6 +126,9 @@ jQuery(document).ready(function ()
 $('table tr:odd').addClass('odd');
 $('table tr:even') .addClass('even');
 $('#liste-vdl ul').attr("id", "wookmark-id");
+$('#liste-vdl div.view-content').attr("data-columns","");
+
+
 
 //Action sur taille des images : retrait de toutes les tailles en dur (HTML) de manière ciblée
  //$('img').each(function(){

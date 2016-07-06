@@ -68,6 +68,7 @@ span{
         position: relative;
         top: em(20px);
         margin: 0 em(10px);
+        z-index: 20;
     }
     &.titre-vdl{
         a{
@@ -88,22 +89,35 @@ span{
     }
     &.vdl-3{background: $vert;}
     &.vdl-5{background: $violet;}
-    &.vdl-6{background: $violet;}
-    &.vdl-7{background: $bleu-turquoise;}
+    &.vdl-6{background: $bleu-turquoise;}
+    &.vdl-7{background: $vert;}
     &.vdl-8{background: $violet;}
-    &.vdl-9{background: $rouge;}
-    &.vdl-12{background: $gris-anthracite;}
+    &.vdl-9{background: $bleu-turquoise;}
+    &.vdl-12{background: $vert;}
     &.vdl-24{background: $violet;}
 }
 div.img-vdl{
+    &:hover{
+    &.vdl-3{background: $vert;}
+    &.vdl-5{background: $violet;}
+    &.vdl-6{background: $bleu-turquoise;}
+    &.vdl-7{background: $vert;}
+    &.vdl-8{background: $violet;}
+    &.vdl-9{background: $bleu-turquoise;}
+    &.vdl-12{background: $vert;}
+    &.vdl-24{background: $violet;}
+    }
     img{
         padding: 0;
-    margin: 0 auto;
-    display: block;
-    object-fit: cover;//ne déforme pas l'image mais la coupe à la différence de contain
-             }
-        a{
-            &:hover{
+        margin: 0 auto;
+        display: block;
+        object-fit: cover;//ne déforme pas l'image mais la coupe à la différence de contain
+        &:hover{
+             @include opacity(0.3);
+        }
+    }
+    a{
+        &:hover{
             background: transparent;
         }   
     }

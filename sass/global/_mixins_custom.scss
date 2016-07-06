@@ -6,7 +6,12 @@
 @mixin PIE {
     behavior: url(/sites/all/libraries/PIE/PIE.htc);
 }
-
+/*-------- LAYOUT CSS3 --------------*/
+@mixin colonnes($nb-col:3){
+     -webkit-column-count:$nb-col;
+     -moz-column-count:$nb-col;
+          column-count:$nb-col;
+}
 /*------- GESTION DU TEXTE -------------*/
 @mixin cesure-txt{
     -webkit-hyphens: auto;
@@ -14,6 +19,8 @@
     -ms-hyphens: auto;
     -o-hyphens: auto;
     hyphens: auto;
+    text-overflow: ellipsis;
+    word-wrap: break-word;
 }
 
 /*-------- IMAGES ADAPTABLES -----------*/

@@ -118,14 +118,17 @@ $('#wookmark-id li').wookmark({
  }
   });
   
-jQuery(document).ready(function ()
+//jQuery(document).ready(function ()
+jQuery(window).on('load', function()
     {
         //<!-- Pour ajouter classes sur éléments du tableau -->
         console.log('Actions sur divers éléments : tableaux, images...');
        //Ajout des classes pour styler les tableaux
 $('table tr:odd').addClass('odd');
 $('table tr:even') .addClass('even');
+//Ajout d'attributs pour mur image JS
 $('#liste-vdl ul').attr("id", "wookmark-id");
+$('#liste-vdl div.view-content').attr("id","grid");
 $('#liste-vdl div.view-content').attr("data-columns","");
 
 
@@ -137,9 +140,10 @@ $('#liste-vdl div.view-content').attr("data-columns","");
  $(this).removeAttr('height');
  });
 
-//Changer la casse des titres H1 qui sont en Majuscule
+//Changer la casse des titres H1 qui sont en Majuscules
 $('h1').css('text-transform','lowercase');
 $('.titre-vdl a').css('text-transform','lowercase');
+$('#liste-vdl span.titre-vdl > a').css('text-transform','lowercase');
 
 //Retirer les style en ligne issus de copier/coller
         $("#colonne-2 span").removeAttr("style");

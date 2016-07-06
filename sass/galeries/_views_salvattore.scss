@@ -1,5 +1,5 @@
 /*
-Mise en place / forme des items du mur d'images'
+Mise en place / forme des items du mur d'images
 Indiquer les classes ou les IDs des enveloppes des galeries
 */
 
@@ -7,51 +7,25 @@ Indiquer les classes ou les IDs des enveloppes des galeries
 //@include breakpoint ($desktop){}
 //@include breakpoint ($tablet){}
 
-/*http://zellwk.com/blog/masonry-with-susy/*/
-.masonry {
-@include span($mobilecol);
-       
-        @include clearfix;
-        @include breakpoint ($tablet){
-            @include span(8 of $tabletcol);
-            
-        }
-        @include breakpoint ($desktop){
-           @include span(12 of $desktopcol);
-            @include gutters(.3em);/*Toujours en dernier pour override de la taille des gouttieres*/
-        }
-        //Pour orientation paysage
-         @include breakpoint ($tabletlandscape){
-           @include span(3 of $tabletcol-landcsape);
-            
-        }
+/*
+<div id="grid" data-columns>
+	<div>Item #1</div>
+	<div>Item #2</div>
+	<div>Item #3</div>
+	…
+	<div>Item #20</div>
+</div>
+*/
+
+.vdl-global{
+    .view-content[data-columns]::before {
+        content: '3 .column.size-1of3';
+    }
 }
-.masonry--gutter {
-  width: gutter();
-}
-.masonry--column {
-  width: span(3); 
-}
-.masonry--item {
-    @include gallery(3 of $mobilecol);
-       
-        @include clearfix;
-        @include breakpoint ($tablet){
-            @include gallery(3 of $tabletcol);
-            
-        }
-        @include breakpoint ($desktop){
-   @include gallery(3 of $desktopcol);
-        }
-        //Pour orientation paysage
-         @include breakpoint ($tabletlandscape){
-        @include gallery(3 of $tabletcol-landcsape);
-            
-        }
-   
-  //width: span(3);
-  margin-top: gutter();
-}
+ #grid[data-columns]::before {
+        content: '3 .column.size-1of3';
+    }
+
 
 /*--------------------
 |  MISE EN FORME|
@@ -60,7 +34,11 @@ Indiquer les classes ou les IDs des enveloppes des galeries
 ---------------------*/
 /*Changer l'ID selon les besoins, en général la #colonne-2 doit convenir*/
 #colonne-1,#colonne-2{
-    .tooltip-vdl{}
+    .vdl-global{
+        ul li{
+            list-style: none;
+        }
+        .tooltip-vdl{}
 /*style du terme de taxonomie selon son ID
 Vocabulaire: Type d'évènement
 Action: 3
@@ -109,5 +87,7 @@ div.img-vdl{
         }   
     }
 }
+    }
+    
 
 }

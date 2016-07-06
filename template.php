@@ -118,8 +118,11 @@ function cyranod6_lr_susy2_preprocess_page(&$vars){
     drupal_add_js(drupal_get_path('theme', 'cyranod6_lr_susy2') . '/js/jquery_plugin/stacktable.min.js', 'theme');
     drupal_add_js(drupal_get_path('theme', 'cyranod6_lr_susy2') . '/js/jquery_plugin/wookmark.min.js', 'theme');
     drupal_add_js(drupal_get_path('theme', 'cyranod6_lr_susy2') . '/js/jquery_plugin/jquery.masonry.min.js', 'theme');
+    //drupal_add_js(drupal_get_path('theme', 'cyranod6_lr_susy2') . '/js/jquery_plugin/salvattore.min.js', 'theme');
+    drupal_add_js(drupal_get_path('theme', 'cyranod6_lr_susy2') . '/js/jquery_plugin/salvattore.js', 'theme');
     //drupal_add_js(drupal_get_path('theme', 'cyranod6_lr_susy2') . '/3rdparty/buttons/js/buttons.js', 'theme');
     drupal_add_js(drupal_get_path('theme', 'cyranod6_lr_susy2') . '/js/js_jquery_new.js', 'theme');
+    drupal_add_js(drupal_get_path('theme', 'cyranod6_lr_susy2') . '/js/jquery_plugin/salvattore.js', 'theme');
     //  mise à disposition des 2 versions de jQuery
     drupal_add_js(drupal_get_path('theme', 'cyranod6_lr_susy2') . '/js/jquery_exit.js', 'theme');
    

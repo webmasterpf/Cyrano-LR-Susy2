@@ -622,6 +622,7 @@ th {
 ----- MIXINS DE STYLES PROVENCE FORMATION -----
 ¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤*/
 /*---------- PIE pour CSS3 IE --------------*/
+/*-------- LAYOUT CSS3 --------------*/
 /*------- GESTION DU TEXTE -------------*/
 /*-------- IMAGES ADAPTABLES -----------*/
 /*--------- MASQUAGE ELEMENTS ---------*/
@@ -924,7 +925,7 @@ aside.navStatic select {
     margin: 0;
   }
   @-moz-document url-prefix() {
-    /* line 23, ../sass/global/_mixins_custom.scss */
+    /* line 30, ../sass/global/_mixins_custom.scss */
     aside.navStatic ul.horizontal-nav li a img img {
       width: 100%;
       max-width: 100%;
@@ -1055,7 +1056,7 @@ body .conteneur .content-top img {
   max-width: 100%;
 }
 @-moz-document url-prefix() {
-  /* line 23, ../sass/global/_mixins_custom.scss */
+  /* line 30, ../sass/global/_mixins_custom.scss */
   body .conteneur .content-top img img {
     width: 100%;
     max-width: 100%;
@@ -1093,7 +1094,7 @@ aside.content_top {
   max-width: 100%;
 }
 @-moz-document url-prefix() {
-  /* line 23, ../sass/global/_mixins_custom.scss */
+  /* line 30, ../sass/global/_mixins_custom.scss */
   .node-inner img img, .node-inner iframe img, .node-inner object img, .node-inner embed img {
     width: 100%;
     max-width: 100%;
@@ -2691,7 +2692,7 @@ body .conteneur #header .headBas .headSearch {
   margin: 0;
 }
 @-moz-document url-prefix() {
-  /* line 23, ../sass/global/_mixins_custom.scss */
+  /* line 30, ../sass/global/_mixins_custom.scss */
   .logoHead img img {
     width: 100%;
     max-width: 100%;
@@ -2884,7 +2885,7 @@ aside .annonce-container .annonce img {
   max-width: 100%;
 }
 @-moz-document url-prefix() {
-  /* line 23, ../sass/global/_mixins_custom.scss */
+  /* line 30, ../sass/global/_mixins_custom.scss */
   aside.annonce-container .annonce img img,
   aside .annonce-container .annonce img img {
     width: 100%;
@@ -3689,7 +3690,7 @@ body .conteneur .HPDiapo aside.DiapoPanoHP img {
   max-width: 100%;
 }
 @-moz-document url-prefix() {
-  /* line 23, ../sass/global/_mixins_custom.scss */
+  /* line 30, ../sass/global/_mixins_custom.scss */
   body .conteneur .HPDiapo aside.DiapoPanoHP img img {
     width: 100%;
     max-width: 100%;
@@ -3719,7 +3720,7 @@ body .conteneur .HPDiapo aside.DiapoPanoHP img {
     max-width: 100%;
   }
   @-moz-document url-prefix() {
-    /* line 23, ../sass/global/_mixins_custom.scss */
+    /* line 30, ../sass/global/_mixins_custom.scss */
     body .conteneur .HPDiapo aside.DiapoPanoHP img img {
       width: 100%;
       max-width: 100%;
@@ -3881,7 +3882,7 @@ body .conteneur .HPDroite3 {
   max-width: 100%;
 }
 @-moz-document url-prefix() {
-  /* line 23, ../sass/global/_mixins_custom.scss */
+  /* line 30, ../sass/global/_mixins_custom.scss */
   .HPDiapoVerticalGauche iframe img {
     width: 100%;
     max-width: 100%;
@@ -4200,7 +4201,7 @@ body .conteneur .conteneur-flex .HPDiapoVerticalGauche img {
   max-width: 100%;
 }
 @-moz-document url-prefix() {
-  /* line 23, ../sass/global/_mixins_custom.scss */
+  /* line 30, ../sass/global/_mixins_custom.scss */
   body .conteneur .conteneur-flex .HPDiapoVerticalGauche img img {
     width: 100%;
     max-width: 100%;
@@ -4227,7 +4228,7 @@ body .conteneur .conteneur-flex .HPDroite img {
   max-width: 100%;
 }
 @-moz-document url-prefix() {
-  /* line 23, ../sass/global/_mixins_custom.scss */
+  /* line 30, ../sass/global/_mixins_custom.scss */
   body .conteneur .conteneur-flex .HPDroite img img {
     width: 100%;
     max-width: 100%;
@@ -4336,7 +4337,7 @@ aside.DiapoHP img {
   max-width: 100%;
 }
 @-moz-document url-prefix() {
-  /* line 23, ../sass/global/_mixins_custom.scss */
+  /* line 30, ../sass/global/_mixins_custom.scss */
   aside.DiapoHP img img {
     width: 100%;
     max-width: 100%;
@@ -4376,7 +4377,7 @@ aside.DiapoHP img {
   max-width: 100%;
 }
 @-moz-document url-prefix() {
-  /* line 23, ../sass/global/_mixins_custom.scss */
+  /* line 30, ../sass/global/_mixins_custom.scss */
   .vue-diapo-hp-img img img {
     width: 100%;
     max-width: 100%;
@@ -4471,7 +4472,7 @@ h1.titre-lycee, h1.title-classes {
   max-width: 100%;
 }
 @-moz-document url-prefix() {
-  /* line 23, ../sass/global/_mixins_custom.scss */
+  /* line 30, ../sass/global/_mixins_custom.scss */
   #colonne-1.page-lycee img img {
     width: 100%;
     max-width: 100%;
@@ -4605,7 +4606,7 @@ table.doc-joint-lycee tr.even, table.doc-joint-lycee tr.odd {
   max-width: 100%;
 }
 @-moz-document url-prefix() {
-  /* line 23, ../sass/global/_mixins_custom.scss */
+  /* line 30, ../sass/global/_mixins_custom.scss */
   .vdl-galerie-image .gallery-slides img img {
     width: 100%;
     max-width: 100%;
@@ -5846,6 +5847,8 @@ form.webform-client-form input[type="submit"] {
   -ms-hyphens: auto;
   -o-hyphens: auto;
   hyphens: auto;
+  text-overflow: ellipsis;
+  word-wrap: break-word;
 }
 /* line 108, ../sass/content-type-style/_webform.scss */
 form.webform-client-form .form-item {
@@ -6033,7 +6036,7 @@ VIEWS 3 CYCLE: DIAPO CONTENU ===================================
   max-width: 100%;
 }
 @-moz-document url-prefix() {
-  /* line 23, ../sass/global/_mixins_custom.scss */
+  /* line 30, ../sass/global/_mixins_custom.scss */
   .galerie .views_slideshow_cycle_slide img img {
     width: 100%;
     max-width: 100%;
@@ -6225,52 +6228,37 @@ Indiquer les classes ou les IDs des enveloppes des galeries
 
 /*######-------- ||| POSITION NAV ||| --------######*/
 /*
-Mise en place / forme des items du mur d'images
+Mise en place / forme des items du mur d'images'
 Indiquer les classes ou les IDs des enveloppes des galeries
 */
-/*
-<ul id="wookmark"> 			
-	<li style="height: 206px;"><img src= /><p>text</p></li>
-	<li style="height: 256px;"><img src= /><p>text</p></li>
-	<li style="height: 216px;"><img src= /><p>text</p></li>
-	<li style="height: 276px;"><img src= /><p>text</p></li> 
-	. . .
-</ul>
-*/
-/* line 19, ../sass/galeries/_views_wookmark.scss */
-.masonry {
-  /*@include span($mobilecol);
-         
-          @include clearfix;
-          @include breakpoint ($tablet){
-              @include span(8 of $tabletcol);
-              
-          }
-          @include breakpoint ($desktop){
-             @include span(12 of $desktopcol);
-              @include gutters(.3em);Toujours en dernier pour override de la taille des gouttieres
-          }
-          //Pour orientation paysage
-           @include breakpoint ($tabletlandscape){
-             @include span(3 of $tabletcol-landcsape);
-              
-          }*/
+/*http://w3bits.com/css-masonry/*/
+/*-------------------------
+|  LAYOUT FULL CSS  |
+--------------------------*/
+/* line 15, ../sass/galeries/_views_mur_image_fullcss.scss */
+.vdl-global .view-content {
+  /* Masonry container */
+  -webkit-column-count: 1;
+  -moz-column-count: 1;
+  column-count: 1;
+  column-gap: 5.10204%;
+}
+@media (min-width: 990px) {
+  /* line 15, ../sass/galeries/_views_mur_image_fullcss.scss */
+  .vdl-global .view-content {
+    -webkit-column-count: 4;
+    -moz-column-count: 4;
+    column-count: 4;
+  }
 }
 
-/* line 38, ../sass/galeries/_views_wookmark.scss */
-.masonry--gutter {
-  width: 5.10204%;
-}
-
-/* line 41, ../sass/galeries/_views_wookmark.scss */
-.masonry--column {
-  width: 47.44898%;
-}
-
-/* line 44, ../sass/galeries/_views_wookmark.scss */
-.masonry--item {
-  width: 47.44898%;
-  margin-top: 5.10204%;
+/* line 23, ../sass/galeries/_views_mur_image_fullcss.scss */
+.item {
+  /* Masonry bricks or child elements */
+  background-color: #eee;
+  display: inline-block;
+  margin: 0 0 0.625em;
+  width: 100%;
 }
 
 /*--------------------
@@ -6279,8 +6267,8 @@ Indiquer les classes ou les IDs des enveloppes des galeries
 |  DE LA VUE        |
 ---------------------*/
 /*Changer l'ID selon les besoins, en général la #colonne-2 doit convenir*/
-/* line 57, ../sass/galeries/_views_wookmark.scss */
-#colonne-1 .wookmark, #colonne-2 .wookmark {
+/* line 36, ../sass/galeries/_views_mur_image_fullcss.scss */
+#colonne-1, #colonne-2 {
   /*style du terme de taxonomie selon son ID
   Vocabulaire: Type d'évènement
   Action: 3
@@ -6292,64 +6280,88 @@ Indiquer les classes ou les IDs des enveloppes des galeries
   Revue de presse : 5
   Sortie : 8*/
 }
-/* line 58, ../sass/galeries/_views_wookmark.scss */
-#colonne-1 .wookmark ul li, #colonne-2 .wookmark ul li {
-  list-style: none;
+/* line 39, ../sass/galeries/_views_mur_image_fullcss.scss */
+#colonne-1 .vdl-global .view-filters .views-exposed-form, #colonne-2 .vdl-global .view-filters .views-exposed-form {
+  font-size: small;
 }
-/* line 74, ../sass/galeries/_views_wookmark.scss */
-#colonne-1 .wookmark span.vdl-tag, #colonne-2 .wookmark span.vdl-tag {
+/* line 42, ../sass/galeries/_views_mur_image_fullcss.scss */
+#colonne-1 .vdl-global .view-filters label, #colonne-2 .vdl-global .view-filters label {
+  font-size: small;
+}
+/* line 61, ../sass/galeries/_views_mur_image_fullcss.scss */
+#colonne-1 span.vdl-tag, #colonne-2 span.vdl-tag {
   font-size: xx-small;
   padding: 0.1875em;
   color: #ECECED;
-  position: absolute;
-  margin: 0 0.1875em;
+  position: relative;
+  top: 1.25em;
+  margin: 0 0.625em;
 }
-/* line 82, ../sass/galeries/_views_wookmark.scss */
-#colonne-1 .wookmark span.titre-vdl a, #colonne-2 .wookmark span.titre-vdl a {
+/* line 70, ../sass/galeries/_views_mur_image_fullcss.scss */
+#colonne-1 span.titre-vdl a, #colonne-2 span.titre-vdl a {
   color: #911381;
+  text-align: center;
+  display: block;
+  font-size: small;
+  text-decoration: none;
+  text-transform: lowercase;
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  -ms-hyphens: auto;
+  -o-hyphens: auto;
+  hyphens: auto;
+  text-overflow: ellipsis;
+  word-wrap: break-word;
 }
-/* line 84, ../sass/galeries/_views_wookmark.scss */
-#colonne-1 .wookmark span.titre-vdl a::first-letter, #colonne-1 .wookmark span.titre-vdl a:first-letter, #colonne-2 .wookmark span.titre-vdl a::first-letter, #colonne-2 .wookmark span.titre-vdl a:first-letter {
+/* line 78, ../sass/galeries/_views_mur_image_fullcss.scss */
+#colonne-1 span.titre-vdl a::first-letter, #colonne-1 span.titre-vdl a:first-letter, #colonne-2 span.titre-vdl a::first-letter, #colonne-2 span.titre-vdl a:first-letter {
   text-transform: capitalize;
 }
-/* line 88, ../sass/galeries/_views_wookmark.scss */
-#colonne-1 .wookmark span.titre-vdl::first-letter, #colonne-1 .wookmark span.titre-vdl:first-letter, #colonne-2 .wookmark span.titre-vdl::first-letter, #colonne-2 .wookmark span.titre-vdl:first-letter {
+/* line 82, ../sass/galeries/_views_mur_image_fullcss.scss */
+#colonne-1 span.titre-vdl::first-letter, #colonne-1 span.titre-vdl:first-letter, #colonne-2 span.titre-vdl::first-letter, #colonne-2 span.titre-vdl:first-letter {
   text-transform: capitalize;
 }
-/* line 92, ../sass/galeries/_views_wookmark.scss */
-#colonne-1 .wookmark span.vdl-3, #colonne-2 .wookmark span.vdl-3 {
+/* line 86, ../sass/galeries/_views_mur_image_fullcss.scss */
+#colonne-1 span.vdl-3, #colonne-2 span.vdl-3 {
   background: #ADC91F;
 }
-/* line 93, ../sass/galeries/_views_wookmark.scss */
-#colonne-1 .wookmark span.vdl-5, #colonne-2 .wookmark span.vdl-5 {
+/* line 87, ../sass/galeries/_views_mur_image_fullcss.scss */
+#colonne-1 span.vdl-5, #colonne-2 span.vdl-5 {
   background: #911381;
 }
-/* line 94, ../sass/galeries/_views_wookmark.scss */
-#colonne-1 .wookmark span.vdl-6, #colonne-2 .wookmark span.vdl-6 {
+/* line 88, ../sass/galeries/_views_mur_image_fullcss.scss */
+#colonne-1 span.vdl-6, #colonne-2 span.vdl-6 {
   background: #911381;
 }
-/* line 95, ../sass/galeries/_views_wookmark.scss */
-#colonne-1 .wookmark span.vdl-7, #colonne-2 .wookmark span.vdl-7 {
+/* line 89, ../sass/galeries/_views_mur_image_fullcss.scss */
+#colonne-1 span.vdl-7, #colonne-2 span.vdl-7 {
   background: #01ABCF;
 }
-/* line 96, ../sass/galeries/_views_wookmark.scss */
-#colonne-1 .wookmark span.vdl-8, #colonne-2 .wookmark span.vdl-8 {
+/* line 90, ../sass/galeries/_views_mur_image_fullcss.scss */
+#colonne-1 span.vdl-8, #colonne-2 span.vdl-8 {
   background: #911381;
 }
-/* line 97, ../sass/galeries/_views_wookmark.scss */
-#colonne-1 .wookmark span.vdl-9, #colonne-2 .wookmark span.vdl-9 {
+/* line 91, ../sass/galeries/_views_mur_image_fullcss.scss */
+#colonne-1 span.vdl-9, #colonne-2 span.vdl-9 {
   background: #E3001C;
 }
-/* line 98, ../sass/galeries/_views_wookmark.scss */
-#colonne-1 .wookmark span.vdl-12, #colonne-2 .wookmark span.vdl-12 {
+/* line 92, ../sass/galeries/_views_mur_image_fullcss.scss */
+#colonne-1 span.vdl-12, #colonne-2 span.vdl-12 {
   background: #606070;
 }
-/* line 99, ../sass/galeries/_views_wookmark.scss */
-#colonne-1 .wookmark span.vdl-24, #colonne-2 .wookmark span.vdl-24 {
+/* line 93, ../sass/galeries/_views_mur_image_fullcss.scss */
+#colonne-1 span.vdl-24, #colonne-2 span.vdl-24 {
   background: #911381;
 }
-/* line 105, ../sass/galeries/_views_wookmark.scss */
-#colonne-1 .wookmark div.img-vdl a:hover, #colonne-2 .wookmark div.img-vdl a:hover {
+/* line 96, ../sass/galeries/_views_mur_image_fullcss.scss */
+#colonne-1 div.img-vdl img, #colonne-2 div.img-vdl img {
+  padding: 0;
+  margin: 0 auto;
+  display: block;
+  object-fit: cover;
+}
+/* line 103, ../sass/galeries/_views_mur_image_fullcss.scss */
+#colonne-1 div.img-vdl a:hover, #colonne-2 div.img-vdl a:hover {
   background: transparent;
 }
 

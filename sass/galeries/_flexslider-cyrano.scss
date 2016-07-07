@@ -9,7 +9,7 @@ Indiquer les classes ou les IDs des enveloppes des galeries
 
 //indiquer la classe qui gère flexslider
 #colonne-2 .galerie-vdl{
-    .flexslider{
+    .flexslider, .flexslider-classic{
         background : transparent;
         border: 0;
         .flex-control-nav{
@@ -70,7 +70,8 @@ Indiquer les classes ou les IDs des enveloppes des galeries
         }
     }
     //Pour le style des galeries quelques soit le type de nav
-    .flexslider , .flexslider-thumbs{
+    
+    .flexslider , .flexslider-thumbs, .flexslider-classic{
         width: 85%;
         display:inherit;
         margin: 0 auto;
@@ -119,6 +120,20 @@ Indiquer les classes ou les IDs des enveloppes des galeries
             *.flex-caption{
                 font-size: small;
             }
+        }
+    }
+}
+//Override pour Version Classic
+#colonne-2 .galerie-vdl{
+    .flexslider-classic{
+        ul.slides{
+            padding: 0;
+            margin:0;
+            width: auto;//pas de taille pour la version classic
+        }
+        *.flex-caption{
+            max-width: 65%;
+            width: auto;
         }
     }
 }

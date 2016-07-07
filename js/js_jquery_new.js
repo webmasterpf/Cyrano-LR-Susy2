@@ -39,7 +39,8 @@
                 console.log('Chargement des paramètres de Flexslider');
         $('.flexslider-classic').flexslider({
             //animation: "slide",
-            directionNav: false,
+            directionNav: true,
+            controlNav: false,
             start: function(slider){
      $('body').removeClass('loading');
         $('.flexslider-classic').resize();

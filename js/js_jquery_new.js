@@ -34,40 +34,56 @@
 });
 
 
-
+//Pour une galerie standard : Flexslider
     jQuery(window).load(function () {
-        //Pour une galerie standard
-        console.log('Chargement de Flexslider');
-        $('.flexslider').flexslider({
+                console.log('Chargement des paramètres de Flexslider');
+        $('.flexslider-classic').flexslider({
+            //animation: "slide",
+            directionNav: false,
             start: function(slider){
      $('body').removeClass('loading');
-        $('.flexslider').resize();
+        $('.flexslider-classic').resize();
+        
     }
-            //animation: "slide",
             
         });
     });
     
+         //Pour une galerie avec des vignettes : Flexslider thumbs
      jQuery(window).load(function () {
-         //Pour une galerie avec des vignettes
-        console.log('Chargement de FlexsliderThumbs');
-        $('.flexslider-thumbs').flexslider({
-            
+            console.log('Chargement des paramètres de FlexsliderThumbs');
+        $('#carousel').flexslider({
             animation: "slide",
-            controlNav: "thumbnails"
+            controlNav: false,
+            directionNav: false,
+            animationLoop: false,
+            slideshow: false,
+            itemWidth: 210,
+            itemMargin: 5,
+            asNavFor: '#slider'
+        });
+
+        $('#slider').flexslider({
+            animation: "slide",
+            controlNav: true,
+            directionNav: false,
+            animationLoop: false,
+            slideshow: false,
+            sync: "#carousel"
         });
     });
     
     //Pour le BxSlider
     jQuery(window).load(function (){
-        console.log('Chargement de BxSlider');
+        console.log('Chargement des paramètres de BxSlider');
   $('.bxslider').bxSlider();
-   pagerCustom: '#bx-pager'
+   pagerCustom: "#bx-pager"
+   captions: true;
 });
 
   //Pour stacktable (tableaux RWD)
     jQuery(window).load(function (){
-        console.log('Chargement de Stacktable.js');
+        console.log('Chargement des paramètres de Stacktable.js');
         //Ajouter l'ID de la table à rendre RWD
   //Cible toutes les tables contenues dans la div.content (colonne-2)
   $('div.content').children('table') .stacktable();

@@ -6084,20 +6084,20 @@ VIEWS 3 CYCLE: DIAPO CONTENU ===================================
 Override du style de galerie Bxslider
 */
 /* line 8, ../sass/galeries/_bxslider-cyrano.scss */
-#bloc-galerie-vdl .bx-wrapper {
+.galerie-vdl .bx-wrapper {
   margin: 0 auto;
   width: 95%;
 }
 /* line 14, ../sass/galeries/_bxslider-cyrano.scss */
-#bloc-galerie-vdl .bx-wrapper li {
+.galerie-vdl .bx-wrapper li {
   padding: 0;
 }
 /* line 17, ../sass/galeries/_bxslider-cyrano.scss */
-#bloc-galerie-vdl .bx-wrapper .bx-viewport {
+.galerie-vdl .bx-wrapper .bx-viewport {
   height: auto;
 }
 /* line 20, ../sass/galeries/_bxslider-cyrano.scss */
-#bloc-galerie-vdl .bx-wrapper .bx-pager {
+.galerie-vdl .bx-wrapper .bx-pager {
   margin: 0 0.1em;
 }
 
@@ -6180,16 +6180,23 @@ Indiquer les classes ou les IDs des enveloppes des galeries
 }
 /* line 73, ../sass/galeries/_flexslider-cyrano.scss */
 #colonne-2 .galerie-vdl .flexslider, #colonne-2 .galerie-vdl .flexslider-thumbs {
-  width: 90%;
+  width: 85%;
   display: inherit;
   margin: 0 auto;
   padding: 1em;
 }
 /* line 78, ../sass/galeries/_flexslider-cyrano.scss */
+#colonne-2 .galerie-vdl .flexslider ul.slides, #colonne-2 .galerie-vdl .flexslider-thumbs ul.slides {
+  padding: 0;
+  margin: 0;
+  width: 1500%;
+}
+/* line 83, ../sass/galeries/_flexslider-cyrano.scss */
 #colonne-2 .galerie-vdl .flexslider li, #colonne-2 .galerie-vdl .flexslider ul.slides li, #colonne-2 .galerie-vdl .flexslider-thumbs li, #colonne-2 .galerie-vdl .flexslider-thumbs ul.slides li {
   padding: 0;
+  margin: 0;
 }
-/* line 81, ../sass/galeries/_flexslider-cyrano.scss */
+/* line 87, ../sass/galeries/_flexslider-cyrano.scss */
 #colonne-2 .galerie-vdl .flexslider .slides img, #colonne-2 .galerie-vdl .flexslider-thumbs .slides img {
   padding: 0em;
   border: 0.1em solid #ECECED;
@@ -6197,7 +6204,7 @@ Indiquer les classes ou les IDs des enveloppes des galeries
   -webkit-border-radius: 0.5em;
   border-radius: 0.5em;
 }
-/* line 87, ../sass/galeries/_flexslider-cyrano.scss */
+/* line 93, ../sass/galeries/_flexslider-cyrano.scss */
 #colonne-2 .galerie-vdl .flexslider *.flex-caption, #colonne-2 .galerie-vdl .flexslider-thumbs *.flex-caption {
   position: relative;
   z-index: 3;
@@ -6212,21 +6219,37 @@ Indiquer les classes ou les IDs des enveloppes des galeries
   line-height: 1.15em;
 }
 @media (min-width: 990px) {
-  /* line 104, ../sass/galeries/_flexslider-cyrano.scss */
+  /* line 110, ../sass/galeries/_flexslider-cyrano.scss */
   #colonne-2 .galerie-vdl .flexslider .slides img, #colonne-2 .galerie-vdl .flexslider-thumbs .slides img {
     border: 0.3em solid #ECECED;
   }
-  /* line 108, ../sass/galeries/_flexslider-cyrano.scss */
+  /* line 114, ../sass/galeries/_flexslider-cyrano.scss */
   #colonne-2 .galerie-vdl .flexslider .slides > li, #colonne-2 .galerie-vdl .flexslider .slides img, #colonne-2 .galerie-vdl .flexslider-thumbs .slides > li, #colonne-2 .galerie-vdl .flexslider-thumbs .slides img {
     max-height: 33em;
   }
-  /* line 113, ../sass/galeries/_flexslider-cyrano.scss */
+  /* line 119, ../sass/galeries/_flexslider-cyrano.scss */
   #colonne-2 .galerie-vdl .flexslider *.flex-caption, #colonne-2 .galerie-vdl .flexslider-thumbs *.flex-caption {
     font-size: small;
   }
 }
 
 /*######-------- ||| POSITION NAV ||| --------######*/
+/* line 129, ../sass/galeries/_flexslider-cyrano.scss */
+#colonne-2 .galerie-vdl #carousel {
+  height: 9em;
+  overflow: hidden;
+}
+/* line 135, ../sass/galeries/_flexslider-cyrano.scss */
+#colonne-2 .galerie-vdl div#slider .flexslider:hover .flex-direction-nav .flex-prev {
+  opacity: 0.7;
+  left: 0;
+}
+/* line 140, ../sass/galeries/_flexslider-cyrano.scss */
+#colonne-2 .galerie-vdl div#slider .flexslider:hover .flex-direction-nav .flex-next {
+  opacity: 0.7;
+  right: 0;
+}
+
 /*
 Mise en place / forme des items du mur d'images'
 Indiquer les classes ou les IDs des enveloppes des galeries

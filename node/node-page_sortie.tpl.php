@@ -18,7 +18,8 @@
               ?>
         </div>
         <!--______________COLONNE 2________________ -->
-         <!-- <pre> <?php //print_r($node); ?> </pre>-->   <!-- listage des variables du $content -->
+         <!--<pre> <?php //print_r($node); ?> </pre>   <!-- listage du contenu de l'objet $node -->
+        <!--<pre> <?php //print_r($rows); ?> </pre>   <!-- listage du contenu de l'objet $rows -->
         <div id="colonne-2" class="col2_layout_3_9 contenu-vdl">
 
             <?php print $picture; ?>

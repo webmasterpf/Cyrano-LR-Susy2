@@ -71,12 +71,18 @@ Indiquer les classes ou les IDs des enveloppes des galeries
     }
     //Pour le style des galeries quelques soit le type de nav
     .flexslider , .flexslider-thumbs{
-        width: 90%;
+        width: 85%;
         display:inherit;
         margin: 0 auto;
         padding:1em;    
+        ul.slides{
+            padding: 0;
+            margin:0;
+            width: 1500%;//pas ajouté par js, mais nécessaire pour afficher correctement la galerie
+        }
         li, ul.slides li{
             padding: 0;
+            margin:0;
         }
         .slides img{
             padding: 0em;
@@ -118,9 +124,22 @@ Indiquer les classes ou les IDs des enveloppes des galeries
 }
 
 /*######-------- ||| POSITION NAV ||| --------######*/
-.vdl-galerie-image{
-    .flexslider{
-  
-        .flex-control-nav{
-          //  bottom: -3.1em;//position de la navigation
-        }}}
+//Flexslider Thumbnails - retrait des fleches directionnelles via le JS
+#colonne-2 .galerie-vdl{
+    #carousel{
+        height: 9em;
+    overflow: hidden;
+    }
+    div#slider{
+
+        .flexslider:hover .flex-direction-nav .flex-prev {
+            opacity: 0.7;
+            left: 0;
+        }
+
+        .flexslider:hover .flex-direction-nav .flex-next {
+            opacity: 0.7;
+            right: 0;
+        }
+    }
+}

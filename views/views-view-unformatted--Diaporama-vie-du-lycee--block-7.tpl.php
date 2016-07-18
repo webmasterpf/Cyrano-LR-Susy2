@@ -5,12 +5,14 @@
  *
  * @ingroup views_templates
  * 
- * 
- * <ul class="bxslider">
-  <li><img src="/images/730_200/tree_root.jpg" /></li>
-  <li><img src="/images/730_200/houses.jpg" /></li>
-  <li><img src="/images/730_200/hill_fence.jpg" /></li>
-</ul>
+ * Pour le ninja-slider
+ * <ul style="overflow: hidden; padding-top: 50%; height: 0px;">
+<li style="left: 0px; z-index: 1;" class="ns-show">
+<a style="background-image: url(&quot;/slider/ninja-slider/img/1.jpg&quot;);" class="ns-img" href="/slider/ninja-slider/img/1.jpg">
+</a>
+
+</li>
+ * </ul>
 
 <div id="bx-pager">
   <a data-slide-index="0" href=""><img src="/images/thumbs/tree_root.jpg" /></a>
@@ -19,24 +21,32 @@
 </div>
  */
 ?>
-<?php if (!empty($title)): ?>
+<!-- Template Ninja Slider -->
+    <?php if (!empty($title)): ?>
   <h3><?php print $title; ?></h3>
 <?php endif; ?>
-  <!-- Construction de la liste -->
-  <ul class="bxslider">
+  <!-- Construction de la liste principale -->
+  <div class="slider-inner">
+      <ul>
 <?php foreach ($rows as $id => $row): ?>
   <li class="<?php print $classes[$id]; ?>">
     <?php print $row; ?>
   </li>
 <?php endforeach; ?>
 </ul>
-  <div id="bx-pager">
-      <?php foreach ($rows as $id => $row): ?>
-
-    <?php print ($fields['field_galerie_image_vdl_fid_1_value']->content); ?>
- 
+        </div>
+  <!-- Construction de la liste thumbnails -->
+  <div id="thumbnail-slider">
+          <ul>
+<?php foreach ($rows as $id => $row): ?>
+  <li class="<?php print $classes[$id]; ?>">
+    <?php print $row; ?>
+  </li>
 <?php endforeach; ?>
-</div>
+</ul>
+      
+  </div>
+  
 <?php 
    drupal_set_message(print_r($fields->field_galerie_image_vdl, TRUE));
    drupal_set_message(print_r($fields->field_galerie_image_vdl_fid_1, TRUE));

@@ -19,6 +19,9 @@
 ?>
 
 <div class="calendar-calendar lr-events">
+           <?php if ($title): /*copier le titre dans la colonne desirée*/?>
+            <h1 class="titre_page_vdl"><?php print $title; ?></h1>
+            <?php endif; ?>
   <?php if (!empty($calendar_popup)) print $calendar_popup;?>
   <?php if (!empty($calendar_add_date)) print $calendar_add_date; ?>
   <?php if (empty($block)) print theme('links', $calendar_links);?>

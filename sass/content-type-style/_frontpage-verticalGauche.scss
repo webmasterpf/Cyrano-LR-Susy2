@@ -162,6 +162,7 @@ body .conteneur
     /*____ INFOS ADMIN ACCUEIL ____*/
     table.info-admin-hp{
         margin: em(5px) auto;
+        border: em(1px) solid $violet;padding: em(5px);
         tr.even, tr.odd {//override suite stacktable.js
                          background-color: transparent;
                          border-bottom: none;
@@ -183,7 +184,7 @@ body .conteneur
          }
     }
     #block-views-liste_activites_lycee-block_4 {
-        border: em(1px) solid $violet;padding: em(5px);
+        
         h3{color: $violet;text-align: center;}
     }
     .visuel-calendrier{
@@ -318,7 +319,7 @@ aside.DiapoHP{
 // Style du diaporama dynamique
 
 /*---DIAPORAMA HOMEPAGE TEXTE DYNAMIQUE PAS SUR MOBILE----*/
-.conteneur #views_slideshow_cycle_div_diaporama_homepage-block_1_0 > div > div.views-field.views-field-teaser{
+.conteneur .DiapoGaucheHP{
     display: none;
     @include breakpoint ($desktop){
         display: block;
@@ -327,7 +328,7 @@ aside.DiapoHP{
             height:em(60px);
             bottom:em(75px); 
             left:em(12px);
-            width: 93.5%;
+            width: 95.5%;
             position:relative;
             z-index:15;
             @include opacity(0.6);
@@ -340,12 +341,13 @@ aside.DiapoHP{
             color: white;
             z-index: 20;
 
-
-            h2 {
+            
+            p,h2 {
                 color: white;
                 padding: em(5px);
                 font-family: $AristaFont;
                 line-height: 1.3em;
+                font-size: medium;
             }
             a {
 

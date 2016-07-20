@@ -14,11 +14,7 @@
 </li>
  * </ul>
 
-<div id="bx-pager">
-  <a data-slide-index="0" href=""><img src="/images/thumbs/tree_root.jpg" /></a>
-  <a data-slide-index="1" href=""><img src="/images/thumbs/houses.jpg" /></a>
-  <a data-slide-index="2" href=""><img src="/images/thumbs/hill_fence.jpg" /></a>
-</div>
+
  */
 ?>
 <!-- Template Ninja Slider -->

@@ -3963,60 +3963,57 @@ body .conteneur .HPDroite3 {
 /* line 163, ../sass/content-type-style/_frontpage-verticalGauche.scss */
 .HPDroite1 table.info-admin-hp {
   margin: 0.3125em auto;
+  border: 0.0625em solid #911381;
+  padding: 0.3125em;
 }
-/* line 165, ../sass/content-type-style/_frontpage-verticalGauche.scss */
+/* line 166, ../sass/content-type-style/_frontpage-verticalGauche.scss */
 .HPDroite1 table.info-admin-hp tr.even, .HPDroite1 table.info-admin-hp tr.odd {
   background-color: transparent;
   border-bottom: none;
   padding: 0;
 }
-/* line 171, ../sass/content-type-style/_frontpage-verticalGauche.scss */
+/* line 172, ../sass/content-type-style/_frontpage-verticalGauche.scss */
 .HPDroite1 table.info-admin-hp td {
   background: #ECECED;
   padding: 0.3125em;
   margin: 2px;
   text-align: center;
 }
-/* line 174, ../sass/content-type-style/_frontpage-verticalGauche.scss */
+/* line 175, ../sass/content-type-style/_frontpage-verticalGauche.scss */
 .HPDroite1 table.info-admin-hp a {
   color: #911381;
   text-decoration: none;
 }
-/* line 176, ../sass/content-type-style/_frontpage-verticalGauche.scss */
+/* line 177, ../sass/content-type-style/_frontpage-verticalGauche.scss */
 .HPDroite1 table.info-admin-hp a:hover {
   text-decoration: underline;
   background: transparent;
 }
-/* line 181, ../sass/content-type-style/_frontpage-verticalGauche.scss */
+/* line 182, ../sass/content-type-style/_frontpage-verticalGauche.scss */
 .HPDroite1 table.info-admin-hp .field-content {
   font-size: smaller;
 }
-/* line 185, ../sass/content-type-style/_frontpage-verticalGauche.scss */
-.HPDroite1 #block-views-liste_activites_lycee-block_4 {
-  border: 0.0625em solid #911381;
-  padding: 0.3125em;
-}
-/* line 187, ../sass/content-type-style/_frontpage-verticalGauche.scss */
+/* line 188, ../sass/content-type-style/_frontpage-verticalGauche.scss */
 .HPDroite1 #block-views-liste_activites_lycee-block_4 h3 {
   color: #911381;
   text-align: center;
 }
-/* line 190, ../sass/content-type-style/_frontpage-verticalGauche.scss */
+/* line 191, ../sass/content-type-style/_frontpage-verticalGauche.scss */
 .HPDroite1 .visuel-calendrier a {
   color: transparent;
   text-decoration: none;
 }
-/* line 193, ../sass/content-type-style/_frontpage-verticalGauche.scss */
+/* line 194, ../sass/content-type-style/_frontpage-verticalGauche.scss */
 .HPDroite1 .visuel-calendrier a:hover {
   background: transparent;
 }
-/* line 197, ../sass/content-type-style/_frontpage-verticalGauche.scss */
+/* line 198, ../sass/content-type-style/_frontpage-verticalGauche.scss */
 .HPDroite1 .visuel-calendrier img {
   display: block;
   margin: 0 auto;
 }
 
-/* line 203, ../sass/content-type-style/_frontpage-verticalGauche.scss */
+/* line 204, ../sass/content-type-style/_frontpage-verticalGauche.scss */
 .HPDroite2 {
   background: url("../images/titre_actus_hp.gif") no-repeat top left;
   margin: 0;
@@ -4025,44 +4022,44 @@ body .conteneur .HPDroite3 {
   LISTE ACTU
   -------------------------------------------*/
 }
-/* line 211, ../sass/content-type-style/_frontpage-verticalGauche.scss */
+/* line 212, ../sass/content-type-style/_frontpage-verticalGauche.scss */
 .HPDroite2 .views-field-title {
   text-indent: 0.9375em;
 }
-/* line 214, ../sass/content-type-style/_frontpage-verticalGauche.scss */
+/* line 215, ../sass/content-type-style/_frontpage-verticalGauche.scss */
 .HPDroite2 li a {
   color: #911381;
   padding: 0;
 }
-/* line 217, ../sass/content-type-style/_frontpage-verticalGauche.scss */
+/* line 218, ../sass/content-type-style/_frontpage-verticalGauche.scss */
 .HPDroite2 li a:hover {
   color: #E30078;
   padding: 0;
 }
-/* line 225, ../sass/content-type-style/_frontpage-verticalGauche.scss */
+/* line 226, ../sass/content-type-style/_frontpage-verticalGauche.scss */
 .HPDroite2 #block-views-liste_activites_accueil-block_1 ul {
   list-style: none;
 }
-/* line 230, ../sass/content-type-style/_frontpage-verticalGauche.scss */
+/* line 231, ../sass/content-type-style/_frontpage-verticalGauche.scss */
 .HPDroite2 .view-liste-activites-accueil ul li {
   list-style: none inside;
   background: url("../images/puce-home.gif") no-repeat left 0.1875em;
   padding: 0;
   margin: 0;
 }
-/* line 236, ../sass/content-type-style/_frontpage-verticalGauche.scss */
+/* line 237, ../sass/content-type-style/_frontpage-verticalGauche.scss */
 .HPDroite2 .view-liste-activites-accueil .titre a {
   font-weight: bold;
   text-transform: uppercase;
   text-decoration: underline;
   font-size: small;
 }
-/* line 244, ../sass/content-type-style/_frontpage-verticalGauche.scss */
+/* line 245, ../sass/content-type-style/_frontpage-verticalGauche.scss */
 .HPDroite2 p.view-liste-activites-accueil a {
   text-decoration: none;
 }
 
-/* line 249, ../sass/content-type-style/_frontpage-verticalGauche.scss */
+/* line 250, ../sass/content-type-style/_frontpage-verticalGauche.scss */
 .HPDroite3 {
   background: url("../images/titre_foyer_hp.gif") no-repeat top left;
   margin: 0;
@@ -4070,13 +4067,13 @@ body .conteneur .HPDroite3 {
 }
 
 /* LISTE JOURNAL PDF */
-/* line 258, ../sass/content-type-style/_frontpage-verticalGauche.scss */
+/* line 259, ../sass/content-type-style/_frontpage-verticalGauche.scss */
 .liste-journal a {
   text-decoration: none;
   color: #911381;
 }
 
-/* line 262, ../sass/content-type-style/_frontpage-verticalGauche.scss */
+/* line 263, ../sass/content-type-style/_frontpage-verticalGauche.scss */
 .liste-journal a:hover {
   text-decoration: underline;
 }
@@ -4084,47 +4081,47 @@ body .conteneur .HPDroite3 {
 /*------------------------------------------
 BLOC POUR ACTU FOYER
 -------------------------------------------*/
-/* line 270, ../sass/content-type-style/_frontpage-verticalGauche.scss */
+/* line 271, ../sass/content-type-style/_frontpage-verticalGauche.scss */
 #block-views-liste_actu_foyer-block_1 {
   float: left;
   width: 18.75em;
   margin: 0 0.125em 0 0;
   padding: 0;
 }
-/* line 275, ../sass/content-type-style/_frontpage-verticalGauche.scss */
+/* line 276, ../sass/content-type-style/_frontpage-verticalGauche.scss */
 #block-views-liste_actu_foyer-block_1 a {
   text-decoration: none;
   color: #911381;
 }
-/* line 278, ../sass/content-type-style/_frontpage-verticalGauche.scss */
+/* line 279, ../sass/content-type-style/_frontpage-verticalGauche.scss */
 #block-views-liste_actu_foyer-block_1 a:hover {
   text-decoration: underline;
   color: #E3001C;
 }
-/* line 284, ../sass/content-type-style/_frontpage-verticalGauche.scss */
+/* line 285, ../sass/content-type-style/_frontpage-verticalGauche.scss */
 #block-views-liste_actu_foyer-block_1 li, #block-views-liste_actu_foyer-block_1 h3 {
   color: #01ABCF;
 }
 
 /*---DIAPORAMA HOMEPAGE TEXTE DYNAMIQUE  PANORAMIQUE----*/
 /*---DIAPORAMA HOMEPAGE TEXTE DYNAMIQUE PAS SUR MOBILE----*/
-/* line 321, ../sass/content-type-style/_frontpage-verticalGauche.scss */
-.conteneur #views_slideshow_cycle_div_diaporama_homepage-block_1_0 > div > div.views-field.views-field-teaser {
+/* line 322, ../sass/content-type-style/_frontpage-verticalGauche.scss */
+.conteneur .DiapoGaucheHP {
   display: none;
 }
 @media (min-width: 990px) {
-  /* line 321, ../sass/content-type-style/_frontpage-verticalGauche.scss */
-  .conteneur #views_slideshow_cycle_div_diaporama_homepage-block_1_0 > div > div.views-field.views-field-teaser {
+  /* line 322, ../sass/content-type-style/_frontpage-verticalGauche.scss */
+  .conteneur .DiapoGaucheHP {
     display: block;
   }
-  /* line 325, ../sass/content-type-style/_frontpage-verticalGauche.scss */
-  .conteneur #views_slideshow_cycle_div_diaporama_homepage-block_1_0 > div > div.views-field.views-field-teaser #transparency {
+  /* line 326, ../sass/content-type-style/_frontpage-verticalGauche.scss */
+  .conteneur .DiapoGaucheHP #transparency {
     background: none repeat scroll 0 0 #911381;
     /*Couleur du fond*/
     height: 3.75em;
     bottom: 4.6875em;
     left: 0.75em;
-    width: 93.5%;
+    width: 95.5%;
     position: relative;
     z-index: 15;
     opacity: 0.6;
@@ -4136,23 +4133,24 @@ BLOC POUR ACTU FOYER
     /* IE < 8 */
     -khtml-opacity: 0.6;
   }
-  /* line 335, ../sass/content-type-style/_frontpage-verticalGauche.scss */
-  .conteneur #views_slideshow_cycle_div_diaporama_homepage-block_1_0 > div > div.views-field.views-field-teaser #contenu-diapo {
+  /* line 336, ../sass/content-type-style/_frontpage-verticalGauche.scss */
+  .conteneur .DiapoGaucheHP #contenu-diapo {
     position: relative;
     bottom: 10.375em;
     left: 0.625em;
     color: white;
     z-index: 20;
   }
-  /* line 344, ../sass/content-type-style/_frontpage-verticalGauche.scss */
-  .conteneur #views_slideshow_cycle_div_diaporama_homepage-block_1_0 > div > div.views-field.views-field-teaser #contenu-diapo h2 {
+  /* line 345, ../sass/content-type-style/_frontpage-verticalGauche.scss */
+  .conteneur .DiapoGaucheHP #contenu-diapo p, .conteneur .DiapoGaucheHP #contenu-diapo h2 {
     color: white;
     padding: 0.3125em;
     font-family: "Arista", Trebuchet MS, sans-serif;
     line-height: 1.3em;
+    font-size: medium;
   }
-  /* line 350, ../sass/content-type-style/_frontpage-verticalGauche.scss */
-  .conteneur #views_slideshow_cycle_div_diaporama_homepage-block_1_0 > div > div.views-field.views-field-teaser #contenu-diapo a {
+  /* line 352, ../sass/content-type-style/_frontpage-verticalGauche.scss */
+  .conteneur .DiapoGaucheHP #contenu-diapo a {
     text-decoration: none;
   }
 }
@@ -5854,6 +5852,42 @@ form.webform-client-form input[type="submit"] {
 form.webform-client-form .form-item {
   margin-bottom: 0.5em;
   margin-top: 0.5em;
+}
+
+/*-------------------------------------|
+|       CONTENU CUSTOM               |
+|               NODE.TPL                      |
+|               MON TYPE                      |
+|--------------------------------------*/
+/*######-------- ||| ORDRE FLEXBOX ||| --------######*/
+/* line 17, ../sass/content-type-style/_calendrier.scss */
+body .conteneur .conteneur-flex #colonne-1.CLASS_NAME {
+  order: 1;
+}
+/* line 18, ../sass/content-type-style/_calendrier.scss */
+body .conteneur .conteneur-flex #colonne-2.CLASS_NAME {
+  order: 2;
+}
+/* line 19, ../sass/content-type-style/_calendrier.scss */
+body .conteneur .conteneur-flex #colonne-3.CLASS_NAME {
+  order: 3;
+}
+
+/*######-------- ||| BORDURES ||| --------######*/
+/*######-------- ||| STYLE ||| --------######*/
+/* line 31, ../sass/content-type-style/_calendrier.scss */
+.calendar-calendar div.date-nav a, .calendar-calendar div.date-nav h3, .lr-events div.date-nav a, .lr-events div.date-nav h3 {
+  color: #911381;
+}
+/* line 34, ../sass/content-type-style/_calendrier.scss */
+.calendar-calendar td .inner div.calendar div, .calendar-calendar td .inner div.calendar div a, .lr-events td .inner div.calendar div, .lr-events td .inner div.calendar div a {
+  border: none;
+  position: relative;
+  background: #911381;
+  background: rgba(145, 19, 129, 0.1);
+  -pie-background: rgba(145, 19, 129, 0.1);
+  behavior: url(/sites/all/libraries/PIE/PIE.htc);
+  padding: 0 0.125em;
 }
 
 /*

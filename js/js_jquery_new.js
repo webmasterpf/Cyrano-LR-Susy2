@@ -121,7 +121,8 @@
     
     });
 //// Script pour Wookmark (liste html)
-jQuery(document).ready(function (){
+jQuery(document).ready(function ()
+{
   console.log('Chargement des paramètres Wookmark.js');   
 $('#wookmark-id li').wookmark({
             autoResize: true, // This will auto-update the layout when the browser window is resized.

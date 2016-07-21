@@ -319,7 +319,8 @@ aside.DiapoHP{
 // Style du diaporama dynamique
 
 /*---DIAPORAMA HOMEPAGE TEXTE DYNAMIQUE PAS SUR MOBILE----*/
-.conteneur .DiapoGaucheHP{
+/* Classe diapo-homepage ajoutée sur le bloc via le module block_class*/
+.conteneur aside.diapo-homepage {
     display: none;
     @include breakpoint ($desktop){
         display: block;

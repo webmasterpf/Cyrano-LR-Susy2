@@ -13,7 +13,12 @@ Indiquer les classes ou les IDs des enveloppes des galeries
         background : transparent;
         border: 0;
         .flex-control-nav{
-            bottom: -1.1em;//position de la navigation
+            // bottom: -1.1em;//position de la navigation
+            bottom: -50.1em;
+            position: inherit;
+            display: block;
+            //left: 4em;
+            width: 35%;
         }
         .flex-control-paging {
             li a{
@@ -30,7 +35,7 @@ Indiquer les classes ou les IDs des enveloppes des galeries
         }
 
     }        
-    .flexslider{
+    .flexslider, .flexslider-classic{
         ul.flex-direction-nav{
             list-style: none;
         }

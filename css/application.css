@@ -4105,17 +4105,18 @@ BLOC POUR ACTU FOYER
 
 /*---DIAPORAMA HOMEPAGE TEXTE DYNAMIQUE  PANORAMIQUE----*/
 /*---DIAPORAMA HOMEPAGE TEXTE DYNAMIQUE PAS SUR MOBILE----*/
-/* line 322, ../sass/content-type-style/_frontpage-verticalGauche.scss */
-.conteneur .DiapoGaucheHP {
+/* Classe diapo-homepage ajoutée sur le bloc via le module block_class*/
+/* line 323, ../sass/content-type-style/_frontpage-verticalGauche.scss */
+.conteneur aside.diapo-homepage {
   display: none;
 }
 @media (min-width: 990px) {
-  /* line 322, ../sass/content-type-style/_frontpage-verticalGauche.scss */
-  .conteneur .DiapoGaucheHP {
+  /* line 323, ../sass/content-type-style/_frontpage-verticalGauche.scss */
+  .conteneur aside.diapo-homepage {
     display: block;
   }
-  /* line 326, ../sass/content-type-style/_frontpage-verticalGauche.scss */
-  .conteneur .DiapoGaucheHP #transparency {
+  /* line 327, ../sass/content-type-style/_frontpage-verticalGauche.scss */
+  .conteneur aside.diapo-homepage #transparency {
     background: none repeat scroll 0 0 #911381;
     /*Couleur du fond*/
     height: 3.75em;
@@ -4133,24 +4134,24 @@ BLOC POUR ACTU FOYER
     /* IE < 8 */
     -khtml-opacity: 0.6;
   }
-  /* line 336, ../sass/content-type-style/_frontpage-verticalGauche.scss */
-  .conteneur .DiapoGaucheHP #contenu-diapo {
+  /* line 337, ../sass/content-type-style/_frontpage-verticalGauche.scss */
+  .conteneur aside.diapo-homepage #contenu-diapo {
     position: relative;
     bottom: 10.375em;
     left: 0.625em;
     color: white;
     z-index: 20;
   }
-  /* line 345, ../sass/content-type-style/_frontpage-verticalGauche.scss */
-  .conteneur .DiapoGaucheHP #contenu-diapo p, .conteneur .DiapoGaucheHP #contenu-diapo h2 {
+  /* line 346, ../sass/content-type-style/_frontpage-verticalGauche.scss */
+  .conteneur aside.diapo-homepage #contenu-diapo p, .conteneur aside.diapo-homepage #contenu-diapo h2 {
     color: white;
     padding: 0.3125em;
     font-family: "Arista", Trebuchet MS, sans-serif;
     line-height: 1.3em;
     font-size: medium;
   }
-  /* line 352, ../sass/content-type-style/_frontpage-verticalGauche.scss */
-  .conteneur .DiapoGaucheHP #contenu-diapo a {
+  /* line 353, ../sass/content-type-style/_frontpage-verticalGauche.scss */
+  .conteneur aside.diapo-homepage #contenu-diapo a {
     text-decoration: none;
   }
 }
@@ -6146,9 +6147,12 @@ Indiquer les classes ou les IDs des enveloppes des galeries
 }
 /* line 15, ../sass/galeries/_flexslider-cyrano.scss */
 #colonne-2 .galerie-vdl .flexslider .flex-control-nav, #colonne-2 .galerie-vdl .flexslider-classic .flex-control-nav {
-  bottom: -1.1em;
+  bottom: -50.1em;
+  position: inherit;
+  display: block;
+  width: 35%;
 }
-/* line 19, ../sass/galeries/_flexslider-cyrano.scss */
+/* line 24, ../sass/galeries/_flexslider-cyrano.scss */
 #colonne-2 .galerie-vdl .flexslider .flex-control-paging li a, #colonne-2 .galerie-vdl .flexslider-classic .flex-control-paging li a {
   margin: 0.1em;
   background: #911381;
@@ -6157,80 +6161,80 @@ Indiquer les classes ou les IDs des enveloppes des galeries
   -webkit-box-shadow: 0.1em 0.1em 0.3em #aaa;
   box-shadow: 0.1em 0.1em 0.3em #aaa;
 }
-/* line 23, ../sass/galeries/_flexslider-cyrano.scss */
+/* line 28, ../sass/galeries/_flexslider-cyrano.scss */
 #colonne-2 .galerie-vdl .flexslider .flex-control-paging li a:hover, #colonne-2 .galerie-vdl .flexslider-classic .flex-control-paging li a:hover {
   background: #ADC91F;
 }
-/* line 27, ../sass/galeries/_flexslider-cyrano.scss */
+/* line 32, ../sass/galeries/_flexslider-cyrano.scss */
 #colonne-2 .galerie-vdl .flexslider .flex-control-paging li a.flex-active, #colonne-2 .galerie-vdl .flexslider-classic .flex-control-paging li a.flex-active {
   background: #ADC91F;
 }
-/* line 34, ../sass/galeries/_flexslider-cyrano.scss */
-#colonne-2 .galerie-vdl .flexslider ul.flex-direction-nav {
+/* line 39, ../sass/galeries/_flexslider-cyrano.scss */
+#colonne-2 .galerie-vdl .flexslider ul.flex-direction-nav, #colonne-2 .galerie-vdl .flexslider-classic ul.flex-direction-nav {
   list-style: none;
 }
-/* line 37, ../sass/galeries/_flexslider-cyrano.scss */
-#colonne-2 .galerie-vdl .flexslider .flex-direction-nav a {
+/* line 42, ../sass/galeries/_flexslider-cyrano.scss */
+#colonne-2 .galerie-vdl .flexslider .flex-direction-nav a, #colonne-2 .galerie-vdl .flexslider-classic .flex-direction-nav a {
   height: 2em;
 }
-/* line 39, ../sass/galeries/_flexslider-cyrano.scss */
-#colonne-2 .galerie-vdl .flexslider .flex-direction-nav a:hover {
+/* line 44, ../sass/galeries/_flexslider-cyrano.scss */
+#colonne-2 .galerie-vdl .flexslider .flex-direction-nav a:hover, #colonne-2 .galerie-vdl .flexslider-classic .flex-direction-nav a:hover {
   background: none;
 }
-/* line 43, ../sass/galeries/_flexslider-cyrano.scss */
-#colonne-2 .galerie-vdl .flexslider .flex-direction-nav a:before {
+/* line 48, ../sass/galeries/_flexslider-cyrano.scss */
+#colonne-2 .galerie-vdl .flexslider .flex-direction-nav a:before, #colonne-2 .galerie-vdl .flexslider-classic .flex-direction-nav a:before {
   font-size: 2.5em;
   display: inline-block;
 }
-/* line 47, ../sass/galeries/_flexslider-cyrano.scss */
-#colonne-2 .galerie-vdl .flexslider .flex-direction-nav a.flex-next:before {
+/* line 52, ../sass/galeries/_flexslider-cyrano.scss */
+#colonne-2 .galerie-vdl .flexslider .flex-direction-nav a.flex-next:before, #colonne-2 .galerie-vdl .flexslider-classic .flex-direction-nav a.flex-next:before {
   content: '\f002';
 }
-/* line 50, ../sass/galeries/_flexslider-cyrano.scss */
-#colonne-2 .galerie-vdl .flexslider .flex-direction-nav .flex-prev {
+/* line 55, ../sass/galeries/_flexslider-cyrano.scss */
+#colonne-2 .galerie-vdl .flexslider .flex-direction-nav .flex-prev, #colonne-2 .galerie-vdl .flexslider-classic .flex-direction-nav .flex-prev {
   left: -3.125em;
 }
-/* line 53, ../sass/galeries/_flexslider-cyrano.scss */
-#colonne-2 .galerie-vdl .flexslider .flex-direction-nav .flex-next {
+/* line 58, ../sass/galeries/_flexslider-cyrano.scss */
+#colonne-2 .galerie-vdl .flexslider .flex-direction-nav .flex-next, #colonne-2 .galerie-vdl .flexslider-classic .flex-direction-nav .flex-next {
   right: -3.125em;
 }
-/* line 57, ../sass/galeries/_flexslider-cyrano.scss */
-#colonne-2 .galerie-vdl .flexslider .flexslider:hover .flex-direction-nav .flex-prev {
+/* line 62, ../sass/galeries/_flexslider-cyrano.scss */
+#colonne-2 .galerie-vdl .flexslider .flexslider:hover .flex-direction-nav .flex-prev, #colonne-2 .galerie-vdl .flexslider-classic .flexslider:hover .flex-direction-nav .flex-prev {
   opacity: 0.7;
   left: 0.625em;
 }
-/* line 61, ../sass/galeries/_flexslider-cyrano.scss */
-#colonne-2 .galerie-vdl .flexslider .flexslider:hover .flex-direction-nav .flex-prev:hover {
+/* line 66, ../sass/galeries/_flexslider-cyrano.scss */
+#colonne-2 .galerie-vdl .flexslider .flexslider:hover .flex-direction-nav .flex-prev:hover, #colonne-2 .galerie-vdl .flexslider-classic .flexslider:hover .flex-direction-nav .flex-prev:hover {
   opacity: 1;
 }
-/* line 64, ../sass/galeries/_flexslider-cyrano.scss */
-#colonne-2 .galerie-vdl .flexslider .flexslider:hover .flex-direction-nav .flex-next {
+/* line 69, ../sass/galeries/_flexslider-cyrano.scss */
+#colonne-2 .galerie-vdl .flexslider .flexslider:hover .flex-direction-nav .flex-next, #colonne-2 .galerie-vdl .flexslider-classic .flexslider:hover .flex-direction-nav .flex-next {
   opacity: 0.7;
   right: 0.625em;
 }
-/* line 68, ../sass/galeries/_flexslider-cyrano.scss */
-#colonne-2 .galerie-vdl .flexslider .flexslider:hover .flex-direction-nav .flex-next:hover {
+/* line 73, ../sass/galeries/_flexslider-cyrano.scss */
+#colonne-2 .galerie-vdl .flexslider .flexslider:hover .flex-direction-nav .flex-next:hover, #colonne-2 .galerie-vdl .flexslider-classic .flexslider:hover .flex-direction-nav .flex-next:hover {
   opacity: 1;
 }
-/* line 74, ../sass/galeries/_flexslider-cyrano.scss */
+/* line 79, ../sass/galeries/_flexslider-cyrano.scss */
 #colonne-2 .galerie-vdl .flexslider, #colonne-2 .galerie-vdl .flexslider-thumbs, #colonne-2 .galerie-vdl .flexslider-classic {
   width: 85%;
   display: inherit;
   margin: 0 auto;
   padding: 1em;
 }
-/* line 79, ../sass/galeries/_flexslider-cyrano.scss */
+/* line 84, ../sass/galeries/_flexslider-cyrano.scss */
 #colonne-2 .galerie-vdl .flexslider ul.slides, #colonne-2 .galerie-vdl .flexslider-thumbs ul.slides, #colonne-2 .galerie-vdl .flexslider-classic ul.slides {
   padding: 0;
   margin: 0;
   width: 1500%;
 }
-/* line 84, ../sass/galeries/_flexslider-cyrano.scss */
+/* line 89, ../sass/galeries/_flexslider-cyrano.scss */
 #colonne-2 .galerie-vdl .flexslider li, #colonne-2 .galerie-vdl .flexslider ul.slides li, #colonne-2 .galerie-vdl .flexslider-thumbs li, #colonne-2 .galerie-vdl .flexslider-thumbs ul.slides li, #colonne-2 .galerie-vdl .flexslider-classic li, #colonne-2 .galerie-vdl .flexslider-classic ul.slides li {
   padding: 0;
   margin: 0;
 }
-/* line 88, ../sass/galeries/_flexslider-cyrano.scss */
+/* line 93, ../sass/galeries/_flexslider-cyrano.scss */
 #colonne-2 .galerie-vdl .flexslider .slides img, #colonne-2 .galerie-vdl .flexslider-thumbs .slides img, #colonne-2 .galerie-vdl .flexslider-classic .slides img {
   padding: 0em;
   border: 0.1em solid #ECECED;
@@ -6238,7 +6242,7 @@ Indiquer les classes ou les IDs des enveloppes des galeries
   -webkit-border-radius: 0.5em;
   border-radius: 0.5em;
 }
-/* line 94, ../sass/galeries/_flexslider-cyrano.scss */
+/* line 99, ../sass/galeries/_flexslider-cyrano.scss */
 #colonne-2 .galerie-vdl .flexslider *.flex-caption, #colonne-2 .galerie-vdl .flexslider-thumbs *.flex-caption, #colonne-2 .galerie-vdl .flexslider-classic *.flex-caption {
   position: relative;
   z-index: 3;
@@ -6253,44 +6257,44 @@ Indiquer les classes ou les IDs des enveloppes des galeries
   line-height: 1.15em;
 }
 @media (min-width: 990px) {
-  /* line 111, ../sass/galeries/_flexslider-cyrano.scss */
+  /* line 116, ../sass/galeries/_flexslider-cyrano.scss */
   #colonne-2 .galerie-vdl .flexslider .slides img, #colonne-2 .galerie-vdl .flexslider-thumbs .slides img, #colonne-2 .galerie-vdl .flexslider-classic .slides img {
     border: 0.3em solid #ECECED;
   }
-  /* line 115, ../sass/galeries/_flexslider-cyrano.scss */
+  /* line 120, ../sass/galeries/_flexslider-cyrano.scss */
   #colonne-2 .galerie-vdl .flexslider .slides > li, #colonne-2 .galerie-vdl .flexslider .slides img, #colonne-2 .galerie-vdl .flexslider-thumbs .slides > li, #colonne-2 .galerie-vdl .flexslider-thumbs .slides img, #colonne-2 .galerie-vdl .flexslider-classic .slides > li, #colonne-2 .galerie-vdl .flexslider-classic .slides img {
     max-height: 33em;
   }
-  /* line 120, ../sass/galeries/_flexslider-cyrano.scss */
+  /* line 125, ../sass/galeries/_flexslider-cyrano.scss */
   #colonne-2 .galerie-vdl .flexslider *.flex-caption, #colonne-2 .galerie-vdl .flexslider-thumbs *.flex-caption, #colonne-2 .galerie-vdl .flexslider-classic *.flex-caption {
     font-size: small;
   }
 }
 
-/* line 129, ../sass/galeries/_flexslider-cyrano.scss */
+/* line 134, ../sass/galeries/_flexslider-cyrano.scss */
 #colonne-2 .galerie-vdl .flexslider-classic ul.slides {
   padding: 0;
   margin: 0;
   width: auto;
 }
-/* line 134, ../sass/galeries/_flexslider-cyrano.scss */
+/* line 139, ../sass/galeries/_flexslider-cyrano.scss */
 #colonne-2 .galerie-vdl .flexslider-classic *.flex-caption {
   max-width: 65%;
   width: auto;
 }
 
 /*######-------- ||| POSITION NAV ||| --------######*/
-/* line 144, ../sass/galeries/_flexslider-cyrano.scss */
+/* line 149, ../sass/galeries/_flexslider-cyrano.scss */
 #colonne-2 .galerie-vdl #carousel {
   height: 9em;
   overflow: hidden;
 }
-/* line 150, ../sass/galeries/_flexslider-cyrano.scss */
+/* line 155, ../sass/galeries/_flexslider-cyrano.scss */
 #colonne-2 .galerie-vdl div#slider .flexslider:hover .flex-direction-nav .flex-prev {
   opacity: 0.7;
   left: 0;
 }
-/* line 155, ../sass/galeries/_flexslider-cyrano.scss */
+/* line 160, ../sass/galeries/_flexslider-cyrano.scss */
 #colonne-2 .galerie-vdl div#slider .flexslider:hover .flex-direction-nav .flex-next {
   opacity: 0.7;
   right: 0;

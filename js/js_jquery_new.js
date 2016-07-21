@@ -157,6 +157,12 @@ $('#liste-vdl div.view-content').attr("data-columns","");
  $(this).removeAttr('width');
  $(this).removeAttr('height');
  });
+ //si dans attribut style,alors il faut rélger la valeur sur auto
+     $('.views_slideshow_cycle_teaser_section').each(function(){
+ $(this).css('width','auto');
+ $(this).css('height','auto');
+ });
+ 
 
 //Changer la casse des titres H1 qui sont en Majuscules
 $('h1').css('text-transform','lowercase');

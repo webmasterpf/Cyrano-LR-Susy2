@@ -110,7 +110,7 @@ h4 a:hover{}
     form{margin: 0 6em;}
     table{
         margin: 0 auto;
-        display:inherit;
+        //display:table;//casse le système de stacktable js
         tbody{
             max-width: 100%;
 

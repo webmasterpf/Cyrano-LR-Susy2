@@ -76,7 +76,8 @@ span.menu-item-container{/*hover des li*/
 }
 /*Rubrique active - Active Trail*/
 .sf-menu.sf-style-blue li.active-trail,.sf-menu.sf-style-blue li.active-trail > a{color: #95107D;background: #D0D1D2;}
-
+/*Position de la liste de sous rubrique , utiliser si mal placée*/
+.sf-menu.sf-vertical.sf-shadow ul{margin:5.1em -12em 0;}
 /*MENU ITEM CONTAINER*/
 span.menu-item-container{display: block;font-size: 12px;font-weight: bold;height: 2.4em;
     text-align: center;text-transform: uppercase;background: transparent;color: #606070;padding: 15px 0 0;}

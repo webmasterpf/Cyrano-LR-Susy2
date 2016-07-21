@@ -4524,7 +4524,7 @@ h1.titre-lycee, h1.title-classes {
 /* line 111, ../sass/content-type-style/_page-lycee.scss */
 #colonne-2.page-lycee table {
   margin: 0 auto;
-  display: table;
+  display: inherit;
 }
 /* line 114, ../sass/content-type-style/_page-lycee.scss */
 #colonne-2.page-lycee table tbody {

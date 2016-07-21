@@ -157,11 +157,12 @@ $('#liste-vdl div.view-content').attr("data-columns","");
  $(this).removeAttr('width');
  $(this).removeAttr('height');
  });
- //si dans attribut style,alors il faut rélger la valeur sur auto
-     $('.views_slideshow_cycle_teaser_section').each(function(){
- $(this).css('width','auto');
- $(this).css('height','auto');
- });
+ //si dans attribut style,alors il faut rélger la valeur sur auto (views slideshow,mais taille overrider,
+ //solution ajouter un max-width
+  $('div.views_slideshow_cycle_teaser_section').css('width','auto');
+  $('.views_slideshow_cycle_teaser_section').css('height','auto');
+  $('.views_slideshow_cycle_teaser_section').css('max-width','100%');
+
  
 
 //Changer la casse des titres H1 qui sont en Majuscules

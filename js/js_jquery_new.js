@@ -157,11 +157,11 @@ $('#liste-vdl div.view-content').attr("data-columns","");
  $(this).removeAttr('width');
  $(this).removeAttr('height');
  });
- //si dans attribut style,alors il faut rélger la valeur sur auto (views slideshow,mais taille overrider,
+ //si dans attribut style,alors il faut régler la valeur sur auto (views slideshow,mais taille overrider,
  //solution ajouter un max-width
-  $('div.views_slideshow_cycle_teaser_section').css('width','auto');
-  $('.views_slideshow_cycle_teaser_section').css('height','auto');
-  $('.views_slideshow_cycle_teaser_section').css('max-width','100%');
+  $('.diapo_fiche div.views_slideshow_cycle_teaser_section').css('width','auto');
+  $('.diapo_fiche .views_slideshow_cycle_teaser_section').css('height','auto');
+  $('.diapo_fiche  .views_slideshow_cycle_teaser_section').css('max-width','100%');
 
  
 

@@ -9,6 +9,7 @@ Indiquer les classes ou les IDs des enveloppes des galeries
 
 //indiquer la classe qui gère flexslider
 #colonne-2 .galerie-vdl{
+    display:inline-block;
     .flexslider, .flexslider-classic{
         background : transparent;
         border: 0;

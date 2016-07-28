@@ -90,7 +90,37 @@
   $('div.content').children('table') .stacktable();
 });
 
-  
+//Slick Basic, nav par points, transition fade
+jQuery(document).ready(function ()
+ {
+ $('.slickdiapofade').slick({
+  dots: true,
+  infinite: true,
+  speed: 500,
+  fade: true,
+  cssEase: 'linear'
+});
+}); 
+
+//Pour utiliser Slick avec une nav par miniatures (thumbs)
+jQuery(document).ready(function ()
+ {
+   $('.slider-for').slick({
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  arrows: false,
+  fade: true,
+  asNavFor: '.slider-nav'
+});
+$('.slider-nav').slick({
+  slidesToShow: 3,
+  slidesToScroll: 1,
+  asNavFor: '.slider-for',
+  dots: true,
+  centerMode: true,
+  focusOnSelect: true
+});
+}); 
 //// Script pour Masonry - Views casse les __ utiliser -- plutôt
 
 //    jQuery(document).ready(function () 

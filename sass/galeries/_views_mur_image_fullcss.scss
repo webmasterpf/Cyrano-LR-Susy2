@@ -112,6 +112,7 @@ div.img-vdl{
         margin: 0 auto;
         display: block;
         object-fit: cover;//ne déforme pas l'image mais la coupe à la différence de contain
+        max-height: 30em;//limite la hauteur si image trop grosse
         &:hover{
              @include opacity(0.3);
         }

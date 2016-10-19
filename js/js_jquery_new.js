@@ -209,4 +209,10 @@ $('#liste-vdl span.titre-vdl > a').css('text-transform','lowercase');
     });
 
 // Pour MixItUp plugin: voir le fichier ajout.classes.mixitup.js
+// Calling the MixItUp plugin for this View.
+    jQuery(window).load(function () {
+        console.log('Chargement de Mixitup');
+        $('.mixitup').mixItUp();
+    });
+
 })(jQuery);

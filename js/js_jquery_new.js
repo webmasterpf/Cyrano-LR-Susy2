@@ -207,4 +207,6 @@ $('#liste-vdl span.titre-vdl > a').css('text-transform','lowercase');
         $(".masonry-brick").removeAttr("style");//pas d'effet
         
     });
+
+// Pour MixItUp plugin: voir le fichier ajout.classes.mixitup.js
 })(jQuery);

@@ -1,7 +1,17 @@
 jQuery(window).on('load', function () {
 // // Selecting from every list item in the View the values that match the filters
 //  (the practice areas and surname each list item is showing) and adding to this list item these values as classes.
-    $('div.mixitup').each(function () {
+    $('ul.mixitup li').each(function () {
+
+        $(this).find('span.vdl-tag').each(function () {
+
+            var str = $(this).text();
+
+            str = str.trim().replace(/\s+/g, '-').toLowerCase().replace('&', 'a');
+
+            $(this).closest('li.item').addClass(str);
+
+        });
 
         $(this).find('div.img-vdl').each(function () {
 
@@ -9,17 +19,7 @@ jQuery(window).on('load', function () {
 
             str = str.trim().replace(/\s+/g, '-').toLowerCase().replace('&', 'a');
 
-            $(this).closest('div.img-vdl').addClass(str);
-
-        });
-
-        $(this).find('div.item').each(function () {
-
-            var str = $(this).text();
-
-            str = str.trim().replace(/\s+/g, '-').toLowerCase().replace('&', 'a');
-
-            $(this).closest('div').addClass(str);
+            $(this).closest('li').addClass(str);
 
         });
 

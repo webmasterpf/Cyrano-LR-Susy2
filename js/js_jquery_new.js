@@ -175,7 +175,7 @@ jQuery(window).on('load', function()
 $('table tr:odd').addClass('odd');
 $('table tr:even') .addClass('even');
 //Ajout d'attributs pour mur image JS
-$('#liste-vdl ul').attr("id", "wookmark-id");
+$('#liste-vdl ul.wookmark').attr("id", "wookmark-id");
 $('#liste-vdl div.view-content').attr("id","grid");
 $('#liste-vdl div.view-content').attr("data-columns","");
 

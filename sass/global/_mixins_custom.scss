@@ -26,10 +26,21 @@
 /*-------- IMAGES ADAPTABLES -----------*/
 @mixin adaptable-img {
     max-width: 100%;
+    height:auto;//proportions
     @-moz-document url-prefix() {  
         img{
             width: 100%;
             max-width: 100%;
+        }
+    }
+}
+@mixin img-centered {
+    display: block;
+    margin: 0 auto;
+    @-moz-document url-prefix() {  
+        img{
+            display: block;
+            margin: 0 auto;
         }
     }
 }
@@ -64,11 +75,29 @@
 }
 }
 /*------- EFFETS VISUELS GENERIQUES--------------*/
-@mixin cadre-ombre($epaisseur-cadre:0.5em,$couleur-cadre:#fff){
+@mixin forme-habillage($forme:inset(),$marge-forme:0){
+    //     circle()     ellipse()     inset()     polygon() , fonctionne uniquement sur élement flottant
+    shape-outside:$forme;
+    -webkit-shape-outside:$forme;
+    -moz-shape-outside:$forme;
+    shape-margin:$marge-forme;
+    -webkit-shape-margin:$marge-forme;
+    -moz-shape-margin:$marge-forme;
+}
+
+@mixin img-border-shadow ($margin : 0.3em, $bordersize:0.5em, $bordercolor : white,$shadowcolor : #AAAAAA) {
+    margin: $margin;
+    border: $bordersize solid $bordercolor;
+    -moz-box-shadow: $shadowcolor 0px 0px 5px ;
+    -webkit-box-shadow: $shadowcolor 0px 0px 5px;
+    box-shadow: $shadowcolor 0px 0px 5px;
+}
+
+@mixin cadre-ombre($epaisseur-cadre:0.5em,$couleur-cadre:#fff,$couleur-ombre:#AAAAAA){
      border: $epaisseur-cadre solid $couleur-cadre;
-    -moz-box-shadow: #AAAAAA 0px 0px 5px ;
-    -webkit-box-shadow: #AAAAAA 0px 0px 5px;
-    box-shadow: #AAAAAA 0px 0px 5px;
+    -moz-box-shadow: $couleur-ombre 0px 0px 0.5em;
+    -webkit-box-shadow: $couleur-ombre 0px 0px 0.5em;
+    box-shadow: $couleur-ombre 0px 0px 0.5em;
 }
 @mixin ombrage ($contour:0.5em,$decalage-horizontal:0.5em,$decalage-vertical:0.5em,$couleur-ombre:#aaa){
     border: $contour solid #fff;
@@ -103,6 +132,10 @@
     box-shadow: 2px 2px 5px #555;
     }
     
+    @mixin ombrage-texte($angle:0.5em,$distance:0.2em,$flou:0.6em,$couleur:#1a181a){
+        text-shadow: $angle $distance $flou $couleur;
+filter: dropshadow(color=$couleur, offx=$angle, offy=$distance);
+    }    
 @mixin ombrage-bas-table-actu{
     -moz-box-shadow: 2px 2px 5px #aaa;
     -webkit-box-shadow: 2px 2px 5px #aaa;
@@ -123,13 +156,7 @@ filter : alpha(opacity=$opacite); /* IE < 8 */
     -pie-background: rgba($color, $opacity);
     @include PIE;
 }
-@mixin img-border-shadow ($margin : 0.3em, $bordersize:0.5em, $bordercolor : white,$shadowcolor : #AAAAAA) {
-    margin: $margin;
-    border: $bordersize solid $bordercolor;
-    -moz-box-shadow: $shadowcolor 0px 0px 5px ;
-    -webkit-box-shadow: $shadowcolor 0px 0px 5px;
-    box-shadow: $shadowcolor 0px 0px 5px;
-}
+
 @mixin arrondis ($angle : 0.5em){
     -moz-border-radius: $angle;
     -webkit-border-radius: $angle;
@@ -187,6 +214,7 @@ filter : alpha(opacity=$opacite); /* IE < 8 */
 @mixin border-rose-bleu { border-left: em(1px) solid $rose-fushia; border-right: em(1px) solid $bleu-turquoise;}
 @mixin border-noir-vert { border-left: em(1px) solid $gris-anthracite; border-right: em(1px) solid $vert;}
 @mixin border-bleu-violet { border-left: em(1px) solid $bleu-turquoise; border-right: em(1px) solid $violet;}
+@mixin border-bleu-gris { border-left: em(1px) solid $bleu-turquoise; border-right: em(1px) solid $gris-anthracite;}
 @mixin border-vert-violet { border-left: em(1px) solid $vert; border-right: em(1px) solid $violet;}
 @mixin border-anthracite-anthracite { border-left: em(1px) solid $gris-anthracite; border-right: em(1px) solid $gris-anthracite;}
 @mixin border-anthracite-orangePF{border-left: em(1px) solid $gris-anthracite;border-right: em(1px) solid $orange-fonce;}

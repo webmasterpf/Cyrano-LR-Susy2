@@ -922,10 +922,11 @@ aside.navStatic select {
   /* line 49, ../sass/global/_sub-nav.scss */
   aside.navStatic ul.horizontal-nav li a img {
     max-width: 100%;
+    height: auto;
     margin: 0;
   }
   @-moz-document url-prefix() {
-    /* line 30, ../sass/global/_mixins_custom.scss */
+    /* line 31, ../sass/global/_mixins_custom.scss */
     aside.navStatic ul.horizontal-nav li a img img {
       width: 100%;
       max-width: 100%;
@@ -1054,9 +1055,10 @@ body .conteneur:after {
 /* line 60, ../sass/layout/_layout.scss */
 body .conteneur .content-top img {
   max-width: 100%;
+  height: auto;
 }
 @-moz-document url-prefix() {
-  /* line 30, ../sass/global/_mixins_custom.scss */
+  /* line 31, ../sass/global/_mixins_custom.scss */
   body .conteneur .content-top img img {
     width: 100%;
     max-width: 100%;
@@ -1092,9 +1094,10 @@ aside.content_top {
 /* line 109, ../sass/layout/_layout.scss */
 .node-inner img, .node-inner iframe, .node-inner object, .node-inner embed {
   max-width: 100%;
+  height: auto;
 }
 @-moz-document url-prefix() {
-  /* line 30, ../sass/global/_mixins_custom.scss */
+  /* line 31, ../sass/global/_mixins_custom.scss */
   .node-inner img img, .node-inner iframe img, .node-inner object img, .node-inner embed img {
     width: 100%;
     max-width: 100%;
@@ -2688,11 +2691,12 @@ body .conteneur #header .headBas .headSearch {
 /* line 87, ../sass/layout/_layout-header.scss */
 .logoHead img {
   max-width: 100%;
+  height: auto;
   padding: 0;
   margin: 0;
 }
 @-moz-document url-prefix() {
-  /* line 30, ../sass/global/_mixins_custom.scss */
+  /* line 31, ../sass/global/_mixins_custom.scss */
   .logoHead img img {
     width: 100%;
     max-width: 100%;
@@ -2883,9 +2887,10 @@ aside .annonce-container .annonce p {
 aside.annonce-container .annonce img,
 aside .annonce-container .annonce img {
   max-width: 100%;
+  height: auto;
 }
 @-moz-document url-prefix() {
-  /* line 30, ../sass/global/_mixins_custom.scss */
+  /* line 31, ../sass/global/_mixins_custom.scss */
   aside.annonce-container .annonce img img,
   aside .annonce-container .annonce img img {
     width: 100%;
@@ -3688,9 +3693,10 @@ body .conteneur .HPDiapo aside.DiapoPanoHP #contenu-diapo {
 /* line 27, ../sass/layout/_layout-diapo-frontpage.scss */
 body .conteneur .HPDiapo aside.DiapoPanoHP img {
   max-width: 100%;
+  height: auto;
 }
 @-moz-document url-prefix() {
-  /* line 30, ../sass/global/_mixins_custom.scss */
+  /* line 31, ../sass/global/_mixins_custom.scss */
   body .conteneur .HPDiapo aside.DiapoPanoHP img img {
     width: 100%;
     max-width: 100%;
@@ -3718,9 +3724,10 @@ body .conteneur .HPDiapo aside.DiapoPanoHP img {
   /* line 38, ../sass/layout/_layout-diapo-frontpage.scss */
   body .conteneur .HPDiapo aside.DiapoPanoHP img {
     max-width: 100%;
+    height: auto;
   }
   @-moz-document url-prefix() {
-    /* line 30, ../sass/global/_mixins_custom.scss */
+    /* line 31, ../sass/global/_mixins_custom.scss */
     body .conteneur .HPDiapo aside.DiapoPanoHP img img {
       width: 100%;
       max-width: 100%;
@@ -3880,9 +3887,10 @@ body .conteneur .HPDroite3 {
   border: 0.2em solid #ADC91F;
   padding: 0.3em;
   max-width: 100%;
+  height: auto;
 }
 @-moz-document url-prefix() {
-  /* line 30, ../sass/global/_mixins_custom.scss */
+  /* line 31, ../sass/global/_mixins_custom.scss */
   .HPDiapoVerticalGauche iframe img {
     width: 100%;
     max-width: 100%;
@@ -4198,9 +4206,10 @@ body .conteneur .conteneur-flex .HPDiapoVerticalGauche {
 /* line 34, ../sass/layout/_layout-vertical-hp-gauche.scss */
 body .conteneur .conteneur-flex .HPDiapoVerticalGauche img {
   max-width: 100%;
+  height: auto;
 }
 @-moz-document url-prefix() {
-  /* line 30, ../sass/global/_mixins_custom.scss */
+  /* line 31, ../sass/global/_mixins_custom.scss */
   body .conteneur .conteneur-flex .HPDiapoVerticalGauche img img {
     width: 100%;
     max-width: 100%;
@@ -4225,9 +4234,10 @@ body .conteneur .conteneur-flex .HPDroite {
 /* line 45, ../sass/layout/_layout-vertical-hp-gauche.scss */
 body .conteneur .conteneur-flex .HPDroite img {
   max-width: 100%;
+  height: auto;
 }
 @-moz-document url-prefix() {
-  /* line 30, ../sass/global/_mixins_custom.scss */
+  /* line 31, ../sass/global/_mixins_custom.scss */
   body .conteneur .conteneur-flex .HPDroite img img {
     width: 100%;
     max-width: 100%;
@@ -4334,9 +4344,10 @@ aside.DiapoHP #contenu-diapo {
 /* line 113, ../sass/layout/_layout-vertical-hp-gauche.scss */
 aside.DiapoHP img {
   max-width: 100%;
+  height: auto;
 }
 @-moz-document url-prefix() {
-  /* line 30, ../sass/global/_mixins_custom.scss */
+  /* line 31, ../sass/global/_mixins_custom.scss */
   aside.DiapoHP img img {
     width: 100%;
     max-width: 100%;
@@ -4374,9 +4385,10 @@ aside.DiapoHP img {
 /* line 13, ../sass/content-type-style/_views.scss */
 .vue-diapo-hp-img img {
   max-width: 100%;
+  height: auto;
 }
 @-moz-document url-prefix() {
-  /* line 30, ../sass/global/_mixins_custom.scss */
+  /* line 31, ../sass/global/_mixins_custom.scss */
   .vue-diapo-hp-img img img {
     width: 100%;
     max-width: 100%;
@@ -4469,9 +4481,10 @@ h1.titre-lycee, h1.title-classes {
   display: block;
   margin: 0 auto;
   max-width: 100%;
+  height: auto;
 }
 @-moz-document url-prefix() {
-  /* line 30, ../sass/global/_mixins_custom.scss */
+  /* line 31, ../sass/global/_mixins_custom.scss */
   #colonne-1.page-lycee img img {
     width: 100%;
     max-width: 100%;
@@ -4602,9 +4615,10 @@ table.doc-joint-lycee tr.even, table.doc-joint-lycee tr.odd {
 /* line 17, ../sass/content-type-style/_page-pole.scss */
 .vdl-galerie-image .gallery-slides img {
   max-width: 100%;
+  height: auto;
 }
 @-moz-document url-prefix() {
-  /* line 30, ../sass/global/_mixins_custom.scss */
+  /* line 31, ../sass/global/_mixins_custom.scss */
   .vdl-galerie-image .gallery-slides img img {
     width: 100%;
     max-width: 100%;
@@ -6068,9 +6082,10 @@ VIEWS 3 CYCLE: DIAPO CONTENU ===================================
   left: 8em;
   position: relative;
   max-width: 100%;
+  height: auto;
 }
 @-moz-document url-prefix() {
-  /* line 30, ../sass/global/_mixins_custom.scss */
+  /* line 31, ../sass/global/_mixins_custom.scss */
   .galerie .views_slideshow_cycle_slide img img {
     width: 100%;
     max-width: 100%;
@@ -6601,6 +6616,65 @@ Indiquer les classes ou les IDs des enveloppes des galeries
 /* line 96, ../sass/galeries/_slick.scss */
 .slick-arrow.slick-hidden {
   display: none;
+}
+
+/*
+Override du style de galerie vignettes BaguetteBox
+*/
+/* line 11, ../sass/galeries/_baguettebox-vignette-zoom.scss */
+.galerie-vdl .galerieBaguetteBox .view-content {
+  margin: 0 1.875em;
+}
+/* line 14, ../sass/galeries/_baguettebox-vignette-zoom.scss */
+.galerie-vdl .galerieBaguetteBox .view-content > div {
+  width: 47.44898%;
+  float: left;
+}
+/* line 66, ../../../../../../../../home/webmaster/.rvm/gems/ruby-1.9.3-p484/gems/susy-2.2.2/sass/susy/language/susy/_gallery.scss */
+.galerie-vdl .galerieBaguetteBox .view-content > div:nth-child(2n + 1) {
+  margin-left: 0;
+  margin-right: -100%;
+  clear: both;
+  margin-left: 0;
+}
+/* line 66, ../../../../../../../../home/webmaster/.rvm/gems/ruby-1.9.3-p484/gems/susy-2.2.2/sass/susy/language/susy/_gallery.scss */
+.galerie-vdl .galerieBaguetteBox .view-content > div:nth-child(2n + 2) {
+  margin-left: 52.55102%;
+  margin-right: -100%;
+  clear: none;
+}
+@media (min-width: 990px) {
+  /* line 14, ../sass/galeries/_baguettebox-vignette-zoom.scss */
+  .galerie-vdl .galerieBaguetteBox .view-content > div {
+    width: 32.23684%;
+    float: left;
+  }
+  /* line 66, ../../../../../../../../home/webmaster/.rvm/gems/ruby-1.9.3-p484/gems/susy-2.2.2/sass/susy/language/susy/_gallery.scss */
+  .galerie-vdl .galerieBaguetteBox .view-content > div:nth-child(3n + 1) {
+    margin-left: 0;
+    margin-right: -100%;
+    clear: both;
+    margin-left: 0;
+  }
+  /* line 66, ../../../../../../../../home/webmaster/.rvm/gems/ruby-1.9.3-p484/gems/susy-2.2.2/sass/susy/language/susy/_gallery.scss */
+  .galerie-vdl .galerieBaguetteBox .view-content > div:nth-child(3n + 2) {
+    margin-left: 33.88158%;
+    margin-right: -100%;
+    clear: none;
+  }
+  /* line 66, ../../../../../../../../home/webmaster/.rvm/gems/ruby-1.9.3-p484/gems/susy-2.2.2/sass/susy/language/susy/_gallery.scss */
+  .galerie-vdl .galerieBaguetteBox .view-content > div:nth-child(3n + 3) {
+    margin-left: 67.76316%;
+    margin-right: -100%;
+    clear: none;
+  }
+}
+/* line 20, ../sass/galeries/_baguettebox-vignette-zoom.scss */
+.galerie-vdl .galerieBaguetteBox .view-content img {
+  border: 0.3em solid white;
+  -moz-box-shadow: #606070 0px 0px 0.5em;
+  -webkit-box-shadow: #606070 0px 0px 0.5em;
+  box-shadow: #606070 0px 0px 0.5em;
 }
 
 /*# sourceMappingURL=application.css.map */

@@ -124,6 +124,8 @@ function cyranod6_lr_susy2_preprocess_page(&$vars){
     //drupal_add_js(drupal_get_path('theme', 'cyranod6_lr_susy2') . '/js/jquery_plugin/salvattore.min.js', 'theme');
     drupal_add_js(drupal_get_path('theme', 'cyranod6_lr_susy2') . '/js/jquery_plugin/salvattore.js', 'theme');
     //drupal_add_js(drupal_get_path('theme', 'cyranod6_lr_susy2') . '/3rdparty/buttons/js/buttons.js', 'theme');
+    drupal_add_js(drupal_get_path('theme', 'cyranod6_lr_susy2') . '/js/jquery_plugin/chocolat/jquery.chocolat.min.js', 'theme');
+    drupal_add_js(drupal_get_path('theme', 'cyranod6_lr_susy2') . '/js/jquery_plugin/baguettebox/baguetteBox.min.js', 'theme');
     drupal_add_js(drupal_get_path('theme', 'cyranod6_lr_susy2') . '/js/jquery_plugin/salvattore.js', 'theme');
     drupal_add_js(drupal_get_path('theme', 'cyranod6_lr_susy2') . '/js/jquery_plugin/jquery.mixitup.js', 'theme');
     drupal_add_js(drupal_get_path('theme', 'cyranod6_lr_susy2') . '/js/jquery_plugin/ajout.classes.mixitup.js', 'theme');

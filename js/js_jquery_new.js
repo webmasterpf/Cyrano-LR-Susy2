@@ -207,6 +207,9 @@ $('#liste-vdl div.view-content').attr("data-columns","");
 
 //Changer la casse des titres H1 qui sont en Majuscules
 $('h1').css('text-transform','lowercase');
+$('h1.titre-lycee').css('text-transform','none');
+$('h1.titre_ficheform').css('text-transform','none');
+
 $('.titre-vdl a').css('text-transform','lowercase');
 $('#liste-vdl span.titre-vdl > a').css('text-transform','lowercase');
 

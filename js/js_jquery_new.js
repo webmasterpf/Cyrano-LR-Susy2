@@ -222,15 +222,13 @@ $('#liste-vdl span.titre-vdl > a').css('text-transform','lowercase');
         $("#colonne-2 ul").removeAttr("style");
         $(".masonry-brick").removeAttr("style");//pas d'effet
 //Hauteur de l'iframe selon son contenu
-
+//pas utile,voir CSS avec min-height pour solution
 $('.page-lycee iframe').css({
   'overflow':'hidden',
-  'height':'100%',
-  'width':'100%',
-  
+  'height':'100%'
+ });
+
 });
-  
-    });
 
 // Pour MixItUp plugin: voir le fichier ajout.classes.mixitup.js
 // Calling the MixItUp plugin for this View.

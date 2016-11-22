@@ -126,6 +126,11 @@ h4 a:hover{}
             td{}
         }
     }
+    iframe{
+        height: max-content;
+        overflow: hidden;
+        width: 95%;
+    }
 }
 #colonne-2.page-classes{
     padding: 0.5em;

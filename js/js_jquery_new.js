@@ -199,10 +199,13 @@ $('#liste-vdl div.view-content').attr("data-columns","");
  });
  //si dans attribut style,alors il faut régler la valeur sur auto (views slideshow,mais taille overrider,
  //solution ajouter un max-width
-  $('.diapo_fiche div.views_slideshow_cycle_teaser_section').css('width','auto');
-  $('.diapo_fiche .views_slideshow_cycle_teaser_section').css('height','auto');
-  $('.diapo_fiche  .views_slideshow_cycle_teaser_section').css('max-width','100%');
-
+ 
+$('.diapo_fiche div.views_slideshow_cycle_teaser_section').css({
+  'max-width':'100%',
+  'height':'auto',
+  'width':'auto'
+  
+});
  
 
 //Changer la casse des titres H1 qui sont en Majuscules
@@ -218,7 +221,15 @@ $('#liste-vdl span.titre-vdl > a').css('text-transform','lowercase');
         $("#colonne-2 p").removeAttr("style");
         $("#colonne-2 ul").removeAttr("style");
         $(".masonry-brick").removeAttr("style");//pas d'effet
-        
+//Hauteur de l'iframe selon son contenu
+
+$('.page-lycee iframe').css({
+  'overflow':'hidden',
+  'height':'100%',
+  'width':'100%',
+  
+});
+  
     });
 
 // Pour MixItUp plugin: voir le fichier ajout.classes.mixitup.js

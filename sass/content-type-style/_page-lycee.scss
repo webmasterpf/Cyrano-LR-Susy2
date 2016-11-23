@@ -113,7 +113,7 @@ h4 a:hover{}
         //display:table;//casse le système de stacktable js
         tbody{
             max-width: 100%;
-
+            color:$vert;
             tr{
                 border:0;
             }
@@ -127,6 +127,9 @@ h4 a:hover{}
         }
     }
     iframe{
+        @include breakpoint ($mobile){
+            min-height: 50em;
+        }
         height: max-content;
         overflow: hidden;
         width: 95%;

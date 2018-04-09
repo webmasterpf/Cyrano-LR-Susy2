@@ -51,8 +51,8 @@
         <div id="colonne-3"  class="layout_4col_all3 page-pole">
             
    <?php
-               global $theme_path;
-              include ($theme_path.'/includes/dedicates_inc/inc_pole_restauration.php');
+           //    global $theme_path;
+            //  include ($theme_path.'/includes/dedicates_inc/inc_pole_restauration.php');
               ?>
          
             

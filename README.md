@@ -21,6 +21,9 @@ npm install --save-dev  event-stream gulp-util node-sass-import-once gulp-sass  
 Vérifier versions des npm:
 npm-check
 
+Installer un version precise
+https://stackoverflow.com/questions/15890958/how-do-i-install-a-previous-version-of-an-npm-package
+
 !! Remplacer gulp-autoprefixer par autoprefixer pour avoir la dernière version du package.Utiliser avec PostCSS
 
 https://github.com/at-import/breakpoint

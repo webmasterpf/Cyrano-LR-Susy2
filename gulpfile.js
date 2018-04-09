@@ -149,7 +149,7 @@ gulp.task('sasscompil', function () {
 gulp.task('browser-sync', function() {
 browserSync.init({
         //changer l'adresse du site pour lequel utiliser browserSync
-        proxy: "http://d6-lerocher.vmdev",
+        proxy: "http://d6-le-rocher.vmdev/",
         open: false,
         logLevel: 'info',//pour avoir toutes les infos ,utiliser "debug", pour infos de base "info"
         logConnections: true

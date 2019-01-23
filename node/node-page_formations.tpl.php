@@ -2,7 +2,7 @@
 /* Ce template permet la création d'un layout multicolonne pour les pages de base, en permettant la disposition facile
  * des champs CCK custom, si nécessaires pour une page de base.
 */?>
-<!--______________NODE TPL POUR POLE.TPL CUSTOM________________ -->
+<!--______________NODE TPL POUR POLE.TPL CUSTOM - Blocs via Viewreference + Argument________________ -->
 <div class="node <?php print $classes; ?>" id="node-<?php print $node->nid; ?>">
  <div class="node-inner">
         <!--______________COLONNE 1________________ -->
@@ -33,7 +33,7 @@
                global $theme_path;
               include ($theme_path.'/includes/dedicates_inc/inc_pole_orientation.php');
               ?>
-  
+
             
         </div>
         <!--______________COLONNE 2________________ -->
@@ -44,6 +44,8 @@
                global $theme_path;
               include ($theme_path.'/includes/dedicates_inc/inc_pole_services.php');
               ?>
+            
+
           
         </div>
 
@@ -51,10 +53,13 @@
         <div id="colonne-3"  class="layout_4col_all3 page-pole">
             
    <?php
-           //    global $theme_path;
-            //  include ($theme_path.'/includes/dedicates_inc/inc_pole_restauration.php');
+//               global $theme_path;
+//              include ($theme_path.'/includes/dedicates_inc/inc_pole_restauration.php');
               ?>
-         
+      <?php
+               global $theme_path;
+              include ($theme_path.'/includes/dedicates_inc/inc_pole_formations_annexes.php');
+              ?>
             
         </div>
              <!--______________COLONNE 4________________ -->
@@ -64,6 +69,8 @@
                global $theme_path;
               include ($theme_path.'/includes/dedicates_inc/inc_pole_industrie.php');
               ?>
+                 
+        
         </div>
                  
 

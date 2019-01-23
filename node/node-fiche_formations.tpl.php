@@ -17,14 +17,32 @@
 
             <?php endif; ?>
 
+                  <?php
+                         /* 01/2019 Liste les fichiers à partir du tableau créé
+                     * création d'une liste dynamique - Fiche formation
+                     */
+                          if (!empty($node->field_programme_formation[0]['view'])): ?>
+                <div class="lien-ficheform">
+               <?php  print $node->content['field_programme_formation']['field']['#title'] ?>
+                    <ul>
+               <?php
+               
+               foreach ($node->field_programme_formation as $key => $fichier) {
+                      //Ne pas afficher les champs vides du tableau
+   if (!empty($fichier['view'])):
+              print '<li class="programme" >'.$node->field_programme_formation[$key]['view'].'</li>';
+   endif;            
+               }
+               ?>  
+                  </ul>   </div>
+            <?php endif;?>
                 
-                
-                <?php if ($node-> field_programme_formation[0]['view'] ):?>
-                <div class="programme">
-                <?php  print $node->content['field_programme_formation']['field']['#title'] ?>
-                <?php print $node-> field_programme_formation[0]['view'] ?>
-                </div> 
-               <?php endif; ?>
+                <?php // if ($node-> field_programme_formation[0]['view'] ):?>
+                <!--<div class="programme">-->
+                <?php //  print $node->content['field_programme_formation']['field']['#title'] ?>
+                <?php // print $node-> field_programme_formation[0]['view'] ?>
+                <!--</div>--> 
+               <?php // endif; ?>
                 
                     <?php
                     /* 06/2015 Liste les fichiers à partir du tableau créé
@@ -36,7 +54,9 @@
                     <ul>
                <?php
                foreach ($node->field_lien_ficheform as $key => $lien) {
+                   if (!empty($lien['view'])):
                     print '<li>'.$node->field_lien_ficheform[$key]['view'].'</li>';
+                   endif;
                }
                ?>  
                   </ul>   </div>

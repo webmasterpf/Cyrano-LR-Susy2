@@ -22,14 +22,14 @@ breakpoint-2.5.0
 @import "normalize302";
 
 // Import de Compass
-@import "compass";
+//@import "compass";
 
 
 //Import des plugins de Compass
 @import "susy";// utiliser susyone si syntaxe ancienne(Susy v1),sinon susy pour utiliser v2
 //@import 'modular-scale';
 @import "breakpoint"; // Pour utiliser les breakpoint de compass
-@import "sassy-buttons";
+//@import "sassy-buttons";
 
 // Import des réglages susy pour la grille
 @import "global/variables";

@@ -40,7 +40,7 @@ $view->execute();
 
 if (!empty($view->result)) {
   // S'il y a un resultat on récupère le titre (ajoute tag h3, et le contenu)
-  $output = '<div id="services" class="bloc-pole formations-annexes"><h3 class="CLASS_NAME">'.$view->get_title().'</h3>' .$view->preview($viewdisplay_fl3,$args_fl3).'</div>';
+  $output = '<div id="restauration" class="bloc-pole formations-annexes"><h3 class="CLASS_NAME">'.$view->get_title().'</h3>' .$view->preview($viewdisplay_fl3,$args_fl3).'</div>';
 
   //Affiche la vue si contenu
 print $output;
